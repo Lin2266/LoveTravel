@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>首頁</title>
 </head>
+
 <body>
     <header>
-        <ul>
-            <li>登入</li>
-            <li>註冊</li>
-            <li><i class="fa-solid fa-circle-user"></i></li>
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><i class="fa-solid fa-globe"></i></li>
-        </ul>
-        <ul>
-            <img src="images/logo-travel-header.png" alt="">
-            <li>最新消息</li>
-            <li>景點</li>
-            <li>美食</li>
-            <li>訂房</li>
-        </ul>
+        <!-- <div class="nav-right"> -->
+            <ul  class="nav-right">
+                <li><a href="">登入</a></li>
+                <li><a href="">註冊</a></li>
+                <li><a href=""><i class="fa-solid fa-circle-user"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-globe"></i></a></li>
+            </ul>
+        <!-- </div> -->
+        
+        <!-- <div class="nav-center"> -->
+            
+            <ul class="nav-center">  
+                <li><a href=""><img src="images/logo-travel-header.png" alt=""></a></li>                    
+                <li><a href="">最新消息</a></li>
+                <li><a href="">景點</a></li>
+                <li><a href="">美食</a></li>
+                <li><a href="">訂房</a></li>
+            </ul>
+        <!-- </div> -->
+        
     </header>
 
     <main>
         <div class="news">
-            <i class="fa-solid fa-star"></i>
+            <h1><i class="fa-solid fa-star"></i>最新消息</h1>
+            <div>
+                <i class="fa-solid fa-angle-left"></i>
+                <img src="images/news1.jpg" alt="">
+                <i class="fa-solid fa-heart"></i>
+                <h1>【落羽松V.S.絕美花海】快穿上大衣！一起來這裡歐風一波吧！！</h1>
+                <p>2022-07-01</p>
+                <p>屏東</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-angle-left"></i>
+                <img src="images/news2.jpg" alt="">
+                <i class="fa-solid fa-heart"></i>
+                <h1>浪漫又迷人的櫻花小精靈來囉!!快一起來司馬庫斯部落賞櫻花看巨木吧！</h1>
+                <p>2022-07-01</p>
+                <p>新竹</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            
+
         </div>
     </main>
 
     <footer>
+        <img src="images/logo-travel_foot.png" alt="">
+        
 
     </footer>
 </body>
+
 </html>
