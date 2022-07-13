@@ -1,7 +1,7 @@
 @import url("reset.css");
 body{
-    font-weight: bold;
-    font-size: 18px;
+    font-family: Arial, '微軟正黑體';
+    font-size: 16px;
 }
 
 header{
@@ -9,6 +9,8 @@ header{
     height: 600px;
     background-image: url("../images/header.jpg");
     background-size: cover;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .nav-right{
@@ -34,13 +36,13 @@ a{
 }
 .nav-center{
     clear: both;
-    /* border: 1px solid rgb(237, 9, 9); */
+    border: 1px solid rgb(237, 9, 9);
     display: flex;   
     margin: 0 15%;
 }
 
 .nav-center li{
-    /* border: 1px solid rgb(92, 11, 222); */
+    border: 1px solid rgb(92, 11, 222);
     line-height: 4;
     padding: 0 25px;
 
@@ -57,16 +59,94 @@ a{
     color: black;
 }
 
-footer{
+/* ------------------body------------------ */
+.out-wrapper{
     width: 100%;
+}
+main > h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px 0;
+}
+
+main h1 > i{
+    font-size: 30px;
+    color: rgb(231, 216, 18);
+}
+
+.news{
+    border: 2px solid rgb(6, 128, 59);
+    display: flex;
+    
+}
+
+.news div{
+    border: 2px solid rgb(11, 6, 113);
+    width: 100%;
+}
+
+.news ul{
+    display: flex;
+    
+}
+
+.news li{
+    border: 2px solid rgb(203, 111, 13);
+    
+}
+.arrow{
+   width: 50px;
+   text-align: center;
+   padding-top: 80px;
+    
+}
+
+.fa-heart{
+    font-size: 25px;
+    color: red;
+    padding: 10px 0 10px 240px;
+}
+
+.fa-angle-left,.fa-angle-right{
+    font-size: 40px;
+    width: 20%;
+    text-align: center;
+}
+.news img{
+    display: block;
+    width: 250px;
+    height: 200px;
+}
+
+.news h1{
+    width: 250px;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.news p{
+    padding: 0 15px 0 15px;
+    border: 2px solid rgb(203, 111, 13);
+}
+
+.news span{
+    /* border: 2px solid rgb(203, 111, 13); */
+    margin-left: 135px;
+}
+
+/* ------------------footer---------------- */
+footer{
+   
     height: 170px;
     background-color: black;
-    color: white;
-   
-    /* padding-top: 30px; */
-    padding: 30px 70px 0 70px;
-    font-size: 18px;
+    color: white;  
+    padding: 20px 15px 0 15px;
+    font-size: 16px;
 }
+
 
 footer a{
     color: white;
@@ -85,15 +165,18 @@ footer img{
 
 .foot-wrapper{
     display: flex;
-    border: 1px solid white;
-    width: 70%;
+    border: 1px solid rgb(167, 31, 31);
+    margin: 0 auto;
+}
+
+.foot-wrapper div{
     margin: 0 auto;
 }
 
 .address{
     border: 1px solid white;
-    margin-left: 20px;
-    height: calc(100% - 131px);
+    /* margin-left: 20px; */
+    /* height: calc(100% - 131px); */
     
 }
 
@@ -102,34 +185,33 @@ footer img{
 }
 
 .address li{
-    padding-bottom: 5px;
+    padding: 5px;
     
 }
 
 .link1{
     border: 1px solid white;
-    margin-left: 55px;
-    height: calc(100% - 131px);
+    
 }
 
 .link1 li{
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 .link2{
     border: 1px solid white;
-    margin-left: 55px;
-    height: calc(100% - 131px);
+    /* margin-left: 55px; */
+    /* height: calc(100% - 131px); */
 }
 
 .link2 li{
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 .link3{
     border: 1px solid white;
-    margin-left: 55px;
-    height: calc(100% - 131px);
+    /* margin-left: 55px; */
+    /* height: calc(100% - 131px); */
 }
 
 .link3 ul{
@@ -145,21 +227,22 @@ footer img{
     height: 45px;
 }
 
-.QRcode{
+.QRcode li{
     border: 1px solid rgb(21, 179, 95);
-    height: calc(100% - 131px);
-    margin-left: 55px;
+    padding: 5px;
+   
 }
 .QRcode img{
+    display: block;
     width: 50px;
-    height: 50px;
+    height: 40px;
     background-color: white;
-    
+    margin: 0 auto;
 }
 
 footer > p{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 
