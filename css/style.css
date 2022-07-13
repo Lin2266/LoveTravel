@@ -1,7 +1,7 @@
 @import url("reset.css");
 body{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 header{
@@ -59,6 +59,109 @@ a{
 
 footer{
     width: 100%;
-    height: 200px;
+    height: 170px;
     background-color: black;
+    color: white;
+   
+    /* padding-top: 30px; */
+    padding: 30px 70px 0 70px;
+    font-size: 18px;
 }
+
+footer a{
+    color: white;
+}
+
+/* footer a:after{
+    將a標籤的title帶到content裡a的內容
+    content: attr(title);
+} */
+
+footer img{
+    border: 1px solid white;
+    width: 100px;
+    height: 70px;
+}
+
+.foot-wrapper{
+    display: flex;
+    border: 1px solid white;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.address{
+    border: 1px solid white;
+    margin-left: 20px;
+    height: calc(100% - 131px);
+    
+}
+
+.address ul{
+    /* border: 1px solid rgb(232, 17, 17); */
+}
+
+.address li{
+    padding-bottom: 5px;
+    
+}
+
+.link1{
+    border: 1px solid white;
+    margin-left: 55px;
+    height: calc(100% - 131px);
+}
+
+.link1 li{
+    padding-bottom: 5px;
+}
+
+.link2{
+    border: 1px solid white;
+    margin-left: 55px;
+    height: calc(100% - 131px);
+}
+
+.link2 li{
+    padding-bottom: 5px;
+}
+
+.link3{
+    border: 1px solid white;
+    margin-left: 55px;
+    height: calc(100% - 131px);
+}
+
+.link3 ul{
+    display: flex;
+}
+
+.link3 li{
+    padding: 5px;
+}
+
+.link3 img{
+    width: 45px;
+    height: 45px;
+}
+
+.QRcode{
+    border: 1px solid rgb(21, 179, 95);
+    height: calc(100% - 131px);
+    margin-left: 55px;
+}
+.QRcode img{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    
+}
+
+footer > p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
