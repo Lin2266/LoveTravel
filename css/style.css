@@ -243,7 +243,8 @@ color: #5790C5;
 .view .fa-heart{
     font-size: 25px;
     color: red;
-    padding: 10px 0 5px 150px;
+    /* padding: 10px 0 5px 150px; */
+    margin: 10px 0 5px 150px;
 }
 
 .view .fa-heart:hover{
@@ -275,9 +276,9 @@ color: #5790C5;
 
 .view h1{
     font-size: 20px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    /* text-align: center; */
+    margin-bottom: 25px;
+    margin-left: 10px;
+
 }
 
 .view a{
@@ -309,11 +310,13 @@ color: #5790C5;
     display: flex;
     /* border: 1px solid rgb(220, 15, 15); */
     flex-wrap: wrap;
+    justify-content:center;
 }
 
 .food > div{
-    margin: 10px 0  10px 20px;
-    border: 1px solid rgb(220, 15, 15);
+    margin: 30px 10px  0 30px;
+
+    /* border: 1px solid rgb(220, 15, 15); */
 }
 
 .food ul{
@@ -323,21 +326,21 @@ color: #5790C5;
 
 .food li{
     /* border: 1px solid rgb(220, 15, 15); */
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     box-shadow: 2px 2px 3px gray;
 }
 
 .food img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     box-shadow: 2px 2px 3px gray;
 }
 
 .food .fa-heart{
     font-size: 25px;
     color: red;
-    padding: 10px 0 5px 150px;
+    padding: 10px 0 5px 120px;
 }
 
 .food .fa-heart:hover {
@@ -366,14 +369,14 @@ color: #5790C5;
 .food h1{
     font-size: 20px;
     text-align: center;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .food p{
     /* border: 1px solid rgb(220, 15, 15); */
     text-align: center;
     line-height: 1.5;
-    margin:10px 20px 30px;
+    margin:10px 20px 20px;
 }
 
 .food .line{
@@ -385,7 +388,7 @@ color: #5790C5;
 
 .food li a:last-of-type{
     font-weight: bold;
-    padding: 5px;
+    /* padding: 5px; */
     /* margin-top: 5px; */
     margin-left: 40%;
     /* border: 1px solid rgb(96, 15, 219); */
@@ -398,23 +401,80 @@ color: #5790C5;
 }
 /* ------------------room---------------- */
 .room{
-    outline: 1px solid rgb(16, 155, 53);
+    /* outline: 1px solid rgb(16, 155, 53); */
 }
 
 .room > div{
     margin-left: 20px;
-    outline: 1px solid rgb(0, 51, 255);
+    /* outline: 1px solid rgb(0, 51, 255); */
 }
 
 .room li li{
     outline: 1px solid red;
+    /* display: flex; */
 }
+
+.room .fa-heart{
+    font-size: 25px;
+    color: red;
+    margin-left: 200px;
+    /* outline: 1px solid rgb(146, 199, 10); */
+}
+.room ul{
+    outline: 1px solid rgb(186, 186, 186);
+    text-align: center;
+    width: 250px;
+    box-shadow: 1px 1px 2px gray;
+}
+.room li{
+   
+    width: 250px;
+    margin: 10px 0;   
+}
+
+.room li h1{
+    font-size: 20px;
+    color: rgb(61, 150, 228);
+}
+
 .room img{
     display: block;
     width: 250px;
     height: 200px;
     box-shadow: 2px 2px 3px gray;
+    
 }
+
+.room .fa-star{
+    margin-top: 10px;
+    color: rgb(61, 150, 228);
+   
+}
+
+.room .fa-location-dot{
+    margin-right: 5px;
+}
+
+.room a{
+    color: black;
+}
+.room .fa-thumbs-up{
+    margin-right: 5px;
+}
+.detailed{
+    display: flex;
+    outline: 1px solid rgb(186, 186, 186);
+}
+.detailed p,.detailed a{
+    outline: 1px solid rgb(186, 186, 186);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.detailed span{
+    color: rgb(61, 150, 228);
+}
+
 /* ------------------footer---------------- */
 footer{
    
