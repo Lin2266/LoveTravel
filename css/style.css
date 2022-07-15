@@ -13,10 +13,47 @@ body{
 .out-wrapper{
 
 }
-header{
+.header-index{
     width: 100%;
     height: 600px;
     background-image: url("../images/header.jpg");
+    background-size: cover;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-news{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/news_header.jpg");
+    background-size:cover;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-view{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/view_header.jpg");
+    background-size: cover;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.header-food{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/food_header.jpg");
+    background-size: cover;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-room{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/room_header.jpg");
     background-size: cover;
     font-size: 20px;
     font-weight: bold;
@@ -314,14 +351,12 @@ color: #5790C5;
 }
 
 .food > div{
-    margin: 30px 10px  0 30px;
-
+    margin:5px 30px;
     /* border: 1px solid rgb(220, 15, 15); */
 }
 
 .food ul{
     display: flex;
-    
 }
 
 .food li{
@@ -401,17 +436,20 @@ color: #5790C5;
 }
 /* ------------------room---------------- */
 .room{
-    /* outline: 1px solid rgb(16, 155, 53); */
+     /* outline: 1px solid rgb(219, 209, 24); */
+     display: flex;
+     justify-content: space-between;
 }
 
 .room > div{
-    margin-left: 20px;
-    /* outline: 1px solid rgb(0, 51, 255); */
+    /* margin-left: 20px; */
+    /* outline: 2px solid rgb(17, 126, 90); */
+    margin: 0 20px;
 }
 
 .room li li{
     outline: 1px solid red;
-    /* display: flex; */
+   
 }
 
 .room .fa-heart{
@@ -419,6 +457,10 @@ color: #5790C5;
     color: red;
     margin-left: 200px;
     /* outline: 1px solid rgb(146, 199, 10); */
+}
+
+.room .fa-heart:hover{
+    color: rgb(248, 154, 173);
 }
 .room ul{
     outline: 1px solid rgb(186, 186, 186);
@@ -435,6 +477,10 @@ color: #5790C5;
 .room li h1{
     font-size: 20px;
     color: rgb(61, 150, 228);
+}
+
+.room li h1:hover{
+    color: rgba(52, 68, 214, 0.943);
 }
 
 .room img{
@@ -471,10 +517,28 @@ color: #5790C5;
     padding: 10px 0;
 }
 
+.detailed a:hover{
+    color: rgb(176, 176, 176);
+}
 .detailed span{
     color: rgb(61, 150, 228);
 }
 
+.fa-circle-chevron-up{
+    font-size: 50px;
+    color:#5790C5;
+    box-shadow: 2px 2px 3px gray;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 200px;
+    right: 10px;
+    z-index: 99;
+}
+
+.fa-circle-chevron-up:hover{
+    background-color: #5790C5;
+    color:  #b6d3eb;
+}
 /* ------------------footer---------------- */
 footer{
    
