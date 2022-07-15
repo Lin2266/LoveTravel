@@ -3,7 +3,7 @@ body{
     font-family: Arial, '微軟正黑體';
     font-size: 16px;
     font-weight: bold;
-    /* background-image: url("../images/body.jpg"); */
+    background-image: url("../images/body1.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     /* background-color: #c8e5fc; */
@@ -59,17 +59,31 @@ body{
     font-weight: bold;
 }
 
+header div{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: rgba(179, 217, 226,0.9);
+    position: fixed;
+    top: 0px;
+    /* left: 0px; */
+    z-index: 100;
+}
+
 .nav-right{
     /* border: 1px solid black; */
     float: right;
     margin-top: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
 }
 
 .nav-right li{
     /* border: 1px solid rgb(222, 11, 11); */
     float: left; 
-    padding: 10px 20px;
-   
+    padding: 10px 20px; 
 }
 
 a{
@@ -78,7 +92,7 @@ a{
 
 .nav-right a{
     /* border: 1px solid rgb(120, 11, 222); */
-    color: black;
+    color: rgb(0, 0, 0);
     /* display: block; */
 }
 
@@ -86,7 +100,12 @@ a{
     clear: both;
     /* border: 1px solid rgb(237, 9, 9); */
     display: flex;   
-    margin: 0 15%;
+    /* margin: 0 15%; */
+    width:700px;
+    position: fixed;
+    top: 30px;
+    left: 200px;
+    z-index: 99;
 }
 
 .nav-center li{
@@ -156,6 +175,7 @@ color: #5790C5;
 .news{
     /* border: 2px solid rgb(6, 128, 59); */
     display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -260,7 +280,7 @@ color: #5790C5;
     width: 270px;
     height: 350px;
     border-radius: 40px;   
-   
+    box-shadow: 1px 1px 2px gray;
     background-color: rgba(255, 255, 255, 0.5);
 
 }
@@ -463,15 +483,16 @@ color: #5790C5;
     color: rgb(248, 154, 173);
 }
 .room ul{
-    outline: 1px solid rgb(186, 186, 186);
+    /* outline: 1px solid rgb(186, 186, 186); */
     text-align: center;
     width: 250px;
     box-shadow: 1px 1px 2px gray;
+    background-color: white; 
 }
-.room li{
-   
+.room li{ 
     width: 250px;
-    margin: 10px 0;   
+    margin: 10px 0; 
+
 }
 
 .room li h1{
