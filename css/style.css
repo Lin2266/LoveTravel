@@ -75,7 +75,7 @@ body {
 }
 
 .nav-center {
-     /* border: 1px solid rgb(237, 9, 9); */
+    /* border: 1px solid rgb(237, 9, 9); */
     clear: both;
     display: flex;
     margin: 0 15%;
@@ -84,22 +84,23 @@ body {
 
 .nav-center li {
     /* border: 1px solid rgb(92, 11, 222); */
-    line-height: 4;
+    line-height: 3.5;
     padding: 0 25px;
     font-size: 25px;
 
 }
 
 .nav-center img {
-    width: 100px;
-    height: 70px;
+    width: 120px;
+    height: 90px;
     padding-right: 70px;
+
 }
 
 .nav-center a {
     /* border: 1px solid rgb(10, 132, 63); */
     /* color: black; */
-    
+
 }
 
 .nav-right a:hover {
@@ -174,7 +175,7 @@ a {
     background-color: #5790C5;
     font-weight: bold;
     box-shadow: 2px 2px 3px gray;
-    
+
 }
 
 .index-page .more a:hover {
@@ -182,6 +183,23 @@ a {
     background-color: #b6d3eb;
     color: #5790C5;
 }
+
+.fa-circle-chevron-up {
+    font-size: 50px;
+    color: #5790C5;
+    /* box-shadow: 0px 0px 5px rgb(58, 57, 57); */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 99;
+}
+
+.fa-circle-chevron-up:hover {
+    background-color: #5790C5;
+    color: #b6d3eb;
+}
+
 /* ------------------news------------------ */
 .index-page .news {
     /* border: 2px solid rgb(6, 128, 59); */
@@ -200,7 +218,7 @@ a {
 .index-page .news ul {
     /* border: 2px solid rgb(210, 144, 78); */
     display: flex;
-    
+
 }
 
 .index-page .news .news-text {
@@ -272,9 +290,9 @@ a {
 }
 
 .index-page .news p {
-     /* border: 2px solid rgb(203, 111, 13); */
+    /* border: 2px solid rgb(203, 111, 13); */
     margin-top: 35px;
-   
+
 }
 
 .index-page .news span {
@@ -283,74 +301,76 @@ a {
 }
 
 /* ------------------news-page------------------ */
-.news-page{
+.news-page {
     background-image: url("../images/news-body.png");
     padding: 15px 65px 20px 65px;
 }
 
-.Bread-crumbs ul{
+.Bread-crumbs ul {
     font-size: 20px;
     display: flex;
-  
+
 }
 
-.Bread-crumbs li{
+.Bread-crumbs li {
     margin-right: 15px;
 }
 
 
-.Bread-crumbs a:hover{
+.Bread-crumbs a:hover {
     color: rgb(95, 95, 254);
 }
 
-.news-page .sort a:hover{
+.news-page .sort a:hover {
     color: rgb(95, 95, 254);
 }
 
-.news-page .sort{ 
+.news-page .sort {
     margin: 40px 0;
 }
 
-.news-page .sort ul{
+.news-page .sort ul {
     /* border: 2px solid rgb(6, 128, 59); */
     display: flex;
 }
 
-.news-page .sort li{
+.news-page .sort li {
     /* border: 2px solid rgb(240, 186, 10); */
     font-size: 20px;
     padding: 5px;
     line-height: 1.5;
 }
-.news-page .sort .date{  
+
+.news-page .sort .date {
     font-size: 20px;
     background-color: rgb(230, 230, 230);
     border: none;
     font-weight: bold;
 }
 
-.news-page .sort .date:hover{
+.news-page .sort .date:hover {
     cursor: pointer;
     color: rgb(95, 95, 254);
 }
 
 
 
-.news-page .news{
+.news-page .news {
     /* border: 2px solid rgb(6, 128, 59); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
 }
 
-.news-page .news div{
+.news-page .news div {
     margin-bottom: 50px;
 }
+
 .news-page .news ul {
     /* border: 2px solid rgb(210, 144, 78); */
     display: flex;
-    
+
 }
 
 .news-page .news .news-text {
@@ -389,9 +409,9 @@ a {
 }
 
 .news-page .news p {
-     /* border: 2px solid rgb(203, 111, 13); */
+    /* border: 2px solid rgb(203, 111, 13); */
     margin-top: 35px;
-   
+
 }
 
 .news-page .news .news-text span {
@@ -399,40 +419,40 @@ a {
     margin-left: 100px;
 }
 
-.pagination{
+.pagination {
     /* border: 1px solid rgb(203, 111, 13); */
     display: flex;
     margin-top: 20px;
 }
 
-.pagination .page-text ul{
+.pagination .page-text ul {
     display: flex;
 }
 
-.pagination .page-text li{
+.pagination .page-text li {
     margin-right: 5px;
     font-size: 20px;
     line-height: 1.5;
 }
 
-.pagination .select-page{
-    margin-left:210px;
+.pagination .select-page {
+    margin-left: 210px;
 }
 
-.pagination .select-page ul{
+.pagination .select-page ul {
     display: flex;
 }
 
-.pagination .select-page button{
-   font-size: 20px;
-   padding: 5px 20px;
-   background-color: white;
-   border-color: rgb(219, 219, 219);
-   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-   font-weight: bold          ;
+.pagination .select-page button {
+    font-size: 20px;
+    padding: 5px 20px;
+    background-color: white;
+    border-color: rgb(219, 219, 219);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
 }
 
-.pagination .select-page button:hover{
+.pagination .select-page button:hover {
     cursor: pointer;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
@@ -448,7 +468,7 @@ a {
 
 .index-page .view ul {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .index-page .view li {
@@ -567,11 +587,11 @@ a {
 }
 
 /* ------------------view-page------------------ */
-.view-page{
+.view-page {
     padding: 15px 65px 20px 65px;
 }
 
-.view-page .area ul{
+.view-page .area ul {
     /* border: 1px solid rgb(6, 128, 59); */
     display: flex;
     margin: 30px auto;
@@ -579,15 +599,15 @@ a {
 
 }
 
-.view-page .area li{
+.view-page .area li {
     /* border: 1px solid rgb(240, 65, 6); */
     padding: 10px;
     margin-right: 10px;
     font-size: 20px;
-    
+
 }
 
-.view-page .area li a:hover{
+.view-page .area li a:hover {
     color: rgb(112, 157, 253);
 }
 
@@ -604,7 +624,7 @@ a {
     background-image: url("../images/page-view-border.png");
     /* background-size:400px; */
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     width: 340px;
     height: 420px;
     /* margin-bottom: 30px; */
@@ -618,7 +638,7 @@ a {
     /* background-color: rgba(255, 255, 255, 0.1); */
     width: 340px;
     height: 420px;
-    
+
 }
 
 .view-page .view li {
@@ -795,7 +815,7 @@ a {
 }
 
 /* ------------------food-page---------------- */
-.food-page{
+.food-page {
     padding: 15px 5px 20px 5px;
     background-image: url("../images/food-page.jpg");
     background-repeat: no-repeat;
@@ -805,23 +825,23 @@ a {
     width: 1100px;
 }
 
-.food-page .area ul{
-    border: 1px solid rgb(6, 128, 59);
+.food-page .area ul {
+    /* border: 1px solid rgb(6, 128, 59); */
     display: flex;
     margin: 30px auto;
     width: 52%;
 
 }
 
-.food-page .area li{
+.food-page .area li {
     /* border: 1px solid rgb(240, 65, 6); */
     padding: 10px;
     margin-right: 10px;
     font-size: 20px;
-    
+
 }
 
-.food-page .area li a:hover{
+.food-page .area li a:hover {
     color: rgb(112, 157, 253);
 }
 
@@ -829,7 +849,7 @@ a {
     display: flex;
     /* border: 1px solid rgb(220, 15, 15); */
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .food-page .food>div {
@@ -948,7 +968,7 @@ a {
 .index-page .room .fa-heart {
     font-size: 20px;
     color: red;
-    margin-left: 200px;
+    margin-left: 160px;
     /* outline: 1px solid rgb(146, 199, 10); */
 }
 
@@ -959,13 +979,13 @@ a {
 .index-page .room ul {
     /* outline: 1px solid rgb(186, 186, 186); */
     text-align: center;
-    width: 250px;
+    width: 230px;
     box-shadow: 1px 1px 2px gray;
     background-color: white;
 }
 
 .index-page .room li {
-    width: 250px;
+    width: 230px;
     margin: 10px 0;
 
 }
@@ -981,19 +1001,19 @@ a {
 
 .index-page .room img {
     display: block;
-    width: 250px;
-    height: 200px;
+    width: 230px;
+    height: 180px;
     box-shadow: 2px 2px 3px gray;
 
 }
 
-.index-page .room .like-star .fa-star{
+.index-page .room .like-star .fa-star {
     margin-top: 10px;
     color: rgb(61, 150, 228);
 
 }
 
-.index-page .room .like-star .star5{
+.index-page .room .like-star .star5 {
     color: rgb(201, 201, 201);
 
 }
@@ -1030,25 +1050,204 @@ a {
     color: rgb(61, 150, 228);
 }
 
-.fa-circle-chevron-up {
-    font-size: 50px;
-    color: #5790C5;
-    box-shadow: 2px 2px 3px gray;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 200px;
-    right: 10px;
-    z-index: 99;
+
+/* ------------------room-page---------------- */
+.room-page {
+    padding: 15px 65px 20px 65px;
 }
 
-.fa-circle-chevron-up:hover {
-    background-color: #5790C5;
-    color: #b6d3eb;
+.room-page .Reservation {
+    outline: 2px solid rgb(17, 126, 90);
+    width: 250px;
+    /* height: 800px; */
+    margin-right: 10px;
+
+}
+
+.Reservation {
+    padding: 30px;
+}
+
+.Reservation input,select,.search{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Reservation h1{
+    /* outline: 2px solid rgb(223, 121, 19); */
+    /* display: flex; */
+    font-size: 25px;
+}
+
+.hotelType h2{
+    /* outline: 2px solid rgb(111, 19, 223); */
+    width: 200px;
+    font-size: 20px;
+    position: absolute;
+}
+
+.Reservation .line{
+    border: 0.5px solid black;
+    margin: 0 auto;
+    width: 150px;
+    margin-top: 5px;
+}
+
+summary{
+    /* outline: 2px solid rgb(205, 16, 133); */
+    /* margin-left: auto; */
+    position: relative;
+    left: 230px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 20px;
+}
+
+.room-page .search{
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+summary {
+    display: block;
+}
+
+
+.room-page #checkInDate::after {
+    content: "\f073";
+    font-size: 14px;
+}
+
+.Reservation .star p i{
+    color: rgb(201, 201, 201);
+}
+
+.Reservation .star .start1 i:nth-of-type(1){
+    color: rgb(61, 150, 228);
+}
+
+.Reservation .star .start2 i:nth-of-type(2n+2){
+    color: rgb(61, 150, 228);
+}
+
+.room-page .room {
+    outline: 1px solid rgb(219, 209, 24);
+    display: flex;
+    margin-top: 30px;
+   
+
+}
+
+.room-page .selectRoom{
+    display: flex;
+    flex-wrap: wrap;
+    outline: 1px solid rgb(219, 76, 24);
+    justify-content:space-around;
+}
+
+.room-page .selectRoom > div{
+   
+}
+
+.room-page .room>div {
+
+    /* outline: 2px solid rgb(17, 126, 90); */
+    /* margin: 0 30px; */
+    /* margin-left: 80px; */
+}
+
+
+.room-page .room li li {
+    outline: 1px solid red;
+
+}
+
+.room-page .room .fa-heart {
+    font-size: 20px;
+    color: red;
+    margin-left: 160px;
+    /* outline: 1px solid rgb(146, 199, 10); */
+}
+
+.room-page .room .fa-heart:hover {
+    color: rgb(248, 154, 173);
+}
+
+.room-page .room ul {
+    /* outline: 1px solid rgb(186, 186, 186); */
+    text-align: center;
+    width: 230px;
+    box-shadow: 1px 1px 2px gray;
+    background-color: white;
+}
+
+.room-page .room li {
+    width: 230px;
+    margin: 10px 0;
+
+}
+
+.room-page .room li h1 {
+    font-size: 20px;
+    color: rgb(61, 150, 228);
+}
+
+.room-page .room li h1:hover {
+    color: rgba(52, 68, 214, 0.943);
+}
+
+.room-page .room img {
+    display: block;
+    width: 230px;
+    height: 180px;
+    box-shadow: 2px 2px 3px gray;
+
+}
+
+.room-page .room .like-star .fa-star {
+    margin-top: 10px;
+    color: rgb(61, 150, 228);
+
+}
+
+.room-page .room .like-star .star5 {
+    color: rgb(201, 201, 201);
+
+}
+
+.room-page .room .fa-location-dot {
+    margin-right: 5px;
+}
+
+.room-page .room a {
+    color: black;
+}
+
+.room-page .room .fa-thumbs-up {
+    margin-right: 5px;
+}
+
+.detailed {
+    display: flex;
+    outline: 1px solid rgb(186, 186, 186);
+}
+
+.detailed p,
+.detailed a {
+    outline: 1px solid rgb(186, 186, 186);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.detailed a:hover {
+    color: rgb(176, 176, 176);
+}
+
+.detailed span {
+    color: rgb(61, 150, 228);
 }
 
 /* ------------------footer---------------- */
 footer {
-
     height: 170px;
     background-color: black;
     color: white;
@@ -1068,8 +1267,8 @@ footer a {
 
 footer img {
     /* border: 1px solid white; */
-    width: 100px;
-    height: 70px;
+    width: 120px;
+    height: 90px;
 }
 
 .foot-wrapper {
@@ -1079,6 +1278,7 @@ footer img {
 }
 
 .foot-wrapper div {
+    /* border: 1px solid rgb(167, 31, 31); */
     margin: 0 auto;
 }
 
@@ -1107,9 +1307,9 @@ footer img {
     padding: 5px;
 }
 
-.link1 li a:hover{
-    color:rgb(210, 208, 208) ;
- }
+.link1 li a:hover {
+    color: rgb(210, 208, 208);
+}
 
 .link2 {
     /* border: 1px solid white; */
@@ -1121,9 +1321,9 @@ footer img {
     padding: 5px;
 }
 
-.link2 li a:hover{
-    color:rgb(152, 147, 147) ;
- }
+.link2 li a:hover {
+    color: rgb(152, 147, 147);
+}
 
 .link3 {
     /* border: 1px solid white; */
