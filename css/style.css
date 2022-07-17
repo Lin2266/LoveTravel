@@ -15,7 +15,7 @@ body {
     height: 600px;
     background-image: url("../images/header.jpg");
     background-size: cover;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: bold;
 }
 
@@ -24,7 +24,7 @@ body {
     height: 600px;
     background-image: url("../images/news_header.jpg");
     background-size: cover;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: bold;
 }
 
@@ -33,7 +33,7 @@ body {
     height: 600px;
     background-image: url("../images/view_header.jpg");
     background-size: cover;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: bold;
 }
 
@@ -43,7 +43,7 @@ body {
     height: 600px;
     background-image: url("../images/food_header.jpg");
     background-size: cover;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: bold;
 }
 
@@ -52,7 +52,7 @@ body {
     height: 600px;
     background-image: url("../images/room_header.jpg");
     background-size: cover;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: bold;
 }
 
@@ -65,7 +65,8 @@ body {
 .nav-right li {
     /* border: 1px solid rgb(222, 11, 11); */
     float: left;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    font-size: 20px;
 }
 
 .nav-right a {
@@ -85,6 +86,7 @@ body {
     /* border: 1px solid rgb(92, 11, 222); */
     line-height: 4;
     padding: 0 25px;
+    font-size: 25px;
 
 }
 
@@ -97,6 +99,7 @@ body {
 .nav-center a {
     /* border: 1px solid rgb(10, 132, 63); */
     /* color: black; */
+    
 }
 
 .nav-right a:hover {
@@ -179,25 +182,6 @@ a {
     background-color: #b6d3eb;
     color: #5790C5;
 }
-
-/* .index-page .more a{
-    border: 2px solid rgb(203, 111, 13);
-    margin: 30px 0 10px 1125px;
-    padding: 5px 15px;
-    font-size: 20px;
-    color: white;
-    background-color: #5790C5;
-    border: none;
-    font-weight: bold;
-    box-shadow: 2px 2px 3px gray;
-} */
-
-/* .index-page>button:hover {
-    cursor: pointer;
-    background-color: #b6d3eb;
-    color: #5790C5;
-} */
-
 /* ------------------news------------------ */
 .index-page .news {
     /* border: 2px solid rgb(6, 128, 59); */
@@ -464,10 +448,7 @@ a {
 
 .index-page .view ul {
     display: flex;
-    flex-direction: column;
-    /* box-shadow: 1px 1px 2px gray; */
-    /* border: 2px solid rgb(235, 26, 26); */
-    /* background-color: rgba(255, 255, 255, 0.1); */
+    flex-direction: column; 
 }
 
 .index-page .view li {
@@ -611,7 +592,7 @@ a {
 }
 
 .view-page .view {
-    border: 1px solid rgb(6, 128, 59);
+    /* border: 1px solid rgb(6, 128, 59); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -650,19 +631,6 @@ a {
     margin: 43px 41px;
 
 }
-
-/* .view-page .view div:nth-of-type(2) {
-    flex-grow: 1;
-}
-
-.view-page .view div:nth-of-type(3) {
-    flex-grow: 1;
-}
-
-.view-page .view div:nth-of-type(4) {
-    flex-grow: 1;
-} */
-
 
 .view-page .view .fa-heart {
     font-size: 20px;
@@ -729,12 +697,13 @@ a {
     display: flex;
     /* border: 1px solid rgb(220, 15, 15); */
     flex-wrap: wrap;
-    /* justify-content:space-between; */
+    /* justify-content:end; */
 }
 
 .index-page .food>div {
     margin: 0 65px;
     /* border: 1px solid rgb(220, 15, 15); */
+    /* padding: 20px 0; */
 }
 
 .index-page .food>div:nth-of-type(3) {
@@ -822,6 +791,130 @@ a {
 }
 
 .index-page .food li a:last-of-type:hover {
+    color: rgb(245, 193, 98);
+}
+
+/* ------------------food-page---------------- */
+.food-page{
+    padding: 15px 5px 20px 5px;
+    background-image: url("../images/food-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    /* opacity: 0.5; */
+    width: 1100px;
+}
+
+.food-page .area ul{
+    border: 1px solid rgb(6, 128, 59);
+    display: flex;
+    margin: 30px auto;
+    width: 52%;
+
+}
+
+.food-page .area li{
+    /* border: 1px solid rgb(240, 65, 6); */
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+
+.food-page .area li a:hover{
+    color: rgb(112, 157, 253);
+}
+
+.food-page .food {
+    display: flex;
+    /* border: 1px solid rgb(220, 15, 15); */
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.food-page .food>div {
+    /* margin: 0 65px; */
+    /* border: 1px solid rgb(220, 15, 15); */
+    margin-bottom: 50px;
+}
+
+.food-page .food ul {
+    display: flex;
+}
+
+.food-page .food li {
+    /* border: 1px solid rgb(220, 15, 15); */
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.food-page .food img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.food-page .food .fa-heart {
+    font-size: 20px;
+    color: red;
+    padding: 10px 0 5px 120px;
+}
+
+.food-page .food .fa-heart:hover {
+    color: rgb(248, 154, 173);
+}
+
+.food-page .food .fa-star {
+    font-size: 20px;
+    color: rgb(231, 216, 18);
+    margin: 0 10px;
+}
+
+.food-page .food .fa-star:hover {
+    color: rgb(244, 236, 122);
+}
+
+.food-page .food li>span {
+    font-size: 20px;
+}
+
+.food-page .food .food-text {
+    /* background-color: FFEECE; */
+    background-color: rgb(245, 233, 200);
+}
+
+.food-page .food h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.food-page .food p {
+    /* border: 1px solid rgb(220, 15, 15); */
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px 20px 20px;
+}
+
+.food-page .food .line {
+    border: 0.5px solid rgb(177, 177, 177);
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: rgb(167, 167, 167); */
+}
+
+.food-page .food .food-text a:last-of-type {
+    font-weight: bold;
+    /* padding: 5px; */
+    /* margin-top: 5px; */
+    margin-left: 40%;
+    /* border: 1px solid rgb(96, 15, 219); */
+    cursor: pointer;
+    color: rgb(255, 163, 4);
+}
+
+.food-page .food li a:last-of-type:hover {
     color: rgb(245, 193, 98);
 }
 
