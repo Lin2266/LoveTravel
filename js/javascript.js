@@ -35,7 +35,7 @@ var page1bgNo = -1;       //負責page1目前畫面呈現的背景的索引號�
 
 function page1show() {
     //讓目前畫面上的影像以1秒的時間淡出
-    $('.page1 .page1bg').eq(page1bgNo).fadeOut(1000);
+    $('.page1 .page1bg').eq(page1bgNo).fadeOut(2000);
 
     //準備下一張
     page1bgNo++;
