@@ -35,7 +35,7 @@ var page1bgNo = -1;       //負責page1目前畫面呈現的背景的索引號�
 
 function page1show() {
     //讓目前畫面上的影像以1秒的時間淡出
-    $('.page1 .page1bg').eq(page1bgNo).fadeOut(2000);
+    $('.page1 .page1bg').eq(page1bgNo).fadeOut(2500);
 
     //準備下一張
     page1bgNo++;
@@ -46,6 +46,6 @@ function page1show() {
 }
 
 page1show();    //馬上執行一次page1show()函式
-setInterval(page1show, 5000);    //設定每隔5秒之後執行一次page1show的函式
+setInterval(page1show, 10000);    //設定每隔5秒之後執行一次page1show的函式
 
 
