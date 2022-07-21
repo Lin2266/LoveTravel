@@ -1,0 +1,205 @@
+/* 輪播 */
+.page1bg{ 
+    position:absolute; 
+    width:100%;
+    height: 600px; 
+    top:0; 
+    left:0;
+    background-size:cover; 
+    /* background-position:center;  */
+    display:none; }
+.page1bg1{ background-image:url("../images/food_header.jpg"); }
+.page1bg2{ background-image:url("../images/view_header.jpg"); }
+.page1bg3{ background-image:url("../images/room_header.jpg"); }
+.page1bg4{ background-image:url("../images/news_header.jpg"); }
+
+.header-index {
+    height: 600px;
+}
+
+.nav-right {
+    /* outline: 2px solid rgb(15, 11, 247); */
+    position:relative;
+    z-index: 99;
+    display: flex;
+    justify-content:flex-end;
+    overflow: hidden;
+}
+
+.nav-right li {
+    /* outline: 2px solid rgb(247, 11, 11); */
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.nav-center {
+    /* outline: 2px solid rgb(247, 11, 11); */
+    display: flex;
+    position:relative;
+    z-index: 99;
+    width: 650px;
+    margin: auto;
+    
+}
+
+
+.nav-center li {
+    /* outline: 2px solid rgb(247, 11, 11); */
+    padding: 0 25px;
+    font-size: 25px;
+    align-self: center;
+
+}
+
+.nav-center img {
+    width: 130px;
+    height: 90px;
+}
+
+.nav-right a:hover {
+    color: rgb(173, 226, 251);
+}
+
+.nav-center a:hover {
+    color: rgb(173, 226, 251);
+}
+
+/* 返回頂端按鈕 */
+.fa-circle-chevron-up {
+    font-size: 50px;
+    color: #5790C5;
+    /* box-shadow: 0px 0px 5px rgb(58, 57, 57); */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 99;
+}
+
+.fa-circle-chevron-up:hover {
+    background-color: #5790C5;
+    color: rgb(173, 226, 251);
+}
+/* ------------------footer---------------- */
+footer {
+    /* height: 170px; */
+    background-color: black;
+    color: white;
+    padding: 20px 30px 0 60px;
+    font-size: 16px;
+}
+
+
+footer a {
+    color: white;
+}
+
+/* footer a:after{
+    將a標籤的title帶到content裡a的內容
+    content: attr(title);
+} */
+
+footer img {
+    /* border: 1px solid white; */
+    width: 130px;
+    height: 90px;
+}
+
+.foot-wrapper {
+    display: flex;
+    /* border: 1px solid rgb(167, 31, 31); */
+    margin: 0 auto;
+}
+
+.foot-wrapper div {
+    /* border: 1px solid rgb(167, 31, 31); */
+    margin: 0 auto;
+}
+
+.address {
+    /* border: 1px solid white; */
+    /* margin-left: 20px; */
+    /* height: calc(100% - 131px); */
+
+}
+
+.address ul {
+    /* border: 1px solid rgb(232, 17, 17); */
+}
+
+.address li {
+    padding: 5px;
+
+}
+
+.link1 {
+    /* border: 1px solid white; */
+
+}
+
+.link1 li {
+    padding: 5px;
+}
+
+.link1 li a:hover {
+    color:rgb(173, 226, 251);
+}
+
+.link2 {
+    /* border: 1px solid white; */
+    /* margin-left: 55px; */
+    /* height: calc(100% - 131px); */
+}
+
+.link2 li {
+    padding: 5px;
+}
+
+.link2 li a:hover {
+    color: rgb(173, 226, 251);
+}
+
+.link3 ul {
+    outline: 1px solid rgb(18, 146, 80);
+    display: flex;
+}
+
+.link3 li {
+    outline: 1px solid rgb(15, 11, 247);
+    padding: 5px;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+.QRcode li {
+    outline: 1px solid rgb(21, 179, 95);
+    padding: 5px;
+    background-color: #5790C5;
+
+}
+
+/* .QRcode img {
+    display: block;
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    margin: 0 auto;
+} */
+
+.foot-wrapper~p {
+    text-align: center;
+    padding: 10px;
+}
+
+.foot-wrapper~a>p {
+    text-align: center;
+    /* margin-top: 15px; */
+    padding: 10px;
+    color: blue;
+}
+
+.foot-wrapper~a>p:hover {
+    color: #5790C5;
+}

@@ -9,10 +9,20 @@
     <style>
     .page1bg{ position:absolute; width:100%; height:100%; top:0; left:0;
               background-size:cover; background-position:center; display:none; }
-    .page1bg1{ background-image:url("images/food_header.jpg"); }
-    .page1bg2{ background-image:url("images/view_header.jpg"); }
-    .page1bg3{ background-image:url("images/room_header.jpg"); }
-    .page1bg4{ background-image:url("images/news_header.jpg"); }
+    .page1bg1{ background-image:url("images/food_header.jpg"); 
+    border: 2px solid red;
+    }
+    .page1bg2{ background-image:url("images/view_header.jpg"); 
+    border: 2px solid blue;
+    }
+    .page1bg3{ background-image:url("images/room_header.jpg"); 
+    border: 2px solid rgb(202, 219, 16);
+    }
+    .page1bg4{ background-image:url("images/news_header.jpg"); 
+    border: 2px solid rgb(48, 234, 104);
+    }
+
+
 </style>
     </style>
 </head>
@@ -30,7 +40,7 @@
     <script>
  
         //變數宣告區=============================================================
-        var page1bgNo=-1;       //負責page1目前畫面呈現的背景的索引號碼(0代表第1張)
+        var page1bgNo=0;       //負責page1目前畫面呈現的背景的索引號碼(0代表第1張)
          
         //page1影像輪播----------------------------------------------------------
         //偵測.page1中class名稱為page1bg的length"總數量"
@@ -42,7 +52,9 @@
             
             //準備下一張
             page1bgNo++;
-            if( page1bgNo == $('.page1 .page1bg').length ){ page1bgNo = 0; }
+            if( page1bgNo == $('.page1 .page1bg').length ){ 
+                page1bgNo = 0; 
+            }
             
             //讓下一張以1秒的時間淡入
             $('.page1 .page1bg').eq(page1bgNo).fadeIn(1000);

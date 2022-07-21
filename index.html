@@ -5,356 +5,285 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <title>首頁</title>
+
 </head>
 
 <body>
 
-    <div class="out-wrapper">
-        <header class="header-index page page1">
-            <div class="page1bg page1bg1"></div>
-            <div class="page1bg page1bg2"></div>
-            <div class="page1bg page1bg3"></div>
-            <div class="page1bg page1bg4"></div>
-
-            <ul class="nav-right">
-                <li><a href="">登入</a></li>
-                <li><a href="">註冊</a></li>
-                <li><a href=""><i class="fa-solid fa-circle-user"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-globe"></i></a></li>
-            </ul>
-
-            <ul class="nav-center">
-                <li><a href="index.html"><img src="images/logo-travel-header.png" alt=""></a></li>
-                <li><a href="news.html">最新消息</a></li>
-                <li><a href="view.html">景點</a></li>
-                <li><a href="food.html">美食</a></li>
-                <li><a href="room.html">訂房</a></li>
-            </ul>
-
-        </header>
-
-        <main class="index-page">
-            <!------------ 最新消息 ------------->
-            <h1><i class="fa-solid fa-star"></i>最新消息</h1>
-            <div class="news">
-                <div class="arrow-left"><i class="fa-solid fa-angle-left"></i></div>
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/news1.jpg" alt=""></a></li>
-                        <li class="news-text">
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#">
-                                <h1>【落羽松V.S.絕美花海】快穿上大衣！一起來這裡歐風一波吧！！</h1>
-                            </a>
-                            <p>2022-07-01<span>屏東</span></p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/news2.jpg" alt=""></a></li>
-                        <li class="news-text">
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#">
-                                <h1>浪漫又迷人的櫻花小精靈來囉!!快一起來司馬庫斯部落賞櫻花看巨木吧！</h1>
-                            </a>
-                            <p>2022-07-01<span>新竹</span></p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="arrow-right"><i class="fa-solid fa-angle-right"></i></div>
+    <div id="header"></div>
+    <!-- <div w3-include-html="header.html"></div>  -->
+    
+    <main class="index-page">
+        <!------------ 最新消息 ------------->
+        <h1><i class="fa-solid fa-star"></i>最新消息</h1>
+        <div class="news">
+            <div class="arrow-left"><i class="fa-solid fa-angle-left"></i></div>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/news1.jpg" alt=""></a></li>
+                    <li class="news-text">
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#">
+                            <h1>【落羽松V.S.絕美花海】快穿上大衣！一起來這裡歐風一波吧！！</h1>
+                        </a>
+                        <p>2022-07-01<span>屏東</span></p>
+                    </li>
+                </ul>
             </div>
-            <div class="more"><a href="news.html">更多</a></div>
-
-            <!------------ 推薦景點 ------------->
-            <h1><i class="fa-solid fa-mountain-sun"></i>推薦景點</h1>
-            <div class="view">
-                <div class="arrow-left"><i class="fa-solid fa-angle-left"></i></div>
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/view1.jpg" alt=""></a>
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-star"></i></a>
-                            <span>4.5</span>
-                            <a href="#">
-                                <h1>野柳地質公園</h1>
-                            </a>
-                            <div><span>#地質奇觀</span><span>#打卡熱點</span></div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/view2.jpg" alt=""></a>
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-star"></i></a>
-                            <span>4.5</span>
-                            <a href="#">
-                                <h1>野柳地質公園</h1>
-                            </a>
-                            <div><span>#地質奇觀</span><span>#打卡熱點</span></div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/view3.jpg" alt=""></a>
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-star"></i></a>
-                            <span>4.5</span>
-                            <a href="#">
-                                <h1>野柳地質公園</h1>
-                            </a>
-                            <div><span>#地質奇觀</span><span>#打卡熱點</span></div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/view3.jpg" alt=""></a>
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-star"></i></a>
-                            <span>4.5</span>
-                            <a href="#">
-                                <h1>野柳地質公園</h1>
-                            </a>
-                            <div><span>#地質奇觀</span><span>#打卡熱點</span></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="arrow-right"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/news2.jpg" alt=""></a></li>
+                    <li class="news-text">
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#">
+                            <h1>浪漫又迷人的櫻花小精靈來囉!!快一起來司馬庫斯部落賞櫻花看巨木吧！</h1>
+                        </a>
+                        <p>2022-07-01<span>新竹</span></p>
+                    </li>
+                </ul>
             </div>
-            <div class="more"><a href="view.html">更多</a></div>
+            <div class="arrow-right"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        <div class="more"><a href="news.html">更多</a></div>
 
-            <!------------ 推薦美食 ------------->
-            <h1><i class="fa-solid fa-utensils"></i>推薦美食</h1>
-            <div class="food">
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/food1.jpg"></a></li>
-                        <li class="food-text">
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-star"></i></a>
-                            <span>4.5</span>
-                            <h1>淡水阿給</h1>
-                            <div class="line"></div>
-                            <p>淡水阿給是淡水老街有名的小吃！將油豆腐的中間挖空、填入拌炒過的冬粉，看似簡單，卻有著令人難忘的美味。</p>
-                            <a href="#">詳細介紹</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/food2.jpg"></a></li>
-                        <li class="food-text">
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-star"></i></a>
-                            <span>4.5</span>
-                            <h1>臭豆腐</h1>
-                            <div class="line"></div>
-                            <p>台灣小吃之一，臭豆腐！
-                                靠著這股外國人難以理解的味道，但是卻有著台灣人無法抗拒的魅力!</p>
-                            <a href="#">詳細介紹</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-                        <li class="food-text">
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-star"></i></a>
-                            <span>4.5</span>
-                            <h1>萬里蟹</h1>
-                            <div class="line"></div>
-                            <p>每逢秋冬正是萬里蟹的產季，到北海岸的漁港親自選蟹、請漁港旁的店家代客料理，就能吃到野生肥美的三大海蟹！</p>
-                            <a href="#">詳細介紹</a>
-                        </li>
-                        <li><a href="#"><img src="images/food3.jpg"></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li class="food-text">
-                            <a href="#"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-star"></i></a>
-                            <span>4.5</span>
-                            <h1>大腸麵線</h1>
-                            <div class="line"></div>
-                            <p>蚵仔麵線是臺灣的麵食小吃，是以麵線製成的湯麵。 依據加入配料有不同稱呼，除蚵仔之外，常見還有大腸麵線。</p>
-                            <a href="#">詳細介紹</a>
-                        </li>
-                        <li><a href="#"><img src="images/food4.jpg"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="more"><a href="food.html">更多</a></div>
-
-            <!------------ room ------------->
-            <h1><i class="fa-solid fa-bed"></i></i>推薦宿住</h1>
-            <div class="room">
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
-                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a href="#">
-                                <h1>Happy Travel Hotel</h1>
-                            </a></li>
-                        <li><a href="https://www.google.com.tw/maps/@24.9871676,121.6447893,10z"><i class="fa-solid fa-location-dot"></i>台北市00街00巷11號</a></li>
-                        <li class="like-star">
-                            <i class="fa-solid fa-star star1"></i>
-                            <i class="fa-solid fa-star star2"></i>
-                            <i class="fa-solid fa-star star3"></i>
-                            <i class="fa-solid fa-star star4"></i>
-                            <i class="fa-solid fa-star star5"></i>
-                        </li>
-                        <li><i class="fa-solid fa-thumbs-up"></i><span>150個人按讚</span></li>
-                        <li class="detailed">
-                            <P>NTD <span>$2000</span></p>
-                            <a href="#">詳細說明</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/room2.jpg" alt=""></a></li>
-                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a href="#">
-                                <h1>Happy Travel Hotel</h1>
-                            </a></li>
-                        <li><a href="https://www.google.com.tw/maps/@24.9871676,121.6447893,10z"><i class="fa-solid fa-location-dot"></i>台北市00街00巷11號</a></li>
-                        <li class="like-star">
-                            <i class="fa-solid fa-star star1"></i>
-                            <i class="fa-solid fa-star star2"></i>
-                            <i class="fa-solid fa-star star3"></i>
-                            <i class="fa-solid fa-star star4"></i>
-                            <i class="fa-solid fa-star star5"></i>
-                        </li>
-                        <li><i class="fa-solid fa-thumbs-up"></i><span>150個人按讚</span></li>
-                        <li class="detailed">
-                            <P>NTD <span>$2000</span></p>
-                            <a href="#">詳細說明</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
-                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a href="#">
-                                <h1>Happy Travel Hotel</h1>
-                            </a></li>
-                        <li><a href="https://www.google.com.tw/maps/@24.9871676,121.6447893,10z"><i class="fa-solid fa-location-dot"></i>台北市00街00巷11號</a></li>
-                        <li class="like-star">
-                            <i class="fa-solid fa-star star1"></i>
-                            <i class="fa-solid fa-star star2"></i>
-                            <i class="fa-solid fa-star star3"></i>
-                            <i class="fa-solid fa-star star4"></i>
-                            <i class="fa-solid fa-star star5"></i>
-                        </li>
-                        <li><i class="fa-solid fa-thumbs-up"></i><span>150個人按讚</span></li>
-                        <li class="detailed">
-                            <P>NTD <span>$2000</span></p>
-                            <a href="#">詳細說明</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="images/room2.jpg" alt=""></a></li>
-                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                        <li><a href="#">
-                                <h1>Happy Travel Hotel</h1>
-                            </a></li>
-                        <li><a href="https://www.google.com.tw/maps/@24.9871676,121.6447893,10z"><i class="fa-solid fa-location-dot"></i>台北市00街00巷11號</a></li>
-                        <li class="like-star">
-                            <i class="fa-solid fa-star star1"></i>
-                            <i class="fa-solid fa-star star2"></i>
-                            <i class="fa-solid fa-star star3"></i>
-                            <i class="fa-solid fa-star star4"></i>
-                            <i class="fa-solid fa-star star5"></i>
-                        </li>
-                        <li><i class="fa-solid fa-thumbs-up"></i><span>150個人按讚</span></li>
-                        <li class="detailed">
-                            <P>NTD <span>$2000</span></p>
-                            <a href="#">詳細說明</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="more"><a href="room.html">更多</a></div>
-            <div class="up-home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
-        </main>
-
-
-
-        <!------------ footer ------------->
-        <footer>
-            <div class="foot-wrapper">
-                <a href="index.html"><img src="images/logo-travel_foot.png" alt=""></a>
-                <div class="address">
-                    <ul>
-                        <li>Love 旅行股份有限公司</li>
-                        <li>地址：106台北市xxx路x段xxx號x樓</li>
-                        <li>電話：(02)1234-5678</li>
-                    </ul>
-                </div>
-
-                <div class="link1">
-                    <ul>
-                        <li><a href="#">關於我</a></li>
-                        <li><a href="#">客服中心</a></li>
-                        <li><a href="#">常見問題與幫助</a></li>
-                    </ul>
-                </div>
-
-                <div class="link2">
-                    <ul>
-                        <li><a href="#">使用者條款</a></li>
-                        <li><a href="#">版權聲明</a></li>
-                        <li><a href="#">隱私權保護</a></li>
-                    </ul>
-                </div>
-
-                <div class="link3">
-                    <p>追蹤我們</p>
-                    <ul>
-                        <li><a href="#" title="facebook"><img src="images/facebook.png" alt=""></a></li>
-                        <li><a href="#" title="youtube"><img src="images/youtube.png" alt=""></a></li>
-                        <li><a href="#" title="line"><img src="images/line.png" alt=""></a></li>
-                        <li><a href="#" title="instagram"><img src="images/instagram.png" alt=""></a></li>
-                    </ul>
-                </div>
-
-                <div class="QRcode">
-                    <ul>
-                        <li>APP下載</li>
-                        <li><img src="images/qr-code.png" alt=""></li>
-                    </ul>
-                </div>
+        <!------------ 推薦景點 ------------->
+        <h1><i class="fa-solid fa-mountain-sun"></i>推薦景點</h1>
+        <div class="view">
+            <div class="arrow-left"><i class="fa-solid fa-angle-left"></i></div>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/view1.jpg" alt=""></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <span>4.5</span>
+                        <a href="#">
+                            <h1>野柳地質公園</h1>
+                        </a>
+                        <div><span>#地質奇觀</span><span>#打卡熱點</span></div>
+                    </li>
+                </ul>
             </div>
 
-            <p>© 2022 Love Travel. All rights reserved.</p>
-            <a href="references.html">
-                <p>本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。參考資源連結</p>
-            </a>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/view2.jpg" alt=""></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <span>4.5</span>
+                        <a href="#">
+                            <h1>野柳地質公園</h1>
+                        </a>
+                        <div><span>#地質奇觀</span><span>#打卡熱點</span></div>
+                    </li>
+                </ul>
+            </div>
 
-        </footer>
-    </div>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/view3.jpg" alt=""></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <span>4.5</span>
+                        <a href="#">
+                            <h1>野柳地質公園</h1>
+                        </a>
+                        <div><span>#地質奇觀</span><span>#打卡熱點</span></div>
+                    </li>
+                </ul>
+            </div>
 
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/view3.jpg" alt=""></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <span>4.5</span>
+                        <a href="#">
+                            <h1>野柳地質公園</h1>
+                        </a>
+                        <div><span>#地質奇觀</span><span>#打卡熱點</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="arrow-right"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        <div class="more"><a href="view.html">更多</a></div>
+
+        <!------------ 推薦美食 ------------->
+        <h1><i class="fa-solid fa-utensils"></i>推薦美食</h1>
+        <div class="food">
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/food1.jpg"></a></li>
+                    <li class="food-text">
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <span>4.5</span>
+                        <h1>淡水阿給</h1>
+                        <div class="line"></div>
+                        <p>淡水阿給是淡水老街有名的小吃！將油豆腐的中間挖空、填入拌炒過的冬粉，看似簡單，卻有著令人難忘的美味。</p>
+                        <a href="#">詳細介紹</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/food2.jpg"></a></li>
+                    <li class="food-text">
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <span>4.5</span>
+                        <h1>臭豆腐</h1>
+                        <div class="line"></div>
+                        <p>台灣小吃之一，臭豆腐！
+                            靠著這股外國人難以理解的味道，但是卻有著台灣人無法抗拒的魅力!</p>
+                        <a href="#">詳細介紹</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="food-text">
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <span>4.5</span>
+                        <h1>萬里蟹</h1>
+                        <div class="line"></div>
+                        <p>每逢秋冬正是萬里蟹的產季，到北海岸的漁港親自選蟹、請漁港旁的店家代客料理，就能吃到野生肥美的三大海蟹！</p>
+                        <a href="#">詳細介紹</a>
+                    </li>
+                    <li><a href="#"><img src="images/food3.jpg"></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="food-text">
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <span>4.5</span>
+                        <h1>大腸麵線</h1>
+                        <div class="line"></div>
+                        <p>蚵仔麵線是臺灣的麵食小吃，是以麵線製成的湯麵。 依據加入配料有不同稱呼，除蚵仔之外，常見還有大腸麵線。</p>
+                        <a href="#">詳細介紹</a>
+                    </li>
+                    <li><a href="#"><img src="images/food4.jpg"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="more"><a href="food.html">更多</a></div>
+
+        <!------------ room ------------->
+        <h1><i class="fa-solid fa-bed"></i></i>推薦宿住</h1>
+        <div class="room">
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="#">
+                            <h1>Happy Travel Hotel</h1>
+                        </a></li>
+                    <li><a href="https://www.google.com.tw/maps/@24.9871676,121.6447893,10z"><i
+                                class="fa-solid fa-location-dot"></i>台北市00街00巷11號</a></li>
+                    <li class="like-star">
+                        <i class="fa-solid fa-star star1"></i>
+                        <i class="fa-solid fa-star star2"></i>
+                        <i class="fa-solid fa-star star3"></i>
+                        <i class="fa-solid fa-star star4"></i>
+                        <i class="fa-solid fa-star star5"></i>
+                    </li>
+                    <li><i class="fa-solid fa-thumbs-up"></i><span>150個人按讚</span></li>
+                    <li class="detailed">
+                        <P>NTD <span>$2000</span></p>
+                        <a href="#">詳細說明</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/room2.jpg" alt=""></a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="#">
+                            <h1>Happy Travel Hotel</h1>
+                        </a></li>
+                    <li><a href="https://www.google.com.tw/maps/@24.9871676,121.6447893,10z"><i
+                                class="fa-solid fa-location-dot"></i>台北市00街00巷11號</a></li>
+                    <li class="like-star">
+                        <i class="fa-solid fa-star star1"></i>
+                        <i class="fa-solid fa-star star2"></i>
+                        <i class="fa-solid fa-star star3"></i>
+                        <i class="fa-solid fa-star star4"></i>
+                        <i class="fa-solid fa-star star5"></i>
+                    </li>
+                    <li><i class="fa-solid fa-thumbs-up"></i><span>150個人按讚</span></li>
+                    <li class="detailed">
+                        <P>NTD <span>$2000</span></p>
+                        <a href="#">詳細說明</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="#">
+                            <h1>Happy Travel Hotel</h1>
+                        </a></li>
+                    <li><a href="https://www.google.com.tw/maps/@24.9871676,121.6447893,10z"><i
+                                class="fa-solid fa-location-dot"></i>台北市00街00巷11號</a></li>
+                    <li class="like-star">
+                        <i class="fa-solid fa-star star1"></i>
+                        <i class="fa-solid fa-star star2"></i>
+                        <i class="fa-solid fa-star star3"></i>
+                        <i class="fa-solid fa-star star4"></i>
+                        <i class="fa-solid fa-star star5"></i>
+                    </li>
+                    <li><i class="fa-solid fa-thumbs-up"></i><span>150個人按讚</span></li>
+                    <li class="detailed">
+                        <P>NTD <span>$2000</span></p>
+                        <a href="#">詳細說明</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/room2.jpg" alt=""></a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="#">
+                            <h1>Happy Travel Hotel</h1>
+                        </a></li>
+                    <li><a href="https://www.google.com.tw/maps/@24.9871676,121.6447893,10z"><i
+                                class="fa-solid fa-location-dot"></i>台北市00街00巷11號</a></li>
+                    <li class="like-star">
+                        <i class="fa-solid fa-star star1"></i>
+                        <i class="fa-solid fa-star star2"></i>
+                        <i class="fa-solid fa-star star3"></i>
+                        <i class="fa-solid fa-star star4"></i>
+                        <i class="fa-solid fa-star star5"></i>
+                    </li>
+                    <li><i class="fa-solid fa-thumbs-up"></i><span>150個人按讚</span></li>
+                    <li class="detailed">
+                        <P>NTD <span>$2000</span></p>
+                        <a href="#">詳細說明</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="more"><a href="room.html">更多</a></div>
+        
+    </main>
+
+    <!------------ footer ------------->
+    <div id="footer"></div>
+
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/javascript.js"></script>
 </body>

@@ -1,3 +1,52 @@
+
+document.addEventListener("DOMContentLoaded", function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+
+    // DOM 載入完成之後
+    // $.get('header.html',function(response){ 
+    //     $('#header').html(response); 
+    //    });
+
+
+    // Carousel輪播
+    //變數宣告區=============================================================
+    var page1bgNo = 0;       //負責page1目前畫面呈現的背景的索引號碼(0代表第1張)
+
+    //page1影像輪播----------------------------------------------------------
+    //偵測.page1中class名稱為page1bg的length"總數量"
+    //alert($('.page1 .page1bg').length);
+    function page1show() {
+        //取得陣列，比對目前索引跟變數索引一不一樣，讓目前畫面上的影像以1秒的時間淡出
+        $('.page1 .page1bg').eq(page1bgNo).fadeOut(1000);
+
+        //準備下一張
+        page1bgNo++;
+        if (page1bgNo == $('.page1 .page1bg').length) {
+            page1bgNo = 0;
+        }
+
+        //讓下一張以1秒的時間淡入
+        $('.page1 .page1bg').eq(page1bgNo).fadeIn(1000);
+    }
+
+    page1show();    //馬上執行一次page1show()函式
+    setInterval(page1show, 4000);    //設定每隔5秒之後執行一次page1show的函式
+
+
+});
+
+
+$(function () {
+    // include
+    // $("#head").load("head.html");
+    // $("#header").load("header.html");
+    // $("#footer").load("footer.html");
+
+    // w3.includeHTML();
+
+
+});
 //checkInDate
 // var d = new Date();
 // document.getElementById("checkInDate").value =
@@ -25,27 +74,8 @@ for (let i = 0; i < summary.length; i++) {
 }
 
 
-// Carousel輪播
-//變數宣告區=============================================================
-var page1bgNo = -1;       //負責page1目前畫面呈現的背景的索引號碼(0代表第1張)
 
-//page1影像輪播----------------------------------------------------------
-//偵測.page1中class名稱為page1bg的length"總數量"
-//alert($('.page1 .page1bg').length);
 
-function page1show() {
-    //讓目前畫面上的影像以1秒的時間淡出
-    $('.page1 .page1bg').eq(page1bgNo).fadeOut(2500);
 
-    //準備下一張
-    page1bgNo++;
-    if (page1bgNo == $('.page1 .page1bg').length) { page1bgNo = 0; }
-
-    //讓下一張以1秒的時間淡入
-    $('.page1 .page1bg').eq(page1bgNo).fadeIn(1000);
-}
-
-page1show();    //馬上執行一次page1show()函式
-setInterval(page1show, 10000);    //設定每隔5秒之後執行一次page1show的函式
 
 
