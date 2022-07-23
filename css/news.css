@@ -12,7 +12,7 @@
     /* outline: 2px solid rgb(210, 144, 78); */
     display: flex;
     height: 250px;
-    width: 100%;
+    width: 50%;
 }
 
 .news-shared .news ul:hover {
@@ -38,7 +38,7 @@
 
 .news-shared .news-text h2 {
     /* border: 1px solid rgb(205, 234, 39); */
-    font-size: 20px;
+    /* font-size: 20px; */
     line-height: 1.5;
     height: 75%;
 

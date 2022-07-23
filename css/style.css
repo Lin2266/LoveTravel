@@ -1,15 +1,42 @@
 @import url("reset.css");
 @import url("news.css");
 @import url("view.css");
+@import url("food.css");
+@import url("room.css");
 body {
     font-family: Arial, '微軟正黑體';
     font-size: 16px;
     font-weight: bold;
-    /* background-color: #c8e5fc; */
+}
 
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+span{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;  
+    color: rgb(51, 9, 236);  
+}
+
+a:hover{
+    color: rgb(46, 197, 239);
+}
+
+/* 分頁body四邊距離 */
+.all-shared {
+    padding: 20px 65px 20px 65px;
 }
 
 /* ------------------共用style------------------ */
+
 /* 輪播 */
 .page1bg{ 
     position:absolute; 
@@ -34,11 +61,7 @@ body {
     color: black;
 }
 
-a{
-    text-decoration: none;    
-}
 .nav-right {
-    /* outline: 2px solid rgb(15, 11, 247); */
     position:relative;
     z-index: 99;
     display: flex;
@@ -47,17 +70,11 @@ a{
 }
 
 .nav-right li {
-    /* outline: 2px solid rgb(247, 11, 11); */
     padding: 10px 10px;
     font-size: 20px;
 }
 
-.nav-right a:hover {
-    color: rgb(46, 197, 239);
-}
-
 .nav-center {
-    /* outline: 2px solid rgb(247, 11, 11); */
     display: flex;
     position:relative;
     z-index: 99;
@@ -67,7 +84,6 @@ a{
 }
 
 .nav-center li {
-    /* outline: 2px solid rgb(247, 11, 11); */
     padding: 0 25px;
     font-size: 25px;
     align-self: center;
@@ -83,15 +99,10 @@ a{
    box-shadow: 1px 1px 2px gray;
 }
 
-.nav-center a:hover {
-    color: rgb(46, 197, 239);
-}
-
 /* 返回頂端按鈕 */
 .fa-circle-chevron-up {
     font-size: 50px;
     color: #5790C5;
-    /* box-shadow: 0px 0px 5px rgb(58, 57, 57); */
     border-radius: 50%;
     position: fixed;
     bottom: 30px;
@@ -104,19 +115,8 @@ a{
     color: rgb(173, 226, 251);
 }
 
-.all-shared a {
-    color: rgb(51, 9, 236);
-}
-
-/* 分頁body四邊距離 */
-.pagination-shared {
-    padding: 20px 65px 20px 65px;
-
-}
-
 /* 愛心 */
 .all-shared .fa-heart {
-    /* border: 2px solid rgb(203, 111, 13); */
     font-size: 20px;
     color: rgb(0, 0, 0);
 
@@ -146,13 +146,8 @@ a{
     margin-right: 15px;
 }
 
-.Bread-crumbs a:hover {
-    color: rgb(105, 235, 245);
-}
-
 /* 選擇分頁 */
 .pagination {
-    /* border: 1px solid rgb(203, 111, 13); */
     display: flex;
     margin-top: 20px;
 }
@@ -171,7 +166,6 @@ a{
     margin: 0 auto;
 }
 .select-page ul{
-    /* border: 1px solid rgb(242, 27, 11); */
     display: flex;
 }
 
@@ -194,31 +188,29 @@ a{
 }
 /* 標題 */
 .index-page>h1 {
-    /* border: 2px solid rgb(240, 12, 12); */
-    font-size: 30px;
     font-weight: bold;
     text-align: center;
     padding: 40px 0;
 }
 
 /* 標題圖 */
-.index-page h1>.fa-star {
-    /* font-size: 30px; */
+.index-page>h1>.fa-star {
+    font-size: 30px;
     color: rgb(231, 216, 18);
     margin-right: 15px;
 }
 
-.index-page h1>.fa-mountain-sun {
+.index-page>h1>.fa-mountain-sun {
     color: green;
     margin-right: 15px;
 }
 
-.index-page h1>.fa-utensils {
+.index-page>h1>.fa-utensils {
     color: rgb(5, 5, 5);
     margin-right: 15px;
 }
 
-.index-page h1>.fa-bed {
+.index-page>h1>.fa-bed {
     color: rgb(2, 2, 2);
     margin-right: 15px;
 }
@@ -263,7 +255,6 @@ a{
 
 /* 更多按鈕 */
 .index-page .more a {
-    /* border: 2px solid rgb(203, 111, 13); */
     display: block;
     width: 80px;
     height: 40px;
@@ -282,234 +273,6 @@ a{
 .index-page .more a:hover {
     background-color: #b6d3eb;
     color: #5790C5;
-}
-
-
-/* ------------------food---------------- */
-.index-page .food {
-    display: flex;
-    /* border: 1px solid rgb(220, 15, 15); */
-    flex-wrap: wrap;
-    /* justify-content:end; */
-}
-
-.index-page .food>div {
-    margin: 0 65px;
-    /* border: 1px solid rgb(220, 15, 15); */
-    /* padding: 20px 0; */
-}
-
-.index-page .food>div:nth-of-type(3) {
-    margin-top: 30px;
-}
-
-.index-page .food>div:nth-of-type(4) {
-    margin-top: 30px;
-}
-
-.index-page .food ul {
-    display: flex;
-}
-
-.index-page .food li {
-    /* border: 1px solid rgb(220, 15, 15); */
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 3px gray;
-}
-
-.index-page .food img {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 3px gray;
-}
-
-.index-page .food .fa-heart {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    padding: 10px 0 5px 120px;
-}
-
-.index-page .food .fa-heart:hover {
-    color: rgb(213, 213, 213);
-
-}
-
-.index-page .food .fa-star {
-    font-size: 20px;
-    color: rgb(231, 216, 18);
-    margin: 0 10px;
-}
-
-.index-page .food .fa-star:hover {
-    color: rgb(244, 236, 122);
-}
-
-.index-page .food li>span {
-    font-size: 20px;
-}
-
-.index-page .food .food-text {
-    /* background-color: FFEECE; */
-    background-color: rgb(245, 233, 200);
-}
-
-.index-page .food h1 {
-    font-size: 20px;
-    text-align: center;
-    margin: 15px 0;
-}
-
-.index-page .food p {
-    /* border: 1px solid rgb(220, 15, 15); */
-    text-align: left;
-    line-height: 1.5;
-    margin: 10px 20px 20px;
-}
-
-.index-page .food .line {
-    border: 0.5px solid rgb(177, 177, 177);
-    width: 80%;
-    margin: 0 auto;
-    /* background-color: rgb(167, 167, 167); */
-}
-
-.index-page .food .food-text a:last-of-type {
-    font-weight: bold;
-    /* padding: 5px; */
-    /* margin-top: 5px; */
-    margin-left: 40%;
-    /* border: 1px solid rgb(96, 15, 219); */
-    cursor: pointer;
-    color: rgb(255, 163, 4);
-}
-
-.index-page .food li a:last-of-type:hover {
-    color: rgb(245, 193, 98);
-}
-
-/* ------------------food-page---------------- */
-.food-page {
-    padding: 15px 5px 20px 5px;
-    /* background-image: url("../images/food-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-    margin: 0 auto;
-    /* opacity: 0.5; */
-    width: 1100px;
-}
-
-.food-page .area ul {
-    /* border: 1px solid rgb(6, 128, 59); */
-    display: flex;
-    margin: 30px auto;
-    width: 52%;
-
-}
-
-.food-page .area li {
-    /* border: 1px solid rgb(240, 65, 6); */
-    padding: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-
-}
-
-.food-page .area li a:hover {
-    color: rgb(213, 213, 213);
-}
-
-.food-page .food {
-    display: flex;
-    /* border: 1px solid rgb(220, 15, 15); */
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.food-page .food>div {
-    /* margin: 0 65px; */
-    /* border: 1px solid rgb(220, 15, 15); */
-    margin-bottom: 50px;
-}
-
-.food-page .food ul {
-    display: flex;
-}
-
-.food-page .food li {
-    /* border: 1px solid rgb(220, 15, 15); */
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 3px gray;
-}
-
-.food-page .food img {
-    width: 250px;
-    height: 250px;
-    box-shadow: 2px 2px 3px gray;
-}
-
-.food-page .food .fa-heart {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    padding: 10px 0 5px 120px;
-}
-
-.food-page .food .fa-heart:hover {
-    color: rgb(213, 213, 213);
-}
-
-.food-page .food .fa-star {
-    font-size: 20px;
-    color: rgb(231, 216, 18);
-    margin: 0 10px;
-}
-
-.food-page .food .fa-star:hover {
-    color: rgb(244, 236, 122);
-}
-
-.food-page .food li>span {
-    font-size: 20px;
-}
-
-.food-page .food .food-text {
-    /* background-color: FFEECE; */
-    background-color: rgb(245, 233, 200);
-}
-
-.food-page .food h1 {
-    font-size: 20px;
-    text-align: center;
-    margin: 15px 0;
-}
-
-.food-page .food p {
-    /* border: 1px solid rgb(220, 15, 15); */
-    text-align: center;
-    line-height: 1.5;
-    margin: 10px 20px 20px;
-}
-
-.food-page .food .line {
-    border: 0.5px solid rgb(177, 177, 177);
-    width: 80%;
-    margin: 0 auto;
-    /* background-color: rgb(167, 167, 167); */
-}
-
-.food-page .food .food-text a:last-of-type {
-    font-weight: bold;
-    /* padding: 5px; */
-    /* margin-top: 5px; */
-    margin-left: 40%;
-    /* border: 1px solid rgb(96, 15, 219); */
-    cursor: pointer;
-    color: rgb(255, 163, 4);
-}
-
-.food-page .food li a:last-of-type:hover {
-    color: rgb(245, 193, 98);
 }
 
 /* ------------------room---------------- */
@@ -540,24 +303,24 @@ a{
 }
 
 .index-page .room .fa-heart {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
     margin-left: 160px;
-    /* outline: 1px solid rgb(146, 199, 10); */
+
 }
 
-.index-page .room .fa-heart:hover {
+/* .index-page .room .fa-heart:hover {
     color: rgb(213, 213, 213);
-}
+} */
 
 .index-page .room ul {
     /* outline: 1px solid rgb(186, 186, 186); */
     text-align: center;
     width: 230px;
-    box-shadow: 1px 1px 2px gray;
-    background-color: white;
+
 }
 
+.index-page .room ul:hover {
+    box-shadow: 1px 1px 2px gray;
+}
 .index-page .room li {
     width: 230px;
     margin: 10px 0;
@@ -569,19 +332,20 @@ a{
     color: rgb(61, 150, 228);
 }
 
-.index-page .room li h1:hover {
+/* .index-page .room li h1:hover {
     color: rgb(213, 213, 213);
-}
+} */
 
 .index-page .room img {
     display: block;
     width: 230px;
     height: 180px;
-    box-shadow: 2px 2px 3px gray;
+    /* box-shadow: 2px 2px 3px gray; */
 
 }
 
 .index-page .room .like-star .fa-star {
+    margin: auto;
     margin-top: 10px;
     color: rgb(231, 216, 18);
 
@@ -606,12 +370,12 @@ a{
 
 .detailed {
     display: flex;
-    outline: 1px solid rgb(186, 186, 186);
+    /* outline: 1px solid rgb(186, 186, 186); */
 }
 
 .detailed p,
 .detailed a {
-    outline: 1px solid rgb(186, 186, 186);
+    /* outline: 1px solid rgb(186, 186, 186); */
     width: 100%;
     padding: 10px 0;
 }
@@ -855,7 +619,6 @@ summary:hover {
 .room-page .selectRoom {
     display: flex;
     flex-wrap: wrap;
-    /* outline: 2px solid rgb(189, 218, 26); */
     justify-content: space-between;
     margin-left: 50px;
 }
@@ -864,22 +627,6 @@ summary:hover {
 .room-page .selectRoom>div {
     /* outline: 2px solid rgb(132, 9, 239); */
     margin-bottom: 20px;
-}
-
-.room-page .selectRoom li li {
-    /* outline: 1px solid red; */
-
-}
-
-.room-page .selectRoom .fa-heart {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    margin-left: 160px;
-    /* outline: 1px solid #597510; */
-}
-
-.room-page .rooselectRoomm .fa-heart:hover {
-    color: rgb(197, 195, 196);
 }
 
 .room-page .selectRoom ul {
@@ -918,7 +665,6 @@ summary:hover {
 .room-page .selectRoom .like-star .fa-star {
     margin-top: 10px;
     color: rgb(231, 216, 18);
-
 }
 
 .room-page .selectRoom .like-star .star5 {
@@ -940,12 +686,12 @@ summary:hover {
 
 .detailed {
     display: flex;
-    outline: 1px solid rgb(186, 186, 186);
+    /* outline: 1px solid rgb(186, 186, 186); */
 }
 
 .detailed p,
 .detailed a {
-    outline: 1px solid rgb(186, 186, 186);
+    /* outline: 1px solid rgb(186, 186, 186); */
     width: 100%;
     padding: 10px 0;
 }
@@ -964,7 +710,6 @@ footer {
     background-color: black;
     color: white;
     padding: 10px 30px 10px 30px;
-    /* outline: 1px solid rgb(167, 31, 31); */
 }
 
 footer a>img {
@@ -1006,17 +751,14 @@ footer>a p:hover {
 
 
 .footer-wrapper {
-    /* outline: 1px solid rgb(167, 31, 31); */
     display: flex;
 }
 
 .footer-wrapper ul {
-    /* outline: 1px solid rgb(19, 125, 65); */
     flex-grow: 1;
 }
 
 .footer-wrapper li{
-    /* outline: 1px solid rgb(167, 31, 31); */
     padding: 5px;
 }
 

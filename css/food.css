@@ -1,0 +1,227 @@
+
+/* ------------------food---------------- */
+.index-page .food {
+    display: flex;
+    /* border: 1px solid rgb(220, 15, 15); */
+    flex-wrap: wrap;
+    /* justify-content:end; */
+}
+
+.index-page .food>div {
+    margin: 0 65px;
+    /* border: 1px solid rgb(220, 15, 15); */
+    /* padding: 20px 0; */
+}
+
+.index-page .food>div:nth-of-type(3) {
+    margin-top: 30px;
+}
+
+.index-page .food>div:nth-of-type(4) {
+    margin-top: 30px;
+}
+
+.index-page .food ul {
+    display: flex;
+}
+
+.index-page .food li {
+    /* border: 1px solid rgb(220, 15, 15); */
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.index-page .food img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.index-page .food .fa-heart {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 0 5px 120px;
+}
+
+.index-page .food .fa-heart:hover {
+    color: rgb(213, 213, 213);
+
+}
+
+.index-page .food .fa-star {
+    font-size: 20px;
+    color: rgb(231, 216, 18);
+    margin: 0 10px;
+}
+
+.index-page .food .fa-star:hover {
+    color: rgb(244, 236, 122);
+}
+
+.index-page .food li>span {
+    font-size: 20px;
+}
+
+.index-page .food .food-text {
+    /* background-color: FFEECE; */
+    background-color: rgb(245, 233, 200);
+}
+
+.index-page .food h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.index-page .food p {
+    /* border: 1px solid rgb(220, 15, 15); */
+    text-align: left;
+    line-height: 1.5;
+    margin: 10px 20px 20px;
+}
+
+.index-page .food .line {
+    border: 0.5px solid rgb(177, 177, 177);
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: rgb(167, 167, 167); */
+}
+
+.index-page .food .food-text a:last-of-type {
+    font-weight: bold;
+    /* padding: 5px; */
+    /* margin-top: 5px; */
+    margin-left: 40%;
+    /* border: 1px solid rgb(96, 15, 219); */
+    cursor: pointer;
+    color: rgb(255, 163, 4);
+}
+
+.index-page .food li a:last-of-type:hover {
+    color: rgb(245, 193, 98);
+}
+
+/* ------------------food-page---------------- */
+.food-page {
+    padding: 15px 5px 20px 5px;
+    /* background-image: url("../images/food-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    margin: 0 auto;
+    /* opacity: 0.5; */
+    width: 1100px;
+}
+
+.food-page .area ul {
+    /* border: 1px solid rgb(6, 128, 59); */
+    display: flex;
+    margin: 30px auto;
+    width: 52%;
+
+}
+
+.food-page .area li {
+    /* border: 1px solid rgb(240, 65, 6); */
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+
+}
+
+.food-page .area li a:hover {
+    color: rgb(213, 213, 213);
+}
+
+.food-page .food {
+    display: flex;
+    /* border: 1px solid rgb(220, 15, 15); */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.food-page .food>div {
+    /* margin: 0 65px; */
+    /* border: 1px solid rgb(220, 15, 15); */
+    margin-bottom: 50px;
+}
+
+.food-page .food ul {
+    display: flex;
+}
+
+.food-page .food li {
+    /* border: 1px solid rgb(220, 15, 15); */
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.food-page .food img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.food-page .food .fa-heart {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 0 5px 120px;
+}
+
+.food-page .food .fa-heart:hover {
+    color: rgb(213, 213, 213);
+}
+
+.food-page .food .fa-star {
+    font-size: 20px;
+    color: rgb(231, 216, 18);
+    margin: 0 10px;
+}
+
+.food-page .food .fa-star:hover {
+    color: rgb(244, 236, 122);
+}
+
+.food-page .food li>span {
+    font-size: 20px;
+}
+
+.food-page .food .food-text {
+    /* background-color: FFEECE; */
+    background-color: rgb(245, 233, 200);
+}
+
+.food-page .food h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.food-page .food p {
+    /* border: 1px solid rgb(220, 15, 15); */
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px 20px 20px;
+}
+
+.food-page .food .line {
+    border: 0.5px solid rgb(177, 177, 177);
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: rgb(167, 167, 167); */
+}
+
+.food-page .food .food-text a:last-of-type {
+    font-weight: bold;
+    /* padding: 5px; */
+    /* margin-top: 5px; */
+    margin-left: 40%;
+    /* border: 1px solid rgb(96, 15, 219); */
+    cursor: pointer;
+    color: rgb(255, 163, 4);
+}
+
+.food-page .food li a:last-of-type:hover {
+    color: rgb(245, 193, 98);
+}
