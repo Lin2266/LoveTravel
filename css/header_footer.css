@@ -21,6 +21,9 @@
     color: black;
 }
 
+a{
+    text-decoration: none;    
+}
 .nav-right {
     /* outline: 2px solid rgb(15, 11, 247); */
     position:relative;
@@ -37,7 +40,7 @@
 }
 
 .nav-right a:hover {
-    color: rgb(95, 95, 254);
+    color: rgb(46, 197, 239);
 }
 
 .nav-center {
@@ -63,8 +66,12 @@
     height: 80px;
 }
 
+.nav-center img:hover {
+    box-shadow: 1px 1px 2px gray;
+}
+
 .nav-center a:hover {
-    color: rgb(95, 95, 254);
+    color: rgb(46, 197, 239);
 }
 
 /* 返回頂端按鈕 */
@@ -102,7 +109,7 @@ footer a {
 }
 
 footer a:hover {
-    color: rgb(95, 95, 254);
+    color: rgb(46, 197, 239);
 }
 
 footer i {
@@ -121,7 +128,7 @@ footer>a p {
 }
 
 footer>a p:hover {
-    color: #5790C5;
+    color: rgb(46, 197, 239);
 }
 /* footer a:after{
     將a標籤的title帶到content裡a的內容
