@@ -1,5 +1,5 @@
 @import url("reset.css");
-@import url("header_footer.css");
+@import url("news.css");
 body {
     font-family: Arial, '微軟正黑體';
     font-size: 16px;
@@ -9,26 +9,127 @@ body {
 }
 
 /* ------------------共用style------------------ */
-.all-shared{
-    padding-bottom: 30px;
+/* 輪播 */
+.page1bg{ 
+    position:absolute; 
+    width:100%;
+    height: 600px; 
+    top:0; 
+    left:0;
+    background-size:cover; 
+    /* background-position:center;  */
+    display:none; }
+.page1bg1{ background-image:url("../images/food_header.jpg"); }
+.page1bg2{ background-image:url("../images/view_header.jpg"); }
+.page1bg3{ background-image:url("../images/room_header.jpg"); }
+.page1bg4{ background-image:url("../images/news_header.jpg"); }
+
+.header-index {
+    width:100%;
+    height: 600px;
+}
+
+.header-index a{
+    color: black;
+}
+
+a{
+    text-decoration: none;    
+}
+.nav-right {
+    /* outline: 2px solid rgb(15, 11, 247); */
+    position:relative;
+    z-index: 99;
+    display: flex;
+    justify-content:flex-end;
+    overflow: hidden;
+}
+
+.nav-right li {
+    /* outline: 2px solid rgb(247, 11, 11); */
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.nav-right a:hover {
+    color: rgb(46, 197, 239);
+}
+
+.nav-center {
+    /* outline: 2px solid rgb(247, 11, 11); */
+    display: flex;
+    position:relative;
+    z-index: 99;
+    width: 650px;
+    margin: auto;
+    
+}
+
+.nav-center li {
+    /* outline: 2px solid rgb(247, 11, 11); */
+    padding: 0 25px;
+    font-size: 25px;
+    align-self: center;
+
+}
+
+.nav-center img {
+    width: 120px;
+    height: 80px;
+}
+
+.nav-center img:hover {
+   box-shadow: 1px 1px 2px gray;
+}
+
+.nav-center a:hover {
+    color: rgb(46, 197, 239);
+}
+
+/* 返回頂端按鈕 */
+.fa-circle-chevron-up {
+    font-size: 50px;
+    color: #5790C5;
+    /* box-shadow: 0px 0px 5px rgb(58, 57, 57); */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 99;
+}
+
+.fa-circle-chevron-up:hover {
+    background-color: #5790C5;
+    color: rgb(173, 226, 251);
 }
 
 .all-shared a {
-    
     color: rgb(51, 9, 236);
 }
 
 /* 分頁body四邊距離 */
 .pagination-shared {
-    padding: 15px 65px 20px 65px;
-   
+    padding: 20px 65px 20px 65px;
+
 }
 
+/* 愛心 */
+.all-shared .news-text .fa-heart {
+    /* border: 2px solid rgb(203, 111, 13); */
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+
+}
+
+.all-shared .news-text .fa-heart:hover {
+    color: rgb(254, 2, 2);
+}
+
+
 /* 麵包屑 */
-.Bread-crumbs{
+.Bread-crumbs {
     font-size: 20px;
     display: flex;
-
 }
 
 .Bread-crumbs li {
@@ -48,6 +149,7 @@ body {
     text-align: center;
     padding: 40px 0;
 }
+
 /* 標題圖 */
 .index-page h1>.fa-star {
     /* font-size: 30px; */
@@ -69,6 +171,7 @@ body {
     color: rgb(2, 2, 2);
     margin-right: 15px;
 }
+
 /* 更多按鈕 */
 .index-page .more a {
     /* border: 2px solid rgb(203, 111, 13); */
@@ -92,228 +195,42 @@ body {
     color: #5790C5;
 }
 
-/* ------------------news------------------ */
-.index-page .news .fa-angle-left {
-    font-size: 30px;
-    padding: 0 25px;
-    margin: 160% 0;
-
-}
-
-.index-page .news .fa-angle-right {
-    font-size: 30px;
-    padding: 0 25px;
-    margin: 160% 0;
-}
-
-.index-page .news .arrow-left:hover {
-    cursor: pointer;
-    background-color: rgba(176, 176, 176, 0.5);
-}
-
-.index-page .news .arrow-right:hover {
-    cursor: pointer;
-    background-color: rgba(176, 176, 176, 0.5);
-}
-
-.news-shared .news {
-    /* outline: 2px solid rgb(6, 128, 59); */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    
-}
-
-.news-shared .news ul {
-    /* outline: 2px solid rgb(210, 144, 78); */
-    display: flex;
-    height: 250px;
-}
-
-.news-shared .news ul:hover {
-    box-shadow: 1px 1px 2px gray;
-}
-
-
-.news-shared .news li {
-    /* outline: 2px solid rgb(210, 144, 78); */
-   width: 250px;   
-}
-
-.news-shared .news img {
-    display: block;
-    width: 100%;
-}
-
-.news-shared .news-text {
-    /* border: 1px solid rgb(205, 234, 39); */
-    padding: 20PX 20px 10PX 20px;  
-}
-
-.news-shared .news-text h2 {
-    /* border: 1px solid rgb(205, 234, 39); */
-    font-size: 20px;
-    line-height: 1.5;
-    height: 75%;
-
-}
-
-.news-shared .news-text h2 a:hover {
-    color: rgb(46, 197, 239);
-}
-
-.news-shared .news-text > a{
-    /* border: 2px solid rgb(117, 13, 203); */
-    margin: 10px 0 10px 88%;
-
-}
-
-.news-shared .news-text p {
-    /* border: 2px solid rgb(203, 111, 13); */
-    margin-bottom: 10px;
-
-}
-
-.news-shared .news-text span {
-    /* border: 2px solid rgb(203, 111, 13); */
-    margin-left: 50%;
-}
-
-
-.news-shared .news-text .fa-heart {
-    /* border: 2px solid rgb(203, 111, 13); */
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    
-}
-
-.news-shared .news-text .fa-heart:hover {
-    color: rgb(254, 2, 2);
-}
-
-/* ------------------news-page------------------ */
-.news-page .sort {
-    margin: 40px 0;
-    display: flex;
-}
-
-.news-page .sort li {
-    /* border: 2px solid rgb(240, 186, 10); */
-    font-size: 20px;
-    padding: 5px;
-    line-height: 1.5;
-}
-
-.news-page .sort .date {
-    font-size: 20px;
-    /* background-color: rgb(230, 230, 230); */
-    border: none;
-    font-weight: bold;
-}
-
-.news-page .sort .date:hover {
-    cursor: pointer;
-    color: rgb(46, 197, 239);
-}
-
-/* .news-page .news {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content:;
-
-} */
-
-.news-page .news ul {
-    /* border: 2px solid rgb(210, 144, 78); */
-    /* display: flex; */
-    margin: 20px 0px;
-}
-
-/* .news-page .news .news-text {
-    border: 1px solid rgb(64, 16, 186);
-    width: 233px;
-    padding: 0 20px;
-    box-shadow: 2px 2px 3px gray;
-}
-
-.news-page .news .fa-heart {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    padding: 10px 0 10px 200px;
-}
-
-.news-page .news .fa-heart:hover {
-    color: rgb(197, 195, 196);
-}
-
-.news-page .news img {
-    display: block;
-    width: 250px;
-    height: 200px;
-    box-shadow: 2px 2px 3px gray;
-}
-
-.news-page .news h1 {
-    font-size: 20px;
-    text-align: left;
-    line-height: 1.5;
-
-}
-
-.news-page .news h2:hover {
-    color: rgb(112, 157, 253);
-}
-
-.news-page .news p {
-    border: 2px solid rgb(203, 111, 13);
-    margin-top: 35px;
-
-}
-
-.news-page .news .news-text span {
-    border: 2px solid rgb(203, 111, 13);
-    margin-left: 100px;
-} */
-
+/* 選擇分頁 */
 .pagination {
     /* border: 1px solid rgb(203, 111, 13); */
     display: flex;
     margin-top: 20px;
 }
 
-.pagination .page-text ul {
+.page-text ul{
     display: flex;
 }
 
-.pagination .page-text li {
+.page-text li {
     margin-right: 5px;
     font-size: 20px;
     line-height: 1.5;
 }
 
-.pagination .select-page {
-    margin-left: 210px;
+.select-page{
+    margin-left: 20%;
 }
-
-.pagination .select-page ul {
+.select-page ul{
+    /* border: 1px solid rgb(242, 27, 11); */
     display: flex;
 }
 
-.pagination .select-page button {
+.select-page li {
     font-size: 20px;
     padding: 5px 20px;
-    background-color: white;
-    border-color: rgb(219, 219, 219);
-    /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); */
     font-weight: bold;
 }
 
-.pagination .select-page button:hover {
+.select-page li:hover {
     cursor: pointer;
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(46, 197, 239);
 }
-
 /* ------------------view------------------ */
 .index-page .view {
     /* border: 2px solid rgb(6, 128, 59); */
@@ -640,7 +557,7 @@ body {
 
 .index-page .food p {
     /* border: 1px solid rgb(220, 15, 15); */
-    text-align:left;
+    text-align: left;
     line-height: 1.5;
     margin: 10px 20px 20px;
 }
@@ -929,13 +846,13 @@ body {
     background-color: rgb(234, 234, 234);
 }
 
-.Reservation form > div{
+.Reservation form>div {
     /* border: 1px solid rgb(211, 54, 54); */
     margin-bottom: 15px;
-    
+
 }
 
-.Reservation select{
+.Reservation select {
     font-size: 16px;
     font-weight: bold;
     width: 200px;
@@ -944,7 +861,7 @@ body {
     border: 1px solid rgb(185, 185, 185);
 }
 
-.Reservation .date input{
+.Reservation .date input {
     font-size: 16px;
     font-weight: bold;
     width: 188px;
@@ -953,26 +870,26 @@ body {
     border: 1px solid rgb(185, 185, 185);
 }
 
-.Reservation .number input{
+.Reservation .number input {
     font-size: 16px;
     font-weight: bold;
     width: 188px;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid rgb(185, 185, 185);   
+    border: 1px solid rgb(185, 185, 185);
 }
 
-.prcesdetails input{
+.prcesdetails input {
     font-size: 16px;
     font-weight: bold;
     width: 188px;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid rgb(185, 185, 185);   
+    border: 1px solid rgb(185, 185, 185);
 }
 
 
-.Reservation .search button{
+.Reservation .search button {
     font-size: 16px;
     font-weight: bold;
     width: 200px;
@@ -983,60 +900,60 @@ body {
     color: white;
 }
 
-.Reservation .search button:hover{
-    background-color:rgb(121, 186, 243);
+.Reservation .search button:hover {
+    background-color: rgb(121, 186, 243);
     color: #6c6c6c;
     cursor: pointer;
 }
 
-.Reservation h1{
+.Reservation h1 {
     /* outline: 2px solid rgb(223, 121, 19); */
     /* display: flex; */
     font-size: 25px;
 }
 
-.hotelType h2{
+.hotelType h2 {
     /* outline: 2px solid rgb(111, 19, 223); */
     /* width: 200px; */
     font-size: 20px;
     position: absolute;
-    
-   
+
+
 }
 
-.prces h2{
+.prces h2 {
     /* outline: 2px solid rgb(111, 19, 223); */
     /* width: 200px; */
     font-size: 20px;
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 
-.star h2{
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
-}
-
-.facility h2{
+.star h2 {
     /* outline: 2px solid rgb(111, 19, 223); */
     /* width: 200px; */
     font-size: 20px;
 }
 
-.Reservation .line{
-    border: 0.5px solid rgb(202, 202, 202);   
+.facility h2 {
+    /* outline: 2px solid rgb(111, 19, 223); */
+    /* width: 200px; */
+    font-size: 20px;
+}
+
+.Reservation .line {
+    border: 0.5px solid rgb(202, 202, 202);
     width: 200px;
     margin-top: 10px;
     /* position: relative; */
-   
+
 }
 
-.hotelTypedetails{
+.hotelTypedetails {
     /* position: absolute; */
-    
+
 }
 
-.hotelTypedetails summary{
+.hotelTypedetails summary {
     /* outline: 2px solid rgb(205, 16, 133);  */
     position: relative;
     left: 180px;
@@ -1046,12 +963,12 @@ body {
     margin-bottom: 10px;
 }
 
-.prcesdetails{
+.prcesdetails {
     /* position: absolute; */
-    
+
 }
 
-.prcesdetails summary{
+.prcesdetails summary {
     /* outline: 2px solid rgb(205, 16, 133);  */
     position: relative;
     left: 180px;
@@ -1059,6 +976,7 @@ body {
     /* 讓箭頭符號不見*/
     display: block;
 }
+
 /* .Reservation summary{
     position: relative;
     left: 180px;
@@ -1069,49 +987,55 @@ body {
 
 
 
-summary:hover{
+summary:hover {
     cursor: pointer;
 }
 
-.Reservation .star p i{
+.Reservation .star p i {
     color: rgb(201, 201, 201);
 }
 
-.Reservation .star .start1 i:nth-of-type(1){
+.Reservation .star .start1 i:nth-of-type(1) {
     color: rgb(231, 216, 18);
 }
 
-.Reservation .star .start2 i:nth-of-type(1){
-    color: rgb(231, 216, 18);
-}
-.Reservation .star .start2 i:nth-of-type(2){
+.Reservation .star .start2 i:nth-of-type(1) {
     color: rgb(231, 216, 18);
 }
 
-.Reservation .star .start3 i:nth-of-type(1){
-    color: rgb(231, 216, 18);
-}
-.Reservation .star .start3 i:nth-of-type(2){
-    color: rgb(231, 216, 18);
-}
-.Reservation .star .start3 i:nth-of-type(3){
+.Reservation .star .start2 i:nth-of-type(2) {
     color: rgb(231, 216, 18);
 }
 
-.Reservation .star .start4 i:nth-of-type(1){
-    color: rgb(231, 216, 18);
-}
-.Reservation .star .start4 i:nth-of-type(2){
-    color: rgb(231, 216, 18);
-}
-.Reservation .star .start4 i:nth-of-type(3){
-    color: rgb(231, 216, 18);
-}
-.Reservation .star .start4 i:nth-of-type(4){
+.Reservation .star .start3 i:nth-of-type(1) {
     color: rgb(231, 216, 18);
 }
 
-.Reservation .star .start5 i:nth-of-type(1n+1){
+.Reservation .star .start3 i:nth-of-type(2) {
+    color: rgb(231, 216, 18);
+}
+
+.Reservation .star .start3 i:nth-of-type(3) {
+    color: rgb(231, 216, 18);
+}
+
+.Reservation .star .start4 i:nth-of-type(1) {
+    color: rgb(231, 216, 18);
+}
+
+.Reservation .star .start4 i:nth-of-type(2) {
+    color: rgb(231, 216, 18);
+}
+
+.Reservation .star .start4 i:nth-of-type(3) {
+    color: rgb(231, 216, 18);
+}
+
+.Reservation .star .start4 i:nth-of-type(4) {
+    color: rgb(231, 216, 18);
+}
+
+.Reservation .star .start5 i:nth-of-type(1n+1) {
     color: rgb(231, 216, 18);
 }
 
@@ -1119,20 +1043,20 @@ summary:hover{
     /* outline: 1px solid rgb(219, 209, 24); */
     display: flex;
     margin-top: 30px;
-   
+
 
 }
 
-.room-page .selectRoom{
+.room-page .selectRoom {
     display: flex;
     flex-wrap: wrap;
     /* outline: 2px solid rgb(189, 218, 26); */
-    justify-content:space-between;
+    justify-content: space-between;
     margin-left: 50px;
 }
 
 
-.room-page .selectRoom > div{
+.room-page .selectRoom>div {
     /* outline: 2px solid rgb(132, 9, 239); */
     margin-bottom: 20px;
 }
@@ -1229,3 +1153,71 @@ summary:hover{
     color: rgb(255, 0, 0);
 }
 
+
+/* ------------------footer---------------- */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    /* outline: 1px solid rgb(167, 31, 31); */
+}
+
+footer a>img {
+    width: 120px;
+    height: 80px;
+    flex-grow: 1;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(46, 197, 239);
+}
+
+footer i {
+    font-size: 30px;
+
+}
+
+footer>p {
+    text-align: center;
+    padding: 10px;
+}
+
+footer>a p {
+    text-align: center;
+    color: blue;
+}
+
+footer>a p:hover {
+    color: rgb(46, 197, 239);
+}
+/* footer a:after{
+    將a標籤的title帶到content裡a的內容
+    content: attr(title);
+} */
+
+
+.footer-wrapper {
+    /* outline: 1px solid rgb(167, 31, 31); */
+    display: flex;
+}
+
+.footer-wrapper ul {
+    /* outline: 1px solid rgb(19, 125, 65); */
+    flex-grow: 1;
+}
+
+.footer-wrapper li{
+    /* outline: 1px solid rgb(167, 31, 31); */
+    padding: 5px;
+}
+
+.QRcode img{
+    outline: 1px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+}
