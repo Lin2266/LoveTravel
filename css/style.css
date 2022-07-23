@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("news.css");
+@import url("view.css");
 body {
     font-family: Arial, '微軟正黑體';
     font-size: 16px;
@@ -141,6 +142,9 @@ a{
 }
 
 /* ------------------首頁------------------ */
+.index-page{
+    margin-bottom: 20px;
+}
 /* 標題 */
 .index-page>h1 {
     /* border: 2px solid rgb(240, 12, 12); */
@@ -213,7 +217,7 @@ a{
 }
 
 .select-page{
-    margin-left: 20%;
+    margin: 0 auto;
 }
 .select-page ul{
     /* border: 1px solid rgb(242, 27, 11); */
