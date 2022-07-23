@@ -1,16 +1,18 @@
+
+
 /* 版 */
 .index-page .news>div{
-    /* outline: 1px solid rgb(6, 128, 59); */
+    /* outline: 2px solid rgb(6, 128, 59); */
     display: flex;
     /* justify-content: space-between; */
-    /* height: 250px; */
+
 }
 
 .news-shared .news ul {
     /* outline: 2px solid rgb(210, 144, 78); */
     display: flex;
     height: 250px;
-    flex-grow: 1;
+    width: 100%;
 }
 
 .news-shared .news ul:hover {
@@ -20,25 +22,25 @@
 
 .news-shared .news li {
     /* outline: 2px solid rgb(210, 144, 78); */
-    /* width: 250px; */
+    width: 250px;
 }
 
 .news-shared .news img {
     display: block;
-    width: 250px;
+    width: 100%;
 }
 
 /* 內容 */
 .news-shared .news-text {
     /* border: 1px solid rgb(205, 234, 39); */
-    padding: 30PX 10px 10PX 20px;
+    padding: 20PX 20px 10PX 20px;
 }
 
 .news-shared .news-text h2 {
     /* border: 1px solid rgb(205, 234, 39); */
     font-size: 20px;
     line-height: 1.5;
-    height: 70%;
+    height: 75%;
 
 }
 
