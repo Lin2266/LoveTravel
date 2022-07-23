@@ -20,7 +20,7 @@
 
 .news-shared .news li {
     /* outline: 2px solid rgb(210, 144, 78); */
-    width: 250px;
+    /* width: 250px; */
 }
 
 .news-shared .news img {
@@ -31,14 +31,14 @@
 /* 內容 */
 .news-shared .news-text {
     /* border: 1px solid rgb(205, 234, 39); */
-    padding: 20PX 20px 10PX 20px;
+    padding: 30PX 10px 10PX 20px;
 }
 
 .news-shared .news-text h2 {
     /* border: 1px solid rgb(205, 234, 39); */
     font-size: 20px;
     line-height: 1.5;
-    height: 75%;
+    height: 70%;
 
 }
 
