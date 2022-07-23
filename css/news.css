@@ -1,39 +1,16 @@
-/* 左右鍵 */
-.index-page .news .fa-angle-left {
-    font-size: 30px;
-    padding: 0 25px;
-    margin: 160% 0;
-
-}
-
-.index-page .news .fa-angle-right {
-    font-size: 30px;
-    padding: 0 25px;
-    margin: 160% 0;
-}
-
-.index-page .news .arrow-left:hover {
-    cursor: pointer;
-    background-color: rgba(176, 176, 176, 0.5);
-}
-
-.index-page .news .arrow-right:hover {
-    cursor: pointer;
-    background-color: rgba(176, 176, 176, 0.5);
-}
-
 /* 版 */
 .index-page .news>div{
-    /* outline: 2px solid rgb(6, 128, 59); */
+    /* outline: 1px solid rgb(6, 128, 59); */
     display: flex;
-    justify-content: space-between;
-
+    /* justify-content: space-between; */
+    /* height: 250px; */
 }
 
 .news-shared .news ul {
     /* outline: 2px solid rgb(210, 144, 78); */
     display: flex;
     height: 250px;
+    flex-grow: 1;
 }
 
 .news-shared .news ul:hover {
@@ -48,7 +25,7 @@
 
 .news-shared .news img {
     display: block;
-    width: 100%;
+    width: 250px;
 }
 
 /* 內容 */

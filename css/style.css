@@ -115,17 +115,26 @@ a{
 }
 
 /* 愛心 */
-.all-shared .news-text .fa-heart {
+.all-shared .fa-heart {
     /* border: 2px solid rgb(203, 111, 13); */
     font-size: 20px;
     color: rgb(0, 0, 0);
 
 }
 
-.all-shared .news-text .fa-heart:hover {
+.all-shared .fa-heart:hover {
     color: rgb(254, 2, 2);
 }
+/* 星星 */
+.all-shared .fa-star {
+    font-size: 20px;
+    color: rgb(231, 216, 18);
+    margin: 0 10px;
+}
 
+.all-shared .fa-star:hover {
+    color: rgb(244, 236, 122);
+}
 
 /* 麵包屑 */
 .Bread-crumbs {
@@ -139,64 +148,6 @@ a{
 
 .Bread-crumbs a:hover {
     color: rgb(105, 235, 245);
-}
-
-/* ------------------首頁------------------ */
-.index-page{
-    margin-bottom: 20px;
-}
-/* 標題 */
-.index-page>h1 {
-    /* border: 2px solid rgb(240, 12, 12); */
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    padding: 40px 0;
-}
-
-/* 標題圖 */
-.index-page h1>.fa-star {
-    /* font-size: 30px; */
-    color: rgb(231, 216, 18);
-    margin-right: 15px;
-}
-
-.index-page h1>.fa-mountain-sun {
-    color: green;
-    margin-right: 15px;
-}
-
-.index-page h1>.fa-utensils {
-    color: rgb(5, 5, 5);
-    margin-right: 15px;
-}
-
-.index-page h1>.fa-bed {
-    color: rgb(2, 2, 2);
-    margin-right: 15px;
-}
-
-/* 更多按鈕 */
-.index-page .more a {
-    /* border: 2px solid rgb(203, 111, 13); */
-    display: block;
-    width: 80px;
-    height: 40px;
-    text-align: center;
-    line-height: 2;
-    font-size: 20px;
-    color: white;
-    background-color: #5790C5;
-    font-weight: bold;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-right: 70px;
-
-}
-
-.index-page .more a:hover {
-    background-color: #b6d3eb;
-    color: #5790C5;
 }
 
 /* 選擇分頁 */
@@ -235,252 +186,102 @@ a{
     color: rgb(255, 255, 255);
     background-color: rgb(46, 197, 239);
 }
-/* ------------------view------------------ */
-.index-page .view {
-    /* border: 2px solid rgb(6, 128, 59); */
-    display: flex;
-    /* justify-content: space-between; */
+
+
+/* ------------------首頁------------------ */
+.index-page{
+    margin-bottom: 20px;
+}
+/* 標題 */
+.index-page>h1 {
+    /* border: 2px solid rgb(240, 12, 12); */
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* 標題圖 */
+.index-page h1>.fa-star {
+    /* font-size: 30px; */
+    color: rgb(231, 216, 18);
+    margin-right: 15px;
+}
+
+.index-page h1>.fa-mountain-sun {
+    color: green;
+    margin-right: 15px;
+}
+
+.index-page h1>.fa-utensils {
+    color: rgb(5, 5, 5);
+    margin-right: 15px;
+}
+
+.index-page h1>.fa-bed {
+    color: rgb(2, 2, 2);
+    margin-right: 15px;
+}
+
+/* 左右鍵 */
+.index-page .news .fa-angle-left {
+    font-size: 30px;
+    padding: 0 25px;
+    margin: 160% 0;
 
 }
 
-.index-page .view ul {
-    display: flex;
-    flex-direction: column;
+.index-page .news .fa-angle-right {
+    font-size: 30px;
+    padding: 0 25px;
+    margin: 160% 0;
 }
-
-.index-page .view li {
-    /* border: 2px solid rgb(243, 242, 241); */
-    width: 250px;
-    height: 330px;
-    border-radius: 40px;
-    box-shadow: 1px 1px 2px gray;
-    background-color: rgba(255, 255, 255);
-
-}
-
-.index-page .view div:nth-of-type(2) {
-    flex-grow: 1;
-}
-
-.index-page .view div:nth-of-type(3) {
-    flex-grow: 1;
-}
-
-.index-page .view div:nth-of-type(4) {
-    flex-grow: 1;
-}
-
-/* s */
 
 .index-page .view .fa-angle-left {
     font-size: 30px;
     padding: 0 25px;
-    padding-top: 160px;
+    margin: 250% 0;
+
 }
 
 .index-page .view .fa-angle-right {
     font-size: 30px;
     padding: 0 25px;
-    padding-top: 160px;
+    margin: 250% 0;
 }
 
-.index-page .view .arrow-left {
-    /* background-color: rgba(196, 189, 189, 0.5);    */
-}
-
-
-.index-page .view .arrow-left:hover {
+.index-page .arrow-left:hover {
     cursor: pointer;
     background-color: rgba(176, 176, 176, 0.5);
 }
 
-.index-page .view .arrow-right:hover {
+.index-page .arrow-right:hover {
     cursor: pointer;
     background-color: rgba(176, 176, 176, 0.5);
 }
 
-.index-page .view .fa-heart {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    /* padding: 10px 0 5px 150px; */
-    margin: 10px 0 5px 130px;
-}
 
-.index-page .view .fa-heart:hover {
-    color: rgb(197, 195, 196);
-}
-
-.index-page .view .fa-star {
-    font-size: 20px;
-    color: rgb(231, 216, 18);
-    margin: 0 10px;
-}
-
-.index-page .view .fa-star:hover {
-    color: rgb(244, 236, 122);
-}
-
-.index-page .view li>span {
-    font-size: 20px;
-
-}
-
-.index-page .view img {
+/* 更多按鈕 */
+.index-page .more a {
+    /* border: 2px solid rgb(203, 111, 13); */
     display: block;
-    width: 250px;
-    height: 200px;
-    box-shadow: 2px 2px 3px gray;
-    border-radius: 40px;
-}
-
-.index-page .view h1 {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 2;
     font-size: 20px;
-    margin-bottom: 25px;
-    margin-left: 10px;
+    color: white;
+    background-color: #5790C5;
+    font-weight: bold;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 70px;
 
 }
 
-.index-page .view a {
-    /* color: black; */
-}
-
-.index-page .view h1:hover {
-    color: rgb(213, 213, 213);
-}
-
-
-.index-page .view li div>span {
-    background-color: rgb(210, 205, 205);
-    padding: 5px;
-    font-size: 18px;
-    margin-left: 10px;
-    box-shadow: 2px 2px 3px gray;
-
-}
-
-/* ------------------view-page------------------ */
-.view-page {
-    padding: 15px 65px 20px 65px;
-}
-
-.view-page .area ul {
-    /* border: 1px solid rgb(6, 128, 59); */
-    display: flex;
-    margin: 30px auto;
-    width: 50%;
-
-}
-
-.view-page .area li {
-    /* border: 1px solid rgb(240, 65, 6); */
-    padding: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-
-}
-
-.view-page .area li a:hover {
-    color: rgb(164, 164, 164);
-}
-
-.view-page .view {
-    /* border: 1px solid rgb(6, 128, 59); */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.view-page .view>div {
-    /* border: 1px solid rgb(98, 7, 226); */
-    /* background-image: url("../images/page-view-border.png"); */
-    /* background-size:400px; */
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 340px;
-    height: 420px;
-    /* margin-bottom: 30px; */
-}
-
-.view-page .view ul {
-    display: flex;
-    flex-direction: column;
-    /* box-shadow: 1px 1px 2px gray; */
-    /* border: 1px solid rgb(235, 26, 26); */
-    /* background-color: rgba(255, 255, 255, 0.1); */
-    width: 340px;
-    height: 420px;
-
-}
-
-.view-page .view li {
-    /* border: 2px solid rgb(243, 242, 241); */
-    width: 250px;
-    height: 330px;
-    border-radius: 40px;
-    box-shadow: 1px 1px 2px gray;
-    background-color: rgba(255, 255, 255);
-    margin: 43px 41px;
-
-}
-
-.view-page .view .fa-heart {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    /* padding: 10px 0 5px 150px; */
-    margin: 10px 0 5px 130px;
-}
-
-.view-page .view .fa-heart:hover {
-    color: rgb(213, 213, 213);
-}
-
-.view-page .view .fa-star {
-    font-size: 20px;
-    color: rgb(231, 216, 18);
-    margin: 0 10px;
-}
-
-.view-page .view .fa-star:hover {
-    color: rgb(244, 236, 122);
-}
-
-.view-page .view li>span {
-    font-size: 20px;
-
-}
-
-.view-page .view img {
-    display: block;
-    width: 250px;
-    height: 200px;
-    box-shadow: 2px 2px 3px gray;
-    border-radius: 40px;
-}
-
-.view-page .view h1 {
-    font-size: 20px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-
-}
-
-.view-page .view a {
-    color: black;
-}
-
-.view-page .view h1:hover {
-    color: rgb(213, 213, 213);
-}
-
-
-.view-page .view li div>span {
-    background-color: rgb(210, 205, 205);
-    padding: 5px;
-    font-size: 18px;
-    margin-left: 10px;
-    box-shadow: 2px 2px 3px gray;
-
+.index-page .more a:hover {
+    background-color: #b6d3eb;
+    color: #5790C5;
 }
 
 
