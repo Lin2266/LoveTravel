@@ -1,25 +1,20 @@
-/* ------------------view------------------ */
-.index-page .view>div{
-    /* border: 2px solid rgb(6, 128, 59); */
+.index-page .view>div {
     display: flex;
 }
 
 .view-shared .view ul {
-    /* outline: 2px solid rgb(6, 252, 43); */
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     width: 25%;
 }
 
-.view-shared .view ul:hover{
+.view-shared .view ul:hover {
     box-shadow: 2px 2px 3px gray;
 }
 
-.view-shared .view li{
-    /* outline: 2px solid rgb(252, 129, 6); */
+.view-shared .view li {
     margin-bottom: 15px;
     text-align: center;
-
 }
 
 .view-shared .view img {
@@ -33,26 +28,12 @@
 }
 
 /* ------------------view-page------------------ */
-.view-page .area { 
-    /* outline: 2px solid rgb(252, 129, 6); */
-    display: flex;
-    margin: 30px 25%;
-    width: 49%;
 
-}
-
-.view-page .area li {  
-    padding: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-
-}
-
- .view-page .view {   
+.view-page .view {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: flex-start;
+
 }
 
 .view-page .view ul {

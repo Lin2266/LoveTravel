@@ -3,69 +3,76 @@
 @import url("view.css");
 @import url("food.css");
 @import url("room.css");
+
 body {
     font-family: Arial, '微軟正黑體';
     font-size: 16px;
     font-weight: bold;
 }
 
-h1{
+h1 {
     font-size: 30px;
 }
 
-h2{
+h2 {
     font-size: 25px;
 }
 
-span{
+h3,span {
     font-size: 20px;
 }
 
-a{
-    text-decoration: none;  
-    color: rgb(51, 9, 236);  
+a {
+    text-decoration: none;
+    color: rgb(51, 9, 236);
 }
 
-a:hover{
+a:hover {
     color: rgb(46, 197, 239);
 }
 
-/* 分頁body四邊距離 */
-.all-shared {
-    padding: 20px 65px 20px 65px;
+/* 輪播 */
+.page1bg {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    /* background-position:center;  */
+    display: none;
 }
 
-/* ------------------共用style------------------ */
+.page1bg1 {
+    background-image: url("../images/food_header.jpg");
+}
 
-/* 輪播 */
-.page1bg{ 
-    position:absolute; 
-    width:100%;
-    height: 600px; 
-    top:0; 
-    left:0;
-    background-size:cover; 
-    /* background-position:center;  */
-    display:none; }
-.page1bg1{ background-image:url("../images/food_header.jpg"); }
-.page1bg2{ background-image:url("../images/view_header.jpg"); }
-.page1bg3{ background-image:url("../images/room_header.jpg"); }
-.page1bg4{ background-image:url("../images/news_header.jpg"); }
+.page1bg2 {
+    background-image: url("../images/view_header.jpg");
+}
+
+.page1bg3 {
+    background-image: url("../images/room_header.jpg");
+}
+
+.page1bg4 {
+    background-image: url("../images/news_header.jpg");
+}
 
 .header-index {
-    width:100%;
+    width: 100%;
     height: 600px;
 }
 
-.header-index a{
+.header-index a {
     color: black;
 }
 
 .nav-right {
-    position:relative;
+    position: relative;
     z-index: 99;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     overflow: hidden;
 }
 
@@ -76,11 +83,11 @@ a:hover{
 
 .nav-center {
     display: flex;
-    position:relative;
+    position: relative;
     z-index: 99;
     width: 650px;
     margin: auto;
-    
+
 }
 
 .nav-center li {
@@ -96,7 +103,7 @@ a:hover{
 }
 
 .nav-center img:hover {
-   box-shadow: 1px 1px 2px gray;
+    box-shadow: 1px 1px 2px gray;
 }
 
 /* 返回頂端按鈕 */
@@ -119,21 +126,23 @@ a:hover{
 .all-shared .fa-heart {
     font-size: 20px;
     color: rgb(0, 0, 0);
-
 }
 
 .all-shared .fa-heart:hover {
+    cursor: pointer;
     color: rgb(254, 2, 2);
 }
+
 /* 星星 */
 .all-shared .fa-star {
     font-size: 20px;
     color: rgb(231, 216, 18);
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 
-.all-shared .fa-star:hover {
-    color: rgb(244, 236, 122);
+/* 評分數 */
+.all-shared .fa-star~span {
+    margin: 0 10px;
 }
 
 /* 麵包屑 */
@@ -146,13 +155,30 @@ a:hover{
     margin-right: 15px;
 }
 
+/* 分頁body四邊距離 */
+.pagination-shared {
+    padding: 20px 65px 20px 65px;
+}
+/* 景點區域 */
+.pagination-shared .area {
+    display: flex;
+    margin: 30px 25%;
+    width: 49%;
+}
+
+.pagination-shared .area li {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
 /* 選擇分頁 */
 .pagination {
     display: flex;
     margin-top: 20px;
 }
 
-.page-text ul{
+.page-text ul {
     display: flex;
 }
 
@@ -162,10 +188,11 @@ a:hover{
     line-height: 1.5;
 }
 
-.select-page{
+.select-page {
     margin: 0 auto;
 }
-.select-page ul{
+
+.select-page ul {
     display: flex;
 }
 
@@ -183,9 +210,10 @@ a:hover{
 
 
 /* ------------------首頁------------------ */
-.index-page{
+.index-page {
     margin-bottom: 20px;
 }
+
 /* 標題 */
 .index-page>h1 {
     font-weight: bold;
@@ -275,436 +303,6 @@ a:hover{
     color: #5790C5;
 }
 
-/* ------------------room---------------- */
-.index-page .room {
-    /* outline: 1px solid rgb(219, 209, 24); */
-    display: flex;
-    justify-content: space-between;
-}
-
-.index-page .room>div {
-
-    /* outline: 2px solid rgb(17, 126, 90); */
-    /* margin: 0 30px; */
-    /* margin-left: 80px; */
-}
-
-.index-page .room>div:first-of-type {
-    margin-left: 65px;
-}
-
-.index-page .room>div:last-of-type {
-    margin-right: 65px;
-}
-
-.index-page .room li li {
-    outline: 1px solid red;
-
-}
-
-.index-page .room .fa-heart {
-    margin-left: 160px;
-
-}
-
-/* .index-page .room .fa-heart:hover {
-    color: rgb(213, 213, 213);
-} */
-
-.index-page .room ul {
-    /* outline: 1px solid rgb(186, 186, 186); */
-    text-align: center;
-    width: 230px;
-
-}
-
-.index-page .room ul:hover {
-    box-shadow: 1px 1px 2px gray;
-}
-.index-page .room li {
-    width: 230px;
-    margin: 10px 0;
-
-}
-
-.index-page .room li h1 {
-    font-size: 20px;
-    color: rgb(61, 150, 228);
-}
-
-/* .index-page .room li h1:hover {
-    color: rgb(213, 213, 213);
-} */
-
-.index-page .room img {
-    display: block;
-    width: 230px;
-    height: 180px;
-    /* box-shadow: 2px 2px 3px gray; */
-
-}
-
-.index-page .room .like-star .fa-star {
-    margin: auto;
-    margin-top: 10px;
-    color: rgb(231, 216, 18);
-
-}
-
-.index-page .room .like-star .star5 {
-    color: rgb(201, 201, 201);
-
-}
-
-.index-page .room .fa-location-dot {
-    margin-right: 5px;
-}
-
-.index-page .room a {
-    color: black;
-}
-
-.index-page .room .fa-thumbs-up {
-    margin-right: 5px;
-}
-
-.detailed {
-    display: flex;
-    /* outline: 1px solid rgb(186, 186, 186); */
-}
-
-.detailed p,
-.detailed a {
-    /* outline: 1px solid rgb(186, 186, 186); */
-    width: 100%;
-    padding: 10px 0;
-}
-
-.detailed a:hover {
-    color: rgb(213, 213, 213);
-}
-
-.detailed span {
-    color: rgb(228, 61, 61);
-}
-
-
-/* ------------------room-page---------------- */
-.room-page {
-    padding: 15px 65px 20px 65px;
-}
-
-.room-page .Reservation {
-    /* outline: 2px solid rgb(17, 126, 90); */
-    width: 220px;
-    /* height: 800px; */
-    /* margin-right: 10px; */
-
-}
-
-
-.room-page .room>div {
-
-    /* outline: 2px solid rgb(17, 126, 90); */
-    /* margin: 0 20px; */
-    /* margin-left: 80px; */
-}
-
-.Reservation {
-    padding: 30px;
-    background-color: rgb(234, 234, 234);
-}
-
-.Reservation form>div {
-    /* border: 1px solid rgb(211, 54, 54); */
-    margin-bottom: 15px;
-
-}
-
-.Reservation select {
-    font-size: 16px;
-    font-weight: bold;
-    width: 200px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid rgb(185, 185, 185);
-}
-
-.Reservation .date input {
-    font-size: 16px;
-    font-weight: bold;
-    width: 188px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid rgb(185, 185, 185);
-}
-
-.Reservation .number input {
-    font-size: 16px;
-    font-weight: bold;
-    width: 188px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid rgb(185, 185, 185);
-}
-
-.prcesdetails input {
-    font-size: 16px;
-    font-weight: bold;
-    width: 188px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid rgb(185, 185, 185);
-}
-
-
-.Reservation .search button {
-    font-size: 16px;
-    font-weight: bold;
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(185, 185, 185);
-    background-color: rgb(61, 150, 228);
-    color: white;
-}
-
-.Reservation .search button:hover {
-    background-color: rgb(121, 186, 243);
-    color: #6c6c6c;
-    cursor: pointer;
-}
-
-.Reservation h1 {
-    /* outline: 2px solid rgb(223, 121, 19); */
-    /* display: flex; */
-    font-size: 25px;
-}
-
-.hotelType h2 {
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
-    position: absolute;
-
-
-}
-
-.prces h2 {
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
-    margin-top: 40px;
-}
-
-.star h2 {
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
-}
-
-.facility h2 {
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
-}
-
-.Reservation .line {
-    border: 0.5px solid rgb(202, 202, 202);
-    width: 200px;
-    margin-top: 10px;
-    /* position: relative; */
-
-}
-
-.hotelTypedetails {
-    /* position: absolute; */
-
-}
-
-.hotelTypedetails summary {
-    /* outline: 2px solid rgb(205, 16, 133);  */
-    position: relative;
-    left: 180px;
-    font-size: 18px;
-    /* 讓箭頭符號不見*/
-    display: block;
-    margin-bottom: 10px;
-}
-
-.prcesdetails {
-    /* position: absolute; */
-
-}
-
-.prcesdetails summary {
-    /* outline: 2px solid rgb(205, 16, 133);  */
-    position: relative;
-    left: 180px;
-    font-size: 18px;
-    /* 讓箭頭符號不見*/
-    display: block;
-}
-
-/* .Reservation summary{
-    position: relative;
-    left: 180px;
-    font-size: 18px;
-    讓箭頭符號不見
-    display: block;
-} */
-
-
-
-summary:hover {
-    cursor: pointer;
-}
-
-.Reservation .star p i {
-    color: rgb(201, 201, 201);
-}
-
-.Reservation .star .start1 i:nth-of-type(1) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start2 i:nth-of-type(1) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start2 i:nth-of-type(2) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start3 i:nth-of-type(1) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start3 i:nth-of-type(2) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start3 i:nth-of-type(3) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start4 i:nth-of-type(1) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start4 i:nth-of-type(2) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start4 i:nth-of-type(3) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start4 i:nth-of-type(4) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start5 i:nth-of-type(1n+1) {
-    color: rgb(231, 216, 18);
-}
-
-.room-page .room {
-    /* outline: 1px solid rgb(219, 209, 24); */
-    display: flex;
-    margin-top: 30px;
-
-
-}
-
-.room-page .selectRoom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 50px;
-}
-
-
-.room-page .selectRoom>div {
-    /* outline: 2px solid rgb(132, 9, 239); */
-    margin-bottom: 20px;
-}
-
-.room-page .selectRoom ul {
-    outline: 1px solid rgb(186, 186, 186);
-    /* outline: 1px solid rgb(228, 29, 29); */
-    text-align: center;
-    width: 230px;
-    box-shadow: 1px 1px 2px gray;
-    background-color: white;
-}
-
-.room-page .selectRoom li {
-    /* outline: 1px solid rgb(69, 7, 163); */
-    width: 230px;
-    margin-bottom: 10px;
-
-}
-
-.room-page .selectRoom li h1 {
-    font-size: 20px;
-    color: rgb(61, 150, 228);
-}
-
-.room-page .selectRoom li h1:hover {
-    color: rgba(52, 68, 214, 0.943);
-}
-
-.room-page .selectRoom img {
-    display: block;
-    width: 230px;
-    height: 180px;
-    box-shadow: 2px 2px 3px gray;
-
-}
-
-.room-page .selectRoom .like-star .fa-star {
-    margin-top: 10px;
-    color: rgb(231, 216, 18);
-}
-
-.room-page .selectRoom .like-star .star5 {
-    color: rgb(201, 201, 201);
-
-}
-
-.room-page .rooselectRoomm .fa-location-dot {
-    margin-right: 5px;
-}
-
-.room-page .roselectRoomom a {
-    color: black;
-}
-
-.room-page .selectRoom .fa-thumbs-up {
-    margin-right: 5px;
-}
-
-.detailed {
-    display: flex;
-    /* outline: 1px solid rgb(186, 186, 186); */
-}
-
-.detailed p,
-.detailed a {
-    /* outline: 1px solid rgb(186, 186, 186); */
-    width: 100%;
-    padding: 10px 0;
-}
-
-.detailed a:hover {
-    color: rgb(176, 176, 176);
-}
-
-.detailed span {
-    color: rgb(255, 0, 0);
-}
-
-
 /* ------------------footer---------------- */
 footer {
     background-color: black;
@@ -744,6 +342,7 @@ footer>a p {
 footer>a p:hover {
     color: rgb(46, 197, 239);
 }
+
 /* footer a:after{
     將a標籤的title帶到content裡a的內容
     content: attr(title);
@@ -758,11 +357,11 @@ footer>a p:hover {
     flex-grow: 1;
 }
 
-.footer-wrapper li{
+.footer-wrapper li {
     padding: 5px;
 }
 
-.QRcode img{
+.QRcode img {
     outline: 1px solid rgb(255, 255, 255);
     background-color: #ffffff;
     width: 60px;

@@ -15,14 +15,13 @@
 
         <div id="header"></div>
 
-        <main class="room-page">
-            <div class="Bread-crumbs">
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><i class="fa-solid fa-angle-right"></i></li>
-                    <li>住宿</li>
-                </ul>
-            </div>
+        <main class="room-page room-shared all-shared">
+            <!-- 麵包屑 -->
+            <ul class="Bread-crumbs">
+                <li><a href="index.html">首頁</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li>住宿</li>
+            </ul>
 
             <div class="room">
 
@@ -415,32 +414,31 @@
                 
                 </div>
             </div>
-            <!------------ pagination ------------->
-            <div class="pagination">
-                <div class="page-text">
+            <!------------ 分頁選擇 pagination ------------->
+            <ul class="pagination">
+                <li class="page-text">
                     <ul>
                         <li>Page</li>
                         <li>01</li>
                         <li>of</li>
-                        <li>10</li>
+                        <li>20</li>
                     </ul>
-                </div>
-                <div class="select-page">
+                </li>
+                <li class="select-page">
                     <ul>
-                        <li><button><i class="fa-solid fa-angle-left"></i></button></i></li>
-                        <li><button>1</button></li>
-                        <li><button>2</button></li>
-                        <li><button>3</button></li>
-                        <li><button>4</button></li>
-                        <li><button>...</button></li>
-                        <li><button>5</button></li>
-                        <button><i class="fa-solid fa-angle-right"></i></button>
+                        <li><i class="fa-solid fa-angles-left"></i></li>
+                        <li><i class="fa-solid fa-angle-left"></i></li>
+                        <li>1</button></li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>...10</li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li><i class="fa-solid fa-angles-right"></i></li>
                     </ul>
+                </li>     
+            </ul>
 
-                </div>
-            </div>
-
-            <div class="up-home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
         </main>
 
         <!------------ footer ------------->
