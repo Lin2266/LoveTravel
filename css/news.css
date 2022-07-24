@@ -5,10 +5,14 @@
 
 .news-shared .news ul {
     display: flex;
+    flex-wrap: wrap;
     height: 250px;
-    width: 50%;
+    /* width: 40%; */
 }
 
+.news-shared .news ul:nth-of-type(1) {
+    margin-right:4.2%;
+}
 .news-shared .news ul:hover {
     box-shadow: 1px 1px 2px gray;
 }

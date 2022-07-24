@@ -1,69 +1,42 @@
 .index-page .room {
-    /* outline: 1px solid rgb(219, 209, 24); */
     display: flex;
     justify-content: space-between;
     margin: 0 5%;
+    flex-wrap: wrap;
 }
-
-.index-page .room>div {
-
-    /* outline: 2px solid rgb(17, 126, 90); */
-    /* margin: 0 30px; */
-    /* margin-left: 80px; */
-}
-
-.index-page .room li li {
-    outline: 1px solid red;
-
-}
-
-.index-page .room .fa-heart {
-    margin-left: 160px;
-
-}
-
-/* .index-page .room .fa-heart:hover {
-    color: rgb(213, 213, 213);
-} */
 
 .index-page .room ul {
-    /* outline: 1px solid rgb(186, 186, 186); */
     text-align: center;
-    width: 230px;
+    height: 400px;
+    margin: 10px 0;
 
+}
+
+.index-page .room li {
+    width: 250px;
 }
 
 .index-page .room ul:hover {
     box-shadow: 1px 1px 2px gray;
 }
 
-.index-page .room li {
-    width: 230px;
+.index-page .room li:nth-child(1n + 2) {
     margin: 10px 0;
-
 }
-
-.index-page .room li h1 {
-    font-size: 20px;
-    color: rgb(61, 150, 228);
-}
-
-/* .index-page .room li h1:hover {
-    color: rgb(213, 213, 213);
-} */
 
 .index-page .room img {
     display: block;
-    width: 230px;
-    height: 180px;
-    /* box-shadow: 2px 2px 3px gray; */
+    width: 100%;
+}
 
+
+.index-page .room .fa-location-dot {
+    margin-right: 5px;
+    font-size: 20px;
 }
 
 .index-page .room .like-star .fa-star {
-    margin: auto;
-    margin-top: 10px;
-    color: rgb(231, 216, 18);
+    margin-top: 20px;
 
 }
 
@@ -72,36 +45,38 @@
 
 }
 
-.index-page .room .fa-location-dot {
-    margin-right: 5px;
+.index-page .room p {
+    font-size: 20px;
 }
 
-.index-page .room a {
-    color: black;
+.index-page .room .fa-thumbs-up {    
+    margin-right: 5px;
+    font-size: 20px;
 }
 
-.index-page .room .fa-thumbs-up {
-    margin-right: 5px;
+.index-page .room .fa-heart {
+    margin-left: 10px;
 }
 
 .detailed {
     display: flex;
-    /* outline: 1px solid rgb(186, 186, 186); */
 }
 
-.detailed p,
-.detailed a {
-    /* outline: 1px solid rgb(186, 186, 186); */
+.detailed span{
     width: 100%;
-    padding: 10px 0;
-}
-
-.detailed a:hover {
-    color: rgb(213, 213, 213);
-}
-
-.detailed span {
+    align-self: center;
     color: rgb(228, 61, 61);
+}
+
+.detailed button {
+    width: 100%;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+
 }
 
 
@@ -416,8 +391,8 @@ summary:hover {
     color: rgb(176, 176, 176);
 }
 
-.detailed span {
+/* .detailed span {
     color: rgb(255, 0, 0);
-}
+} */
 
 
