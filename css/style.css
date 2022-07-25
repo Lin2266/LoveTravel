@@ -162,6 +162,7 @@ button:hover {
 .Bread-crumbs {
     font-size: 20px;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .Bread-crumbs li {

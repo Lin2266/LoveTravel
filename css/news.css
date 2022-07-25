@@ -51,7 +51,6 @@
 /* ------------------news-page------------------ */
 /* 排序 */
 .news-page .sort {
-    margin-top: 20px;
     display: flex;
 }
 

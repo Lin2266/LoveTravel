@@ -3,12 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     $("#header").load("header.html");
     $("#footer").load("footer.html");
 
-    // DOM 載入完成之後
-    // $.get('header.html',function(response){ 
-    //     $('#header').html(response); 
-    //    });
-
-
     // Carousel輪播
     //變數宣告區=============================================================
     var page1bgNo = 0;       //負責page1目前畫面呈現的背景的索引號碼(0代表第1張)
@@ -34,44 +28,66 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(page1show, 4000);    //設定每隔5秒之後執行一次page1show的函式
 
 
-});
 
-
-$(function () {
-    // include
-    // $("#head").load("head.html");
-    // $("#header").load("header.html");
-    // $("#footer").load("footer.html");
-
-    // w3.includeHTML();
-
-
-});
-//checkInDate
-// var d = new Date();
-// document.getElementById("checkInDate").value =
-//     d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
-
-// document.getElementById("checkOutDate").value =
-//     d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + (d.getDate() + 1);
-
-
-//+號跟-號縮放清單
-
-var summary = document.getElementsByTagName("summary");
-var details = document.getElementsByTagName("details");
-// details.setAttribute("open");
-for (let i = 0; i < summary.length; i++) {
-    details[i].addEventListener("click", function () {
-        // console.log(details.getAttribute("open"));
-        if (details[i].open) {
-            // console.log("hello");
-            summary[i].innerHTML = "<i class='fa-solid fa-circle-minus'></i>";
-        } else {
-            summary[i].innerHTML = "<i class='fa-solid fa-circle-plus'></i>";
+    //  縮放清單:展開變-號，收起變+號
+    //飯店類型
+    $(".hotelToggle").click(function () {
+        var display = $(".hotelType").css("display");
+        $(".hotelType").slideToggle("slow");
+        
+        if( display == "none"){
+            //開啟(-號)
+            $(".hotelToggle").removeClass("fa-circle-plus").addClass('fa-circle-minus');
+            // console.log("else:" + display )
+        }else{  
+            //關閉(+號)
+            $(".hotelToggle").removeClass("fa-circle-minus").addClass('fa-circle-plus');
+            // console.log("if:" + display )
         }
     });
-}
+
+
+    //定價
+    $(".prcesToggle").click(function () {
+        var display = $(".prces").css("display");
+        $(".prces").slideToggle("slow");
+        
+        if( display == "none"){
+            $(".prcesToggle").removeClass("fa-circle-plus").addClass('fa-circle-minus');
+        }else{
+            $(".prcesToggle").removeClass("fa-circle-minus").addClass('fa-circle-plus');
+           
+        }
+    });
+
+    //住宿篩選清單收合
+    $(".starToggle").click(function () {
+        var display = $(".star").css("display");
+        $(".star").slideToggle("slow");
+        
+        if( display == "none"){
+            $(".starToggle").removeClass("fa-circle-plus").addClass('fa-circle-minus');
+        }else{
+            $(".starToggle").removeClass("fa-circle-minus").addClass('fa-circle-plus');
+           
+        }
+    });
+
+    //設施
+    $(".facilityToggle").click(function () {
+        var display = $(".facility").css("display");
+        $(".facility").slideToggle("slow");
+        
+        if( display == "none"){
+            $(".facilityToggle").removeClass("fa-circle-plus").addClass('fa-circle-minus');
+        }else{
+            $(".facilityToggle").removeClass("fa-circle-minus").addClass('fa-circle-plus');
+           
+        }
+    });
+
+});
+
 
 
 

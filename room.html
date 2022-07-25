@@ -15,7 +15,7 @@
 
     <div id="header"></div>
 
-    <main class="room-page room-shared all-shared">
+    <main class="room-page room-shared pagination-shared all-shared">
         <!-- 麵包屑 -->
         <ul class="Bread-crumbs">
             <li><a href="index.html">首頁</a></li>
@@ -23,195 +23,247 @@
             <li>住宿</li>
         </ul>
 
-        <div class="room">
+        <didv class="innerWarpper">
 
             <div class="Reservation">
-                <form action="">
-                    <div class="city">
-                        <select name="city" id="city">
-                            <optgroup label="北部地區">
-                                <option value="Taipei">臺北</option>
-                                <option value="NewTaipei">新北</option>
-                                <option value="Keelung ">基隆</option>
-                                <option value="Yilan">宜蘭</option>
-                                <option value="Taoyuan">桃園</option>
-                                <option value="Hsinchu">新竹</option>
-                            </optgroup>
-                            <optgroup label="中部地區">
-                                <option value="Miaoli">苗栗</option>
-                                <option value="Taichung">台中</option>
-                                <option value="Changhua">彰化</option>
-                                <option value="Nantou">南投</option>
-                                <option value="Yunlin">雲林</option>
-                            </optgroup>
-                            <optgroup label="南部地區">
-                                <option value="Chiayi">嘉義</option>
-                                <option value="Tainan">台南</option>
-                                <option value="Kaohsiung">高雄</option>
-                                <option value="Pingtung">屏東</option>
-                            </optgroup>
-                            <optgroup label="東部地區">
-                                <option value="Hualien">花蓮</option>
-                                <option value="Taitung">台東</option>
-                            </optgroup>
-                            <optgroup label="離島地區">
-                                <option value="Penghu">澎湖</option>
-                                <option value="Kinmen">金門</option>
-                                <option value="Matsu">馬祖</option>
-                            </optgroup>
-                        </select>
-                    </div>
-
-                    <div>
-                        <select name="area" id="area">
-                            <optgroup label="臺北地區">
-                                <option value="Songshan">松山區</option>
-                                <option value="Xinyi">信義區</option>
-                                <option value="Daan">大安區</option>
-                                <option value="Zhongshan">中山區</option>
-                                <option value="Zhongzheng">中正區</option>
-                                <option value="Datong">大同區</option>
-                                <option value="Wanhua">萬華區</option>
-                                <option value="Wenshan">文山區</option>
-                                <option value="Nangang">南港區</option>
-                                <option value="Neihu">內湖區</option>
-                                <option value="Shilin">士林區</option>
-                                <option value="Beitou">北投區</option>
-                            </optgroup>
-                        </select>
-                    </div>
-
-                    <div class="date">
-                        <input type="date" id="checkInDate" name="checkInDate">
-                    </div>
-                    <div class="date">
-                        <input type="date" name="checkOutDate" id="checkOutDate">
-                    </div>
-                    <div class="number">
-                        <input type="number" name="room" id="room" placeholder="1間">
-                    </div>
-                    <div class="number">
-                        <input type="number" name="people" id="people" placeholder="1人">
-                    </div>
-                    <div class="search">
-                        <button>
-                            搜尋
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-
-                    <div class="filterRoom">
-                        <h1>篩選住宿</h1>
-                    </div>
-
-                    <div class="hotelType">
-                        <h2>飯店類型
-
+                <form action="#" method="get">
+                    <ul>
+                        <li>
+                            <select name="city" id="city">
+                                <optgroup label="北部地區">
+                                    <option value="Taipei">臺北</option>
+                                    <option value="NewTaipei">新北</option>
+                                    <option value="Keelung ">基隆</option>
+                                    <option value="Yilan">宜蘭</option>
+                                    <option value="Taoyuan">桃園</option>
+                                    <option value="Hsinchu">新竹</option>
+                                </optgroup>
+                                <optgroup label="中部地區">
+                                    <option value="Miaoli">苗栗</option>
+                                    <option value="Taichung">台中</option>
+                                    <option value="Changhua">彰化</option>
+                                    <option value="Nantou">南投</option>
+                                    <option value="Yunlin">雲林</option>
+                                </optgroup>
+                                <optgroup label="南部地區">
+                                    <option value="Chiayi">嘉義</option>
+                                    <option value="Tainan">台南</option>
+                                    <option value="Kaohsiung">高雄</option>
+                                    <option value="Pingtung">屏東</option>
+                                </optgroup>
+                                <optgroup label="東部地區">
+                                    <option value="Hualien">花蓮</option>
+                                    <option value="Taitung">台東</option>
+                                </optgroup>
+                                <optgroup label="離島地區">
+                                    <option value="Penghu">澎湖</option>
+                                    <option value="Kinmen">金門</option>
+                                    <option value="Matsu">馬祖</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="area" id="area">
+                                <optgroup label="臺北地區">
+                                    <option value="Songshan">松山區</option>
+                                    <option value="Xinyi">信義區</option>
+                                    <option value="Daan">大安區</option>
+                                    <option value="Zhongshan">中山區</option>
+                                    <option value="Zhongzheng">中正區</option>
+                                    <option value="Datong">大同區</option>
+                                    <option value="Wanhua">萬華區</option>
+                                    <option value="Wenshan">文山區</option>
+                                    <option value="Nangang">南港區</option>
+                                    <option value="Neihu">內湖區</option>
+                                    <option value="Shilin">士林區</option>
+                                    <option value="Beitou">北投區</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li><input type="date" id="checkInDate" name="checkInDate"></li>
+                        <li><input type="date" name="checkOutDate" id="checkOutDate"></li>
+                        <li>
+                            <ul class="numInput">
+                                <li><input type="number" name="room" id="room" placeholder="1間"></li>
+                                <li><input type="number" name="people" id="people" placeholder="1人"></li>
+                            </ul>   
+                        </li>
+                        <li><button>搜尋<i class="fa-solid fa-magnifying-glass"></i></button></li>
+                        <li>
+                            <h2>篩選住宿</h2>
+                        </li>
+                        <li>
+                            <h3>飯店類型<i class='fa-solid fa-circle-minus hotelToggle'></i></h3>
+                        </li>
+                        <li>
                             <div class="line"></div>
-                        </h2>
-
-                        <!-- open -->
-                        <details class="hotelTypedetails" open>
-                            <summary><i class='fa-solid fa-circle-minus'></i></summary>
-                            <p><input type="checkbox" name="restaurant" id="restaurant">飯店</p>
-                            <p><input type="checkbox" name="hotel" id="hostel">旅館</p>
-                            <p><input type="checkbox" name="motel" id="motel">汽車旅館</p>
-                            <p><input type="checkbox" name="Backpacker accommodation"
-                                    id="Backpacker accommodation">背包客住宿</p>
-                            <p><input type="checkbox" name="capsule hotel" id="capsule hotel">膠囊旅館</p>
-                            <p><input type="checkbox" name="resort" id="resort">度假村</p>
-                            <p><input type="checkbox" name="homestay" id="homestay">民宿</p>
-                        </details>
-                    </div>
-
-                    <div class="prces">
-                        <h2>定價
+                        </li>
+                        <li>
+                            <ul class="hotelType">
+                                <li>
+                                    <input type="checkbox" name="restaurant" id="restaurant">
+                                    <label for="restaurant">飯店</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="hotel" id="hostel">
+                                    <label for="hostel">旅館</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="motel" id="motel">
+                                    <label for="motel">汽車旅館</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="BackpackerAccommodation" id="BackpackerAccommodation">
+                                    <label for="BackpackerAccommodation">背包客住宿</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="capsuleHotel" id="capsuleHotel">
+                                    <label for="capsuleHotel">膠囊旅館</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="resort" id="resort">
+                                    <label for="resort">度假村</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="homestay" id="homestay">
+                                    <label for="homestay">民宿</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>定價<i class='fa-solid fa-circle-minus prcesToggle'></i></h3>
+                        </li>
+                        <li>
                             <div class="line"></div>
-                        </h2>
+                        </li>
 
-                        <!-- open -->
-                        <details class="prcesdetails" open>
-                            <summary><i class='fa-solid fa-circle-minus'></i></summary><br>
-                            <p><input type="number" name="prces" id="prces" placeholder="全部"></p>
+                        <li>
+                            <ul class="prces">
+                                <li> <input type="number" name="prces" id="prces" placeholder="全部"></li>
+                            </ul>
+                        </li>
 
-                        </details>
-                    </div>
-
-                    <div class="star">
-                        <h2>星星評分
+                        <li>
+                            <h3>星星評分<i class='fa-solid fa-circle-minus starToggle'></i></h3>
+                        </li>
+                        <li>
                             <div class="line"></div>
-                        </h2>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <ul class="star1">
+                                    <li>
+                                        <input type="checkbox" name="start1" id="start1">
+                                        <label for="start1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </label>
+                                    </li>
+                                </ul>
 
-                        <!-- open -->
-                        <details class="stardetails" open>
-                            <summary><i class='fa-solid fa-circle-minus'></i></summary><br>
-                            <p class="start1">
-                                <input type="checkbox" name="start1" id="start1">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                            <p class="start2">
-                                <input type="checkbox" name="start2" id="start2">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                            <p class="start3">
-                                <input type="checkbox" name="start3" id="start3">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                            <p class="start4">
-                                <input type="checkbox" name="start4" id="start4">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                            <p class="start5">
-                                <input type="checkbox" name="start5" id="start5">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                        </details>
-                    </div>
+                                <ul class="star2">
+                                    <li>
+                                        <input type="checkbox" name="start2" id="start2">
+                                        <label for="start2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </label>
+                                    </li>
+                                </ul>
 
-                    <div class="facility">
-                        <h2>設施
+                                <ul class="star3">
+                                    <li>
+                                        <input type="checkbox" name="start3" id="start3">
+                                        <label for="start3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <ul class="star4">
+                                    <li>
+                                        <input type="checkbox" name="start4" id="start4">
+                                        <label for="start4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <ul class="star5">
+                                    <li>
+                                        <input type="checkbox" name="start5" id="start5">
+                                        <label for="start5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>設施<i class='fa-solid fa-circle-minus facilityToggle'></i></h3>
+                        </li>
+                        <li>
                             <div class="line"></div>
-                        </h2>
+                        </li>
+                        <li>
+                            <ul class="facility">
+                                <li>
 
-                        <!-- open -->
-                        <details class="facilitydetails" open>
-                            <summary><i class='fa-solid fa-circle-minus'></i></summary><br>
-                            <p><input type="checkbox" name="restaurant" id="restaurant">Wifi</p>
-                            <p><input type="checkbox" name="hotel" id="hostel">停車場</p>
-                            <p><input type="checkbox" name="motel" id="motel">泳池</p>
-                            <p><input type="checkbox" name="Backpacker accommodation" id="Backpacker accommodation">溫泉設施
-                            </p>
-                            <p><input type="checkbox" name="capsule hotel" id="capsule hotel">早餐</p>
-                            <p><input type="checkbox" name="resort" id="resort">自行車借租</p>
-                            <p><input type="checkbox" name="homestay" id="homestay">寵物友善</p>
-                        </details>
-                    </div>
-
+                                    <input type="checkbox" name="wifi" id="wifi">
+                                    <label for="wifi">wifi</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="PARKING LOT" id="hostel">
+                                    <label for="homestay">停車場</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="motel" id="motel">
+                                    <label for="homestay">泳池</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="BackpackerAccommodation" id="BackpackerAccommodation">
+                                    <label for="homestay">溫泉設施</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="capsuleHotel" id="capsuleHotel">
+                                    <label for="homestay">早餐</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="resort" id="resort">
+                                    <label for="homestay">自行車借租</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="homestay" id="homestay">
+                                    <label for="homestay">寵物友善</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
 
                 </form>
-
             </div>
-            <div class="selectRoom">
+
+
+            <div class="room">
                 <ul>
                     <li><img src="images/room1.jpg" alt=""></li>
                     <li>
@@ -534,40 +586,39 @@
                         <button>詳細說明</button>
                     </li>
                 </ul>
-
 
             </div>
         </div>
-        <!------------ 分頁選擇 pagination ------------->
-        <ul class="pagination">
-            <li class="page-text">
-                <ul>
-                    <li>Page</li>
-                    <li>01</li>
-                    <li>of</li>
-                    <li>20</li>
-                </ul>
-            </li>
-            <li class="select-page">
-                <ul>
-                    <li><i class="fa-solid fa-angles-left"></i></li>
-                    <li><i class="fa-solid fa-angle-left"></i></li>
-                    <li>1</button></li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>...10</li>
-                    <li><i class="fa-solid fa-angle-right"></i></li>
-                    <li><i class="fa-solid fa-angles-right"></i></li>
-                </ul>
-            </li>
-        </ul>
+            <!------------ 分頁選擇 pagination ------------->
+            <ul class="pagination">
+                <li class="page-text">
+                    <ul>
+                        <li>Page</li>
+                        <li>01</li>
+                        <li>of</li>
+                        <li>20</li>
+                    </ul>
+                </li>
+                <li class="select-page">
+                    <ul>
+                        <li><i class="fa-solid fa-angles-left"></i></li>
+                        <li><i class="fa-solid fa-angle-left"></i></li>
+                        <li>1</button></li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>...10</li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li><i class="fa-solid fa-angles-right"></i></li>
+                    </ul>
+                </li>
+            </ul>
 
     </main>
 
     <!------------ footer ------------->
     <div id="footer"></div>
-
+    <script sr="./js/is.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/javascript.js"></script>
 </body>

@@ -5,56 +5,57 @@
     flex-wrap: wrap;
 }
 
-.index-page .room ul {
+.room-shared .room ul {
     text-align: center;
     height: 400px;
-    margin: 10px 0;
+    margin-bottom: 20px;
 
 }
 
-.index-page .room li {
+.room-shared .room li {
     width: 250px;
 }
 
-.index-page .room ul:hover {
+.room-shared .room ul:hover {
     box-shadow: 1px 1px 2px gray;
 }
 
-.index-page .room li:nth-child(1n + 2) {
+/* 圖片以外，其他都上下留空白margin */
+.room-shared .room li:nth-child(1n + 2) {
     margin: 10px 0;
 }
 
-.index-page .room img {
+.room-shared .room img {
     display: block;
     width: 100%;
 }
 
 
-.index-page .room .fa-location-dot {
+.room-shared .room .fa-location-dot {
     margin-right: 5px;
     font-size: 20px;
 }
 
-.index-page .room .like-star .fa-star {
+.room-shared .room .like-star .fa-star {
     margin-top: 20px;
 
 }
 
-.index-page .room .like-star .star5 {
+.room-shared .room .like-star .star5 {
     color: rgb(201, 201, 201);
 
 }
 
-.index-page .room p {
+.room-shared .room p {
     font-size: 20px;
 }
 
-.index-page .room .fa-thumbs-up {    
+.room-shared .room .fa-thumbs-up {    
     margin-right: 5px;
     font-size: 20px;
 }
 
-.index-page .room .fa-heart {
+.room-shared .room .fa-heart {
     margin-left: 10px;
 }
 
@@ -81,36 +82,22 @@
 
 
 /* ------------------room-page---------------- */
-.room-page {
-    padding: 15px 65px 20px 65px;
+.room-page .innerWarpper {
+    display: flex;
+    margin-top: 30px;
 }
-
 .room-page .Reservation {
-    /* outline: 2px solid rgb(17, 126, 90); */
     width: 220px;
-    /* height: 800px; */
-    /* margin-right: 10px; */
-
+    height: 100%;
 }
 
-
-.room-page .room>div {
-
-    /* outline: 2px solid rgb(17, 126, 90); */
-    /* margin: 0 20px; */
-    /* margin-left: 80px; */
-}
-
+/* Reservation預訂 */
 .Reservation {
     padding: 30px;
     background-color: rgb(234, 234, 234);
 }
 
-.Reservation form>div {
-    /* border: 1px solid rgb(211, 54, 54); */
-    margin-bottom: 15px;
 
-}
 
 .Reservation select {
     font-size: 16px;
@@ -119,280 +106,137 @@
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
+    margin-bottom: 15px;
 }
 
-.Reservation .date input {
+form>ul>li>input {
     font-size: 16px;
     font-weight: bold;
     width: 188px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
+    margin-bottom: 15px;
 }
 
-.Reservation .number input {
+form .numInput{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    
+}
+
+form .numInput input{
+    font-size: 16px;
+    font-weight: bold;
+    width: 80px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    
+}
+
+form .prces input {
     font-size: 16px;
     font-weight: bold;
     width: 188px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
+    /* margin-bottom: 15px; */
 }
 
-.prcesdetails input {
-    font-size: 16px;
-    font-weight: bold;
-    width: 188px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid rgb(185, 185, 185);
+form input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    
 }
 
-
-.Reservation .search button {
-    font-size: 16px;
+.Reservation button {
+    font-size: 18px;
     font-weight: bold;
     width: 200px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
-    background-color: rgb(61, 150, 228);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 9, 236);
+    margin-bottom: 15px;
 }
 
-.Reservation .search button:hover {
-    background-color: rgb(121, 186, 243);
-    color: #6c6c6c;
+.Reservation button:hover {
     cursor: pointer;
+    box-shadow: 1px 1px 2px gray;
 }
 
-.Reservation h1 {
-    /* outline: 2px solid rgb(223, 121, 19); */
-    /* display: flex; */
-    font-size: 25px;
+.Reservation button i{
+    margin-left: 10px; 
 }
 
-.hotelType h2 {
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
-    position: absolute;
-
-
+.Reservation h2 {
+   margin: 20px 0;
 }
 
-.prces h2 {
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
-    margin-top: 40px;
+.Reservation h3{
+    margin-top: 20px;
+    /* outline: 1px solid rgb(21, 159, 51); */
 }
 
-.star h2 {
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
+.hotelToggle{
+    /* outline: 1px solid red; */
+    margin-left: 100px;
 }
 
-.facility h2 {
-    /* outline: 2px solid rgb(111, 19, 223); */
-    /* width: 200px; */
-    font-size: 20px;
+.prcesToggle{
+    margin-left: 140px;
+}
+
+.starToggle{
+    margin-left: 100px;
+}
+
+.facilityToggle{
+    margin-left: 140px;
 }
 
 .Reservation .line {
     border: 0.5px solid rgb(202, 202, 202);
     width: 200px;
-    margin-top: 10px;
-    /* position: relative; */
+    margin: 10px 0;
 
 }
 
-.hotelTypedetails {
-    /* position: absolute; */
-
-}
-
-.hotelTypedetails summary {
-    /* outline: 2px solid rgb(205, 16, 133);  */
-    position: relative;
-    left: 180px;
-    font-size: 18px;
-    /* 讓箭頭符號不見*/
-    display: block;
-    margin-bottom: 10px;
-}
-
-.prcesdetails {
-    /* position: absolute; */
-
-}
-
-.prcesdetails summary {
-    /* outline: 2px solid rgb(205, 16, 133);  */
-    position: relative;
-    left: 180px;
-    font-size: 18px;
-    /* 讓箭頭符號不見*/
-    display: block;
-}
-
-/* .Reservation summary{
-    position: relative;
-    left: 180px;
-    font-size: 18px;
-    讓箭頭符號不見
-    display: block;
-} */
-
-
-
-summary:hover {
+.fa-circle-minus:hover,.fa-circle-plus:hover {
     cursor: pointer;
 }
 
-.Reservation .star p i {
+.Reservation .star i {
     color: rgb(201, 201, 201);
 }
 
-.Reservation .star .start1 i:nth-of-type(1) {
+.Reservation .star .star1 i:nth-of-type(1) {
+    color: rgb(231, 216, 18);
+}
+/* 遞減用負號 */
+.Reservation .star .star2 i:nth-of-type(-1n + 2) {
     color: rgb(231, 216, 18);
 }
 
-.Reservation .star .start2 i:nth-of-type(1) {
+.Reservation .star .star3 i:nth-of-type(-1n + 3) {
     color: rgb(231, 216, 18);
 }
 
-.Reservation .star .start2 i:nth-of-type(2) {
+.Reservation .star .star4 i:nth-of-type(-1n + 4) {
     color: rgb(231, 216, 18);
 }
 
-.Reservation .star .start3 i:nth-of-type(1) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start3 i:nth-of-type(2) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start3 i:nth-of-type(3) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start4 i:nth-of-type(1) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start4 i:nth-of-type(2) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start4 i:nth-of-type(3) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start4 i:nth-of-type(4) {
-    color: rgb(231, 216, 18);
-}
-
-.Reservation .star .start5 i:nth-of-type(1n+1) {
+.Reservation .star .star5 i:nth-of-type(1n+1) {
     color: rgb(231, 216, 18);
 }
 
 .room-page .room {
-    /* outline: 1px solid rgb(219, 209, 24); */
-    display: flex;
-    margin-top: 30px;
-
-
-}
-
-.room-page .selectRoom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 50px;
+    margin-left: 3%;
 }
-
-
-.room-page .selectRoom>div {
-    /* outline: 2px solid rgb(132, 9, 239); */
-    margin-bottom: 20px;
-}
-
-.room-page .selectRoom ul {
-    outline: 1px solid rgb(186, 186, 186);
-    /* outline: 1px solid rgb(228, 29, 29); */
-    text-align: center;
-    width: 230px;
-    box-shadow: 1px 1px 2px gray;
-    background-color: white;
-}
-
-.room-page .selectRoom li {
-    /* outline: 1px solid rgb(69, 7, 163); */
-    width: 230px;
-    margin-bottom: 10px;
-
-}
-
-.room-page .selectRoom li h1 {
-    font-size: 20px;
-    color: rgb(61, 150, 228);
-}
-
-.room-page .selectRoom li h1:hover {
-    color: rgba(52, 68, 214, 0.943);
-}
-
-.room-page .selectRoom img {
-    display: block;
-    width: 230px;
-    height: 180px;
-    box-shadow: 2px 2px 3px gray;
-
-}
-
-.room-page .selectRoom .like-star .fa-star {
-    margin-top: 10px;
-    color: rgb(231, 216, 18);
-}
-
-.room-page .selectRoom .like-star .star5 {
-    color: rgb(201, 201, 201);
-
-}
-
-.room-page .rooselectRoomm .fa-location-dot {
-    margin-right: 5px;
-}
-
-.room-page .roselectRoomom a {
-    color: black;
-}
-
-.room-page .selectRoom .fa-thumbs-up {
-    margin-right: 5px;
-}
-
-.detailed {
-    display: flex;
-    /* outline: 1px solid rgb(186, 186, 186); */
-}
-
-.detailed p,
-.detailed a {
-    /* outline: 1px solid rgb(186, 186, 186); */
-    width: 100%;
-    padding: 10px 0;
-}
-
-.detailed a:hover {
-    color: rgb(176, 176, 176);
-}
-
-/* .detailed span {
-    color: rgb(255, 0, 0);
-} */
-
-
