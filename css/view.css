@@ -1,14 +1,16 @@
 .index-page .view>div {
     display: flex;
+    justify-content: space-around;
 }
 
 .view-shared .view ul {
     display: flex;
     flex-direction: column;
     height: 350px;
+    
 }
 
-.index-page .view ul:nth-of-type(1) {
+/* .index-page .view ul:nth-of-type(1) {
     margin-right: 3.5%;
 }
 
@@ -18,7 +20,7 @@
 
 .index-page .view ul:nth-of-type(3) {
     margin-right: 3.5%;
-}
+} */
 
 
 .view-shared .view ul:hover {

@@ -3,17 +3,19 @@
     justify-content: space-between;
     margin: 0 5%;
     flex-wrap: wrap;
+    
 }
 
 .room-shared .room ul {
     text-align: center;
     height: 400px;
     margin-bottom: 20px;
-
+    
 }
 
 .room-shared .room li {
     width: 250px;
+    
 }
 
 .room-shared .room ul:hover {
@@ -84,20 +86,15 @@
 /* ------------------room-page---------------- */
 .room-page .innerWarpper {
     display: flex;
-    margin-top: 30px;
+    /* outline: 1px solid red; */
 }
 .room-page .Reservation {
     width: 220px;
     height: 100%;
-}
-
-/* Reservation預訂 */
-.Reservation {
-    padding: 30px;
+    /* outline: 1px solid rgb(0, 255, 136); */
     background-color: rgb(234, 234, 234);
+    padding: 30px;
 }
-
-
 
 .Reservation select {
     font-size: 16px;
@@ -107,6 +104,7 @@
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
     margin-bottom: 15px;
+    /* outline: 1px solid rgb(0, 255, 136); */
 }
 
 form>ul>li>input {
@@ -122,8 +120,8 @@ form>ul>li>input {
 form .numInput{
     display: flex;
     margin-bottom: 15px;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
+    width: 200px;
 }
 
 form .numInput input{
@@ -143,12 +141,13 @@ form .prces input {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
-    /* margin-bottom: 15px; */
+    
 }
 
 form input[type="checkbox"]{
     width: 15px;
     height: 15px;
+    /* outline: 1px solid rgb(0, 255, 136); */
     
 }
 
@@ -179,11 +178,11 @@ form input[type="checkbox"]{
 
 .Reservation h3{
     margin-top: 20px;
-    /* outline: 1px solid rgb(21, 159, 51); */
+  
 }
 
 .hotelToggle{
-    /* outline: 1px solid red; */
+
     margin-left: 100px;
 }
 
@@ -239,4 +238,5 @@ form input[type="checkbox"]{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 3%;
+    /* outline: 1px solid rgb(0, 255, 136); */
 }

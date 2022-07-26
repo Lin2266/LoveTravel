@@ -35,10 +35,6 @@ a:hover {
     color: rgb(46, 197, 239);
 }
 
-button{
-
-}
-
 button:hover {
     cursor: pointer;
     color: rgb(46, 197, 239);
@@ -322,6 +318,7 @@ footer {
     background-color: black;
     color: white;
     padding: 10px 30px 10px 30px;
+    /* width: 100%; */
 }
 
 footer a>img {

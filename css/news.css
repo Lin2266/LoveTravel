@@ -1,6 +1,7 @@
 /* 版 */
 .index-page .news>div{
     display: flex;
+    justify-content: space-around;
 }
 
 .news-shared .news ul {
@@ -10,9 +11,9 @@
     /* width: 40%; */
 }
 
-.news-shared .news ul:nth-of-type(1) {
+/* .news-shared .news ul:nth-of-type(1) {
     margin-right:4.2%;
-}
+} */
 .news-shared .news ul:hover {
     box-shadow: 1px 1px 2px gray;
 }
