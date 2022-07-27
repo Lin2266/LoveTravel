@@ -1,7 +1,7 @@
 /* 版 */
 .index-page .news>div{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
 }
 
 .news-shared .news ul {
@@ -77,7 +77,7 @@
 .news-page .news {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
 .news-page .news ul {

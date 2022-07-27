@@ -1,6 +1,6 @@
 .index-page .view>div {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
 }
 
 .view-shared .view ul {
@@ -48,7 +48,7 @@
 .view-page .view {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
 .view-page .view ul {

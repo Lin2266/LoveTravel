@@ -1,6 +1,6 @@
+$(function () {
 
-document.addEventListener("DOMContentLoaded", function () {
-    $("#header").load("header.html");
+    $("#nav").load("header.html");
     $("#footer").load("footer.html");
 
     // Carousel輪播
@@ -28,28 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(page1show, 4000);    //設定每隔5秒之後執行一次page1show的函式
 
 
+    //景點、美食點擊區域時會出現底線顯示
     var area = document.getElementsByClassName("area")[0];
     var area_a = area.querySelectorAll(".area_a");
     // console.log(area_a);
-    let deleteBorder = 0;
-    for(let i = 0; i < area_a.length; i++){
-        area_a[i].addEventListener("click",function(e){
-            // if(deleteBorder != undefined){
-                area.children[deleteBorder].style.borderBottom = "none";
-            // }
-            
-            // console.log(area.children[deleteBorder].style)
-            // area.children[deleteBorder].style.borderBottom = "none";
+    let clearBorder = 0;
+    for (let i = 0; i < area_a.length; i++) {
+        area_a[i].addEventListener("click", function (e) {
+            //把上一次按的地區底線清空
+            area.children[clearBorder].style.borderBottom = "none";
+
             area.children[i].style.borderBottom = "3px solid rgb(46, 197, 239)";
-            // console.log(area.children[i].style.borderBottom);
-            // console.log(i + ": "+ area_a[i].innerHTML)
-            deleteBorder = i;
+            //取得上一次按的索引
+            clearBorder = i;
             e.preventDefault();
         });
-        
-    }
-   
 
+    }
 
 
     //  縮放清單:展開變-號，收起變+號
@@ -57,29 +52,28 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".hotelToggle").click(function () {
         var display = $(".hotelType").css("display");
         $(".hotelType").slideToggle("slow");
-        
-        if( display == "none"){
+
+        if (display == "none") {
             //開啟(-號)
             $(".hotelToggle").removeClass("fa-circle-plus").addClass('fa-circle-minus');
             // console.log("else:" + display )
-        }else{  
+        } else {
             //關閉(+號)
             $(".hotelToggle").removeClass("fa-circle-minus").addClass('fa-circle-plus');
             // console.log("if:" + display )
         }
     });
 
-
     //定價
     $(".prcesToggle").click(function () {
         var display = $(".prces").css("display");
         $(".prces").slideToggle("slow");
-        
-        if( display == "none"){
+
+        if (display == "none") {
             $(".prcesToggle").removeClass("fa-circle-plus").addClass('fa-circle-minus');
-        }else{
+        } else {
             $(".prcesToggle").removeClass("fa-circle-minus").addClass('fa-circle-plus');
-           
+
         }
     });
 
@@ -87,12 +81,12 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".starToggle").click(function () {
         var display = $(".star").css("display");
         $(".star").slideToggle("slow");
-        
-        if( display == "none"){
+
+        if (display == "none") {
             $(".starToggle").removeClass("fa-circle-plus").addClass('fa-circle-minus');
-        }else{
+        } else {
             $(".starToggle").removeClass("fa-circle-minus").addClass('fa-circle-plus');
-           
+
         }
     });
 
@@ -100,18 +94,19 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".facilityToggle").click(function () {
         var display = $(".facility").css("display");
         $(".facility").slideToggle("slow");
-        
-        if( display == "none"){
+
+        if (display == "none") {
             $(".facilityToggle").removeClass("fa-circle-plus").addClass('fa-circle-minus');
-        }else{
+        } else {
             $(".facilityToggle").removeClass("fa-circle-minus").addClass('fa-circle-plus');
-           
+
         }
     });
-
 });
 
+document.addEventListener("DOMContentLoaded",function(){
 
+});
 
 
 
