@@ -117,17 +117,17 @@ button:hover {
     position: relative;
     top: -50px;
     z-index: 99;
-    width: 40%;
+    /* width: 50%; */
     margin: 0 auto;
-
-    border: 1px solid red;
+    justify-content: center;
+    /* border: 1px solid red; */
 
 }
 
 .nav-center li {
     padding: 0 30px;
     font-size: 25px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     /* align-self: center; */
     /* border: 1px solid rgb(64, 0, 255); */
 }
