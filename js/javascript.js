@@ -28,6 +28,29 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(page1show, 4000);    //設定每隔5秒之後執行一次page1show的函式
 
 
+    var area = document.getElementsByClassName("area")[0];
+    var area_a = area.querySelectorAll(".area_a");
+    // console.log(area_a);
+    let deleteBorder = 0;
+    for(let i = 0; i < area_a.length; i++){
+        area_a[i].addEventListener("click",function(e){
+            // if(deleteBorder != undefined){
+                area.children[deleteBorder].style.borderBottom = "none";
+            // }
+            
+            // console.log(area.children[deleteBorder].style)
+            // area.children[deleteBorder].style.borderBottom = "none";
+            area.children[i].style.borderBottom = "3px solid rgb(46, 197, 239)";
+            // console.log(area.children[i].style.borderBottom);
+            // console.log(i + ": "+ area_a[i].innerHTML)
+            deleteBorder = i;
+            e.preventDefault();
+        });
+        
+    }
+   
+
+
 
     //  縮放清單:展開變-號，收起變+號
     //飯店類型

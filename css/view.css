@@ -48,7 +48,7 @@
 .view-page .view {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 .view-page .view ul {
