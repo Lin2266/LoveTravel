@@ -28,28 +28,10 @@ $(function () {
     setInterval(page1show, 4000);    //設定每隔5秒之後執行一次page1show的函式
 
 
-    //景點、美食點擊區域時會出現底線顯示
-    var area = document.getElementsByClassName("area")[0];
-    var area_a = area.querySelectorAll(".area_a");
-    // console.log(area_a);
-    let clearBorder = 0;
-    for (let i = 0; i < area_a.length; i++) {
-        area_a[i].addEventListener("click", function (e) {
-            //把上一次按的地區底線清空
-            area.children[clearBorder].style.borderBottom = "none";
-
-            area.children[i].style.borderBottom = "3px solid rgb(46, 197, 239)";
-            //取得上一次按的索引
-            clearBorder = i;
-            e.preventDefault();
-        });
-
-    }
-
-
     //  縮放清單:展開變-號，收起變+號
     //飯店類型
     $(".hotelToggle").click(function () {
+        console.log("1111")
         var display = $(".hotelType").css("display");
         $(".hotelType").slideToggle("slow");
 
@@ -102,11 +84,31 @@ $(function () {
 
         }
     });
+
+    //景點、美食點擊區域時會出現底線顯示
+    var area_a;
+    var area = document.getElementsByClassName("area")[0];
+    if (area != undefined) {
+        area_a = area.querySelectorAll(".area_a");
+        // console.log(area_a);
+        let clearBorder = 0;
+        for (let i = 0; i < area_a.length; i++) {
+            area_a[i].addEventListener("click", function (e) {
+                //把上一次按的地區底線清空
+                area.children[clearBorder].style.borderBottom = "none";
+
+                area.children[i].style.borderBottom = "3px solid rgb(46, 197, 239)";
+                //取得上一次按的索引
+                clearBorder = i;
+                e.preventDefault();
+            });
+
+        }
+    }
+
+
 });
 
-document.addEventListener("DOMContentLoaded",function(){
-
-});
 
 
 
