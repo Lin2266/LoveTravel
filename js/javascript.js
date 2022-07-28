@@ -1,6 +1,6 @@
 $(function () {
 
-    $("#nav").load("header.html");
+    $("#nav").load("nav.html");
     $("#footer").load("footer.html");
 
     // Carousel輪播
@@ -106,6 +106,8 @@ $(function () {
         }
     }
 
+    
+    
 
 });
 
