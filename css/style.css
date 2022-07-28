@@ -3,6 +3,9 @@
 @import url("view.css");
 @import url("food.css");
 @import url("room.css");
+*{
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, '微軟正黑體';

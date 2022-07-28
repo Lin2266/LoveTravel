@@ -1,7 +1,10 @@
+.index-page .view ul { 
+    margin-right: 20px;
+}
 .view-shared .view li {
     margin-bottom: 15px;
     text-align: center;
-    width: 250px;
+    /* width: 250px; */
 }
 
 .view-shared .view img {
@@ -15,18 +18,22 @@
 }
 
 /* ------------------view-page------------------ */
-
 .view-page .view {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
 }
 
-.view-page .view ul {
-    margin-bottom: 40px;
+.view-page .view ul { 
     display: flex;
     flex-direction: column;
     height: 350px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    width: calc((100% - 60px) / 4);
+}
+
+.view-page .view ul:nth-child(4n){
+    margin-right: 0;
 }
 
 .view-page .view ul:hover {

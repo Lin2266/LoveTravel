@@ -1,6 +1,5 @@
 .index-page .room {
     display: flex;
-    justify-content: space-between;
     /* margin: 0 5%; */
     flex-wrap: wrap;
     
