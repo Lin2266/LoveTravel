@@ -1,22 +1,26 @@
-.index-page .food {
+.food-shared .food {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 5%;
 }
 
 .food-shared .food ul {
     display: flex;
     height: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-right: 130px;
+    /* outline: 1px solid red; */
+    width: calc((100% - 130px) / 2);
 }
 
+.food-shared .food ul:nth-child(2n) {
+    margin-right: 0;
+}
 .food-shared .food ul:hover {
     box-shadow: 2px 2px 3px gray;
 }
 
 .food-shared .food li {
-    width: 250px;
+    width: 100%;
     text-align: center;
 }
 
@@ -55,8 +59,4 @@
 }
 
 /* ------------------food-page---------------- */
-.food-page .food {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+

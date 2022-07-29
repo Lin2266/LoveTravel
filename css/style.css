@@ -216,14 +216,18 @@ button:hover {
 /* 景點區域 */
 .pagination-shared .area {
     display: flex;
-    margin: 30px 25%;
-    width: 50%;
+    margin: 30px 0;
+    justify-content: center;
 }
 
 .pagination-shared .area li {
     padding: 10px 0;
     margin-right: 30px;
-    font-size: 20px;
+    font-size: 20px;   
+}
+
+.pagination-shared .area li:nth-child(5) {
+    margin-right: 0;
 }
 
 .pagination-shared .area li:nth-child(1) {

@@ -1,19 +1,24 @@
-.index-page .room {
+.room-shared .room {
     display: flex;
-    /* margin: 0 5%; */
     flex-wrap: wrap;
     
 }
 
-.room-shared .room ul {
+.index-page .room ul {
     text-align: center;
-    height: 400px;
+    height: 410px;
     margin-bottom: 20px;
+    margin-right: 30px;
+    width: calc((100% - 90px) / 4);
     
 }
 
+.index-page .room ul:nth-child(4n) {
+    margin-right: 0;
+}
+
 .room-shared .room li {
-    width: 250px;
+    /* width: 250px; */
     
 }
 
@@ -83,6 +88,8 @@
 
 
 /* ------------------room-page---------------- */
+
+
 .room-page .innerWarpper {
     display: flex;
     /* outline: 1px solid red; */
@@ -92,13 +99,13 @@
     height: 100%;
     /* outline: 1px solid rgb(0, 255, 136); */
     background-color: rgb(234, 234, 234);
-    padding: 30px;
+    padding: 20px;
 }
 
 .Reservation select {
     font-size: 16px;
     font-weight: bold;
-    width: 200px;
+    width: 100%;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
@@ -109,7 +116,7 @@
 form>ul>li>input {
     font-size: 16px;
     font-weight: bold;
-    width: 188px;
+    width: 100%;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
@@ -120,7 +127,7 @@ form .numInput{
     display: flex;
     margin-bottom: 15px;
     justify-content: space-between;   
-    width: 200px;
+    width: 100%;
 }
 
 form .numInput input{
@@ -136,7 +143,7 @@ form .numInput input{
 form .prces input {
     font-size: 16px;
     font-weight: bold;
-    width: 188px;
+    width: 100%;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
@@ -153,7 +160,7 @@ form input[type="checkbox"]{
 .Reservation button {
     font-size: 18px;
     font-weight: bold;
-    width: 200px;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
@@ -181,20 +188,19 @@ form input[type="checkbox"]{
 }
 
 .hotelToggle{
-
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .prcesToggle{
-    margin-left: 140px;
+    margin-left: 120px;
 }
 
 .starToggle{
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .facilityToggle{
-    margin-left: 140px;
+    margin-left: 120px;
 }
 
 .Reservation .line {
@@ -233,9 +239,19 @@ form input[type="checkbox"]{
 }
 
 .room-page .room {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 3%;
-    /* outline: 1px solid rgb(0, 255, 136); */
+    margin-left: 30px;
+    
+}
+
+.room-page .room ul {
+    text-align: center;
+    height: 430px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: calc((100% - 40px) / 3);
+    
+}
+
+.room-page .room ul:nth-child(3n) {
+    margin-right: 0;
 }
