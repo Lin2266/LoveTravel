@@ -1,10 +1,10 @@
-.index-page .view{
-
+.slick-slide{
+   
+    
 }
 
-.index-page .view ul { 
-    /* margin-right: 20px; */
-    height: 350px;
+.index-page .view ul {   
+    margin-right: 20px;
 }
 
 .view-shared .view li {

@@ -5,7 +5,7 @@
 
 .food-shared .food ul {
     display: flex;
-    height: 250px;
+    height: 300px;
     margin-bottom: 50px;
     margin-right: 130px;
     /* outline: 1px solid red; */
@@ -25,11 +25,13 @@
 }
 
 .food-shared .food img {
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
 }
 
 .food-shared .food .food-text {
     background-color: rgb(245, 233, 200);
+    padding: 20px;
 }
 
 .food-shared .food h2 {
@@ -38,12 +40,12 @@
 
 .food-shared .food p {
     line-height: 1.5;
-    margin: 10px 20px 20px;
+    margin: 20px 0;
 }
 
 .food-shared .food .line {
     border: 0.5px solid rgb(177, 177, 177);
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 
