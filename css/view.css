@@ -1,10 +1,10 @@
-.index-page .view{
-
+.slick-slide{
+   
+    
 }
 
-.index-page .view ul { 
-    /* margin-right: 20px; */
-    height: 350px;
+.index-page .view ul {   
+    margin-right: 20px;
 }
 
 .view-shared .view li {
@@ -16,7 +16,7 @@
 
 .view-shared .view img {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
 }
 
 .view-shared .view .text span {
@@ -34,7 +34,7 @@
 .view-page .view ul { 
     display: flex;
     flex-direction: column;
-    /* height: 350px; */
+    height: 100%;
     margin-right: 20px;
     margin-bottom: 40px;
     width: calc((100% - 60px) / 4);

@@ -141,17 +141,19 @@ button:hover {
     left: 18%;
     z-index: 99;
     /* border: 1px solid rgb(255, 111, 0); */
-    width: 120px;
+    /* height: 80px;  
+    width: 120px; */
 }
 
 .header-index>.nav>a img{
     height: 80px;  
+    width: 120px;
     /* border: 1px solid rgb(157, 255, 0); */
 }
 
-.header-index img:hover {
+/* .header-index img:hover {
     box-shadow: 1px 1px 2px gray;
-}
+} */
 
 /* 返回頂端按鈕 */
 .fa-circle-chevron-up {
