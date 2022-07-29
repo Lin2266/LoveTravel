@@ -13,7 +13,7 @@ $('.news .responsive').slick({
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false
             }
         },
         {
@@ -24,7 +24,7 @@ $('.news .responsive').slick({
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 414,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

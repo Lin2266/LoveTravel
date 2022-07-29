@@ -3,6 +3,7 @@
 @import url("view.css");
 @import url("food.css");
 @import url("room.css");
+
 *{
     box-sizing: border-box;
 }
@@ -24,10 +25,10 @@ h2 {
 h3,span {
     font-size: 20px;
 }
-
+/* 
 h4{
     font-size: 18px;
-}
+} */
 
 a {
     text-decoration: none;
@@ -130,14 +131,7 @@ button:hover {
 .nav-center li {
     padding: 0 30px;
     font-size: 25px;
-    /* flex-grow: 1; */
-    /* align-self: center; */
     /* border: 1px solid rgb(64, 0, 255); */
-}
-
-.nav{
-     /* border: 1px solid rgb(64, 0, 255); */
-     /* position: relative; */
 }
 
 .header-index>.nav>a{  
@@ -307,6 +301,11 @@ button:hover {
 }
 
 /* 輪播 */
+.responsive{
+   margin-left: 3px;
+   /* outline: 2px solid red; */
+}
+
 .slick-prev:before {
     content: '←';
     font-size: 50px;
@@ -326,11 +325,11 @@ button:hover {
 }
 
 .slick-prev{
-    left: -57px;
+    left: -60px;
 }
 
 .slick-next{
-    right: -25px;
+    right: -30px;
 }
 
 
@@ -422,3 +421,25 @@ footer>a p:hover {
     height: 60px;
 }
 
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    h3,span {
+        font-size: 14px;
+    }
+
+    .nav-right li { 
+        font-size: 16px;
+    }
+
+    .nav-center li { 
+        font-size: 16px;
+    }
+    
+}
