@@ -75,8 +75,7 @@
 .news-page .news{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
+    justify-content: space-around;
     /* outline: 2px solid rgb(210, 144, 78); */
 }
 
