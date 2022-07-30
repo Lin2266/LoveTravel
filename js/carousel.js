@@ -3,7 +3,8 @@ $('.news .responsive').slick({
     dots: false,
     infinite: true,
     arrows: true,
-    speed: 1000,
+    speed: 5000,
+    autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 2,
     responsive: [
@@ -44,9 +45,12 @@ $('.view .responsive').slick({
     dots: false,
     infinite: true,
     arrows: true,
-    speed: 1000,
+    speed: 2000,
+    autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 4,
+    centerMode: true,  //启动居中
+    // centerPadding: '0', //处于中心模式时的侧面填充（像素或％）
     responsive: [
         {
             breakpoint: 1024,

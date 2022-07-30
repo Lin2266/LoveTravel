@@ -1,20 +1,26 @@
 .food-shared .food {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.food-shared .food::after{
+    content: "";
+    width: 500px;
 }
 
 .food-shared .food ul {
     display: flex;
-    height: 255px;
+    height: 250px;
+    width: 500px;
     margin-bottom: 50px;
-    margin-right: 130px;
-    /* outline: 1px solid red; */
-    width: calc((100% - 130px) / 2);
 }
 
-.food-shared .food ul:nth-child(2n) {
-    margin-right: 0;
+.food-shared .food ul:nth-last-child(1) {
+    margin-bottom: 0;
+
 }
+
 .food-shared .food ul:hover {
     box-shadow: 2px 2px 3px gray;
 }
@@ -26,6 +32,7 @@
 
 .food-shared .food img {
     width: 100%;
+    height: auto;
 }
 
 .food-shared .food .food-text {

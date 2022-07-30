@@ -27,6 +27,10 @@ span {
     font-size: 20px;
 }
 
+span {
+    font-size: 18px;
+}
+
 /* 
 h4{
     font-size: 18px;
@@ -54,7 +58,7 @@ button:hover {
     top: 0;
     left: 0;
     background-size: cover;
-    background-position:center; 
+    background-position: center;
     display: none;
 }
 
@@ -94,7 +98,7 @@ button:hover {
     width: 100%;
     height: 800px;
     background-size: cover;
-    background-position:center; 
+    background-position: center;
 }
 
 .header-index a {
@@ -143,7 +147,7 @@ button:hover {
     top: -5%;
     left: 5%;
     z-index: 99;
-    border: 1px solid rgb(255, 111, 0);
+    /* border: 1px solid rgb(255, 111, 0); */
     width: 120px;
     height: 80px;
 }
@@ -151,28 +155,30 @@ button:hover {
 .header-index>.nav>a img {
     width: 100%;
     height: auto;
-   
+
     /* border: 1px solid rgb(157, 255, 0); */
 }
 
-/* .header-index img:hover {
-    box-shadow: 1px 1px 2px gray;
-} */
+.header-index img:hover {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}
+
 
 /* 返回頂端按鈕 */
 .fa-circle-chevron-up {
-    font-size: 50px;
-    color: rgba(18, 18, 18, 0.6);
+    font-size: 45px;
+    color: rgb(71, 71, 71);
     border-radius: 50%;
     position: fixed;
-    bottom: 30px;
-    right: 10px;
+    bottom: 185px;
+    right: 8px;
     z-index: 99;
 }
 
 .fa-circle-chevron-up:hover {
-    background-color: #5790C5;
-    color: rgb(173, 226, 251);
+    /* background-color: #000000; */
+    color: rgb(0, 0, 0);
 }
 
 /* 愛心 */
@@ -310,7 +316,7 @@ button:hover {
 /* 輪播 */
 .responsive {
     margin-left: 3px;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 
 .slick-prev:before {
@@ -375,6 +381,11 @@ footer a>img {
     width: 120px;
     height: 80px;
     flex-grow: 1;
+}
+
+footer a>img:hover {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
 }
 
 footer a {
@@ -458,7 +469,7 @@ footer>a p:hover {
         height: 200px;
     }
 
-    .nav-right{
+    .nav-right {
         outline: 1px solid red;
         width: 100px;
         right: 0;
@@ -474,7 +485,7 @@ footer>a p:hover {
         outline: 1px solid rgb(13, 0, 255);
         width: 150px;
     }
-  
+
     .nav-center li {
         font-size: 14px;
         padding: 0;
@@ -492,35 +503,35 @@ footer>a p:hover {
     }
 
     /* 返回頂端按鈕 */
-.fa-circle-chevron-up {
-    font-size: 40px;
-    top: 40%;
-    right: 10px;
-}
+    .fa-circle-chevron-up {
+        font-size: 40px;
+        top: 40%;
+        right: 10px;
+    }
 
-.all-shared .fa-heart {
-    font-size: 10px;
-}
+    .all-shared .fa-heart {
+        font-size: 10px;
+    }
 
-.all-shared .fa-star {
-    font-size: 10px;
-}
+    .all-shared .fa-star {
+        font-size: 10px;
+    }
 
-/* 評分數 */
-.all-shared .fa-star~span {
-    margin: 0 10px;
-}
+    /* 評分數 */
+    .all-shared .fa-star~span {
+        margin: 0 10px;
+    }
 
-/* 麵包屑 */
-.Bread-crumbs {
-    font-size: 20px;
-    display: flex;
-    margin-bottom: 20px;
-}
+    /* 麵包屑 */
+    .Bread-crumbs {
+        font-size: 20px;
+        display: flex;
+        margin-bottom: 20px;
+    }
 
-.Bread-crumbs li {
-    margin-right: 15px;
-}
+    .Bread-crumbs li {
+        margin-right: 15px;
+    }
 
     /* 標題 */
     .index-page>h1 {
@@ -559,29 +570,29 @@ footer>a p:hover {
     .food-shared .food h2 {
         margin: 15px 0;
     }
-    
+
     .food-shared .food p {
         line-height: 1.5;
         margin: 10px;
     }
-    
+
     .food-shared .food .line {
         border: 0.5px solid rgb(177, 177, 177);
         width: 80%;
         margin: 0 auto;
     }
-    
+
     .food-shared .food .food-text h3:last-of-type {
         font-weight: bold;
         cursor: pointer;
         color: rgb(51, 9, 236);
         margin-top: 15px;
     }
-    
+
     .food-shared .food li h3:last-of-type:hover {
         color: rgb(46, 197, 239);
     }
-    
+
 
     .index-page .room ul {
         height: 400px;
@@ -595,17 +606,17 @@ footer>a p:hover {
         margin-right: 0;
     }
 
-    
+
     .footer-wrapper {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .footer-wrapper ul {
         flex-grow: 1;
         margin-bottom: 10px;
     }
-    
+
     .footer-wrapper li {
         padding: 3px;
     }
@@ -613,16 +624,16 @@ footer>a p:hover {
     footer {
         padding: 15px 20px 15px 20px;
     }
-    
+
     footer a>img {
         width: 80px;
         height: 40px;
     }
 
     footer i {
-        font-size: 20px;   
+        font-size: 20px;
     }
-    
+
     footer>p {
         padding: 5px;
     }

@@ -1,24 +1,24 @@
 .room-shared .room {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
 }
 
-.index-page .room ul {
+.room-shared .room::after {
+    content: "";
+    width: 250px;
+}
+
+.room-shared  .room ul {
     text-align: center;
-    /* height: auto; */
+    height: 400px;
+    width: 250px;
     margin-bottom: 20px;
-    margin-right: 30px;
-    width: calc((100% - 90px) / 4);
-    
-}
 
-.index-page .room ul:nth-child(4n) {
-    margin-right: 0;
 }
 
 .index-page .room li {
-    height: auto;
+    /* height: auto; */
     
 }
 
@@ -34,6 +34,7 @@
 .room-shared .room img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 
@@ -43,7 +44,7 @@
 }
 
 .room-shared .room .like-star .fa-star {
-    margin-top: 20px;
+    margin-top: 15px;
 
 }
 
@@ -53,7 +54,7 @@
 }
 
 .room-shared .room p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .room-shared .room .fa-thumbs-up {    
@@ -80,7 +81,7 @@
     text-align: center;
     color: blue;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     background-color: white;
 
@@ -239,22 +240,23 @@ form input[type="checkbox"]{
 }
 
 .room-page .room {
-    margin-left: 20px;
+    margin-left: 30px;
     
 }
 
-.room-page .room ul {
+/* .room-page .room ul {
     text-align: center;
-    height: 430px;
+    height: 400px;
+    width: 250px;
     margin-bottom: 20px;
     margin-right: 30px;
     width: calc((100% - 60px) / 3);
     
-}
+} */
 
-.room-page .room ul:nth-child(3n) {
+/* .room-page .room ul:nth-child(3n) {
     margin-right: 0;
-}
+} */
 
 .room-page .room li {
     /* width: 287px; */
