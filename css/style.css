@@ -303,7 +303,7 @@ button:hover {
 /* 輪播 */
 .responsive{
    margin-left: 3px;
-   outline: 2px solid red;
+   /* outline: 2px solid red; */
 }
 
 .slick-prev:before {

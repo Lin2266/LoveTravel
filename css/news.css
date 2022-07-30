@@ -13,7 +13,7 @@
 }
 
 .index-page .news li:nth-child(2) {
-    outline: 2px solid rgb(210, 144, 78);
+    /* outline: 2px solid rgb(210, 144, 78); */
     width: 270px;
 }
 

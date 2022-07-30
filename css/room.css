@@ -6,7 +6,7 @@
 
 .index-page .room ul {
     text-align: center;
-    height: 410px;
+    height: 400px;
     margin-bottom: 20px;
     margin-right: 30px;
     width: calc((100% - 90px) / 4);
@@ -17,8 +17,8 @@
     margin-right: 0;
 }
 
-.room-shared .room li {
-    /* width: 250px; */
+.index-page .room li {
+    width: 261px;
     
 }
 
@@ -254,4 +254,9 @@ form input[type="checkbox"]{
 
 .room-page .room ul:nth-child(3n) {
     margin-right: 0;
+}
+
+.room-page .room li {
+    width: 281px;
+    
 }

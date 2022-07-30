@@ -5,7 +5,7 @@
 .index-page .view ul { 
     /* margin-right: 30px; */
    
-    width: auto;
+    /* width: auto; */
     /* outline: 1px solid rgb(0, 255, 38); */
     height: 350px;
     padding: 0 20px;
@@ -15,6 +15,7 @@
     margin-bottom: 20px;
     text-align: center;
     /* outline: 1px solid rgb(0, 255, 38); */
+    width: 250px;
       
 }
 
