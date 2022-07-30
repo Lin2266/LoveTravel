@@ -2,8 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     height: 250px;
-    margin: 0 10px;
+    margin-right: 10px;
     /* outline: 2px solid rgb(210, 144, 78); */
+
 }
 
 .index-page .news li {
