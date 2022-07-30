@@ -4,7 +4,7 @@
 @import url("food.css");
 @import url("room.css");
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -22,9 +22,11 @@ h2 {
     font-size: 25px;
 }
 
-h3,span {
+h3,
+span {
     font-size: 20px;
 }
+
 /* 
 h4{
     font-size: 18px;
@@ -76,7 +78,7 @@ button:hover {
     background-image: url("../images/news_header.jpg");
 }
 
-.header-view{
+.header-view {
     background-image: url("../images/view_header.jpg");
 }
 
@@ -111,7 +113,7 @@ button:hover {
     /* border: 1px solid red; */
 }
 
-.nav-right li {  
+.nav-right li {
     padding: 10px 10px;
     font-size: 20px;
 }
@@ -134,8 +136,8 @@ button:hover {
     /* border: 1px solid rgb(64, 0, 255); */
 }
 
-.header-index>.nav>a{  
-    display: block;  
+.header-index>.nav>a {
+    display: block;
     position: relative;
     top: -5%;
     left: 18%;
@@ -144,8 +146,8 @@ button:hover {
     width: 120px;
 }
 
-.header-index>.nav>a img{
-    height: 80px;  
+.header-index>.nav>a img {
+    height: 80px;
     /* border: 1px solid rgb(157, 255, 0); */
 }
 
@@ -156,7 +158,7 @@ button:hover {
 /* 返回頂端按鈕 */
 .fa-circle-chevron-up {
     font-size: 50px;
-    color: #5790C5;
+    color: #464646;
     border-radius: 50%;
     position: fixed;
     bottom: 30px;
@@ -207,6 +209,7 @@ button:hover {
 .pagination-shared {
     padding: 20px 65px 20px 65px;
 }
+
 /* 景點區域 */
 .pagination-shared .area {
     display: flex;
@@ -217,7 +220,7 @@ button:hover {
 .pagination-shared .area li {
     padding: 10px 0;
     margin-right: 30px;
-    font-size: 20px;   
+    font-size: 20px;
 }
 
 .pagination-shared .area li:nth-child(5) {
@@ -301,9 +304,9 @@ button:hover {
 }
 
 /* 輪播 */
-.responsive{
-   margin-left: 3px;
-   /* outline: 2px solid red; */
+.responsive {
+    margin-left: 3px;
+    /* outline: 2px solid red; */
 }
 
 .slick-prev:before {
@@ -318,17 +321,18 @@ button:hover {
     color: rgb(1, 1, 1);
 }
 
-.slick-prev,.slick-next{
+.slick-prev,
+.slick-next {
     position: absolute;
     top: 45%;
     z-index: 99;
 }
 
-.slick-prev{
+.slick-prev {
     left: -60px;
 }
 
-.slick-next{
+.slick-next {
     right: -30px;
 }
 
@@ -422,24 +426,206 @@ footer>a p:hover {
 }
 
 @media screen and (max-width: 414px) {
-    h1 {
-        font-size: 18px;
+    body {
+        font-size: 12px;
     }
-    
-    h2 {
+
+    h1 {
         font-size: 16px;
     }
-    
-    h3,span {
+
+    h2 {
         font-size: 14px;
     }
 
-    .nav-right li { 
-        font-size: 16px;
+    h3,
+    span {
+        font-size: 12px;
     }
 
-    .nav-center li { 
-        font-size: 16px;
+    .header-index {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* 輪播 */
+    .page1bg {
+        width: 100%;
+        height: 200px;
+    }
+
+    .nav-right{
+        outline: 1px solid red;
+        width: 100px;
+        right: 0;
+    }
+
+    .nav-right li {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .nav-center {
+        top: 0px;
+        outline: 1px solid rgb(13, 0, 255);
+        width: 150px;
+    }
+  
+    .nav-center li {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .header-index>.nav>a {
+        top: 0%;
+        left: 1%;
+        /* border: 1px solid rgb(255, 111, 0); */
+        width: 80px;
+    }
+
+    .header-index>.nav>a img {
+        height: 40px;
+    }
+
+    /* 返回頂端按鈕 */
+.fa-circle-chevron-up {
+    font-size: 40px;
+    bottom: 30%;
+    right: 10px;
+}
+
+.all-shared .fa-heart {
+    font-size: 10px;
+}
+
+.all-shared .fa-star {
+    font-size: 10px;
+}
+
+/* 評分數 */
+.all-shared .fa-star~span {
+    margin: 0 10px;
+}
+
+/* 麵包屑 */
+.Bread-crumbs {
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.Bread-crumbs li {
+    margin-right: 15px;
+}
+
+    /* 標題 */
+    .index-page>h1 {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    /* 標題圖 */
+    .index-page>h1>.fa-star {
+        font-size: 20px;
+
+    }
+
+    .pagination-shared {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .responsive {
+        margin-left: 0;
+        /* outline: 2px solid red; */
+    }
+
+    .food-shared .food ul {
+        display: flex;
+        height: 190px;
+        margin-bottom: 30px;
+        margin-right: 0;
+        /* outline: 1px solid red; */
+        width: 100%;
+    }
+
+    .food-shared .food img {
+        height: 100%;
+    }
+
+    .food-shared .food h2 {
+        margin: 15px 0;
     }
     
+    .food-shared .food p {
+        line-height: 1.5;
+        margin: 10px;
+    }
+    
+    .food-shared .food .line {
+        border: 0.5px solid rgb(177, 177, 177);
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .food-shared .food .food-text h3:last-of-type {
+        font-weight: bold;
+        cursor: pointer;
+        color: rgb(51, 9, 236);
+        margin-top: 15px;
+    }
+    
+    .food-shared .food li h3:last-of-type:hover {
+        color: rgb(46, 197, 239);
+    }
+    
+
+    .index-page .room ul {
+        height: 400px;
+        margin-bottom: 20px;
+        margin-right: 30px;
+        width: calc((100% - 90px) / 2);
+
+    }
+
+    .index-page .room ul:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .footer-wrapper ul {
+        flex-grow: 1;
+        margin-bottom: 10px;
+    }
+    
+    .footer-wrapper li {
+        padding: 3px;
+    }
+
+    footer {
+        padding: 15px 20px 15px 20px;
+    }
+    
+    footer a>img {
+        width: 80px;
+        height: 40px;
+    }
+
+    footer i {
+        font-size: 20px;   
+    }
+    
+    footer>p {
+        padding: 5px;
+    }
+
+    .QRcode img {
+        width: 40px;
+        height: 40px;
+    }
+
 }

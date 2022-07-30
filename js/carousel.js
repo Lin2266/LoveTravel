@@ -24,10 +24,12 @@ $('.news .responsive').slick({
             }
         },
         {
-            breakpoint: 414,
+            breakpoint: 415,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false,
+                infinite: true,
             }
         }
 
@@ -61,10 +63,12 @@ $('.view .responsive').slick({
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 415,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: true,
             }
         }
 

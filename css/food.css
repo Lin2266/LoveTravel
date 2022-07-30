@@ -5,7 +5,7 @@
 
 .food-shared .food ul {
     display: flex;
-    height: 250px;
+    height: 255px;
     margin-bottom: 50px;
     margin-right: 130px;
     /* outline: 1px solid red; */
@@ -20,7 +20,7 @@
 }
 
 .food-shared .food li {
-    width: 251px;
+    width: 255px;
     text-align: center;
 }
 
