@@ -20,7 +20,9 @@ $('.news .responsive').slick({
             breakpoint: 600,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                arrows: false,
+                infinite: true,
             }
         },
         {
@@ -59,7 +61,9 @@ $('.view .responsive').slick({
             breakpoint: 600,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                arrows: false,
+                infinite: true,
             }
         },
         {
