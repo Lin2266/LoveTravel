@@ -58,7 +58,7 @@ button:hover {
     top: 0;
     left: 0;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     display: none;
 }
 
@@ -98,7 +98,7 @@ button:hover {
     width: 100%;
     height: 800px;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
 }
 
 .header-index a {
@@ -168,7 +168,7 @@ button:hover {
 /* 返回頂端按鈕 */
 .fa-circle-chevron-up {
     font-size: 45px;
-    color: rgb(71, 71, 71);
+    color: #5790C5;
     border-radius: 50%;
     position: fixed;
     bottom: 185px;
@@ -316,7 +316,7 @@ button:hover {
 /* 輪播 */
 .responsive {
     margin-left: 3px;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 .slick-prev:before {
