@@ -263,3 +263,131 @@ form input[type="checkbox"]{
 
 }
 
+@media screen and (max-width: 414px) {
+
+    .index-page .room ul {
+        height: 270px;
+        width: 175px;
+        outline: 1px solid ;
+    }
+
+    /* 圖片以外，其他都上下留空白margin */
+    .room-shared .room li:nth-child(1n + 2) {
+        margin: 8px 0;
+    }
+
+    .room-shared .room .fa-location-dot {
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    
+    .room-shared .room .like-star .fa-star {
+        margin-top: 5px;
+    
+    }
+
+    .room-shared .room p {
+        font-size: 12px;
+    }
+    
+    .room-shared .room .fa-thumbs-up {    
+        font-size: 15px;
+    }
+
+    .detailed button {
+        font-size: 12px;
+    }
+
+    .room-page .room {
+        margin-left: 20px;
+    }
+    
+    .room-page .room ul {
+        height: 270px;
+        width: 175px;
+        margin-bottom: 20px;
+    
+    }
+
+
+
+
+
+
+
+
+    .room-page .Reservation {
+        width: 180px;
+        height: 100%;
+        padding: 10px;
+    }
+    
+    .Reservation select {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        
+    }
+    
+    form>ul>li>input {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    form .numInput{
+        margin-bottom: 10px;
+    }
+    
+    form .numInput input{
+        font-size: 14px;
+        width: 70px;
+    }
+    
+    form .prces input {
+        font-size: 14px; 
+    }
+    
+    form input[type="checkbox"]{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .Reservation button {
+        font-size: 16px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .Reservation h2 {
+       margin: 20px 0;
+    }
+    
+    .Reservation h3{
+        margin-top: 20px;
+      
+    }
+    
+    .hotelToggle{
+        margin-left: 100px;
+    }
+    
+    .prcesToggle{
+        margin-left: 123px;
+    }
+    
+    .starToggle{
+        margin-left: 100px;
+    }
+    
+    .facilityToggle{
+        margin-left: 123px;
+    }
+    
+    .Reservation .line {
+        border: 0.5px solid rgb(202, 202, 202);
+        width: 160px;
+        margin: 10px 0;
+    
+    }
+
+}

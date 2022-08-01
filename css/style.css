@@ -200,12 +200,14 @@ button:hover {
 .all-shared .fa-star {
     font-size: 20px;
     color: rgb(231, 216, 18);
+    /* color: rgb(201, 201, 201); */
     /* margin: 0 10px; */
 }
 
 /* 評分數 */
 .all-shared .fa-star~span {
-    margin: 0 10px;
+    /* margin: 0 10px; */
+    margin-right: 10px;
 }
 
 /* 麵包屑 */
@@ -450,14 +452,17 @@ footer>a p:hover {
     }
 
     h1 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    h3,
+    h3 {
+        font-size: 12px;
+    }
+
     span {
         font-size: 12px;
     }
@@ -593,6 +598,21 @@ footer>a p:hover {
         font-size: 16px;
     }
 
+    .all-shared .fa-star~span {
+        margin-right: 5px;
+    }
+
+    /* 景點區域 */
+    .pagination-shared .area {
+        margin: 15px 0;
+    }
+
+    .pagination-shared .area li {
+        margin-right: 13px;
+        font-size: 16px;
+    }
+
+
     /* 選擇分頁 */
     .pagination {
         margin-top: 10px;
@@ -611,59 +631,6 @@ footer>a p:hover {
         margin-left: 0;
         /* outline: 2px solid red; */
     }
-
-    .food-shared .food ul {
-        display: flex;
-        height: 190px;
-        margin-bottom: 30px;
-        margin-right: 0;
-        /* outline: 1px solid red; */
-        width: 100%;
-    }
-
-    .food-shared .food img {
-        height: 100%;
-    }
-
-    .food-shared .food h2 {
-        margin: 15px 0;
-    }
-
-    .food-shared .food p {
-        line-height: 1.5;
-        margin: 10px;
-    }
-
-    .food-shared .food .line {
-        border: 0.5px solid rgb(177, 177, 177);
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .food-shared .food .food-text h3:last-of-type {
-        font-weight: bold;
-        cursor: pointer;
-        color: rgb(51, 9, 236);
-        margin-top: 15px;
-    }
-
-    .food-shared .food li h3:last-of-type:hover {
-        color: rgb(46, 197, 239);
-    }
-
-
-    .index-page .room ul {
-        height: 400px;
-        margin-bottom: 20px;
-        margin-right: 30px;
-        width: calc((100% - 90px) / 2);
-
-    }
-
-    .index-page .room ul:nth-child(2n) {
-        margin-right: 0;
-    }
-
 
     .footer-wrapper {
         display: flex;

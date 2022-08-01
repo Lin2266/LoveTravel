@@ -32,7 +32,7 @@
 
 .food-shared .food img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .food-shared .food .food-text {
@@ -67,3 +67,17 @@
 
 /* ------------------food-page---------------- */
 
+@media screen and (max-width: 414px) {
+    .food-shared .food ul {
+        height: 190px;
+        width: 380px;
+        margin-bottom: 30px;
+        
+    }
+
+    .food-shared .food p {
+        margin: 10px;
+    }
+
+
+}

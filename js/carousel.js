@@ -3,7 +3,7 @@ $('.news .responsive').slick({
     dots: false,
     infinite: true,
     arrows: true,
-    speed: 5000,
+    speed: 4000,
     autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 2,
@@ -21,7 +21,7 @@ $('.news .responsive').slick({
             breakpoint: 600,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 arrows: false,
                 infinite: true,
             }
@@ -33,6 +33,7 @@ $('.news .responsive').slick({
                 slidesToScroll: 1,
                 arrows: false,
                 infinite: true,
+                pauseOnHover:true,
             }
         }
 
@@ -73,10 +74,11 @@ $('.view .responsive').slick({
         {
             breakpoint: 415,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: false,
                 infinite: true,
+                centerMode: false,
             }
         }
 
