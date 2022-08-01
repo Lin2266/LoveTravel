@@ -20,7 +20,7 @@ $('.news .responsive').slick({
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 2,
                 arrows: false,
                 infinite: true,
@@ -29,8 +29,8 @@ $('.news .responsive').slick({
         {
             breakpoint: 415,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 arrows: false,
                 infinite: true,
             }
