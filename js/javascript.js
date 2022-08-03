@@ -7,12 +7,15 @@ $(function () {
     roomPlusMinus();
     bars();
     searchRoom();
+    translateHand();
     
    
 });
 
 //首頁大圖輪播
 function headerCarousel(){
+    // 5張，先clone 5個，保持10個，前面5個跑完就刪，後面在clone 5個 
+
     //  Carousel輪播
     //  負責page1目前畫面呈現的背景的索引號碼(0代表第1張)
     var page1bgNo = 0;
@@ -119,7 +122,7 @@ function roomPlusMinus() {
 
 //漢堡按鈕
 function bars(){
-    $('.fa-bars').on('click',()=>{
+    $('.fa-bars').click(()=>{
    
         if($('.nav-center').css('display') == 'none'){
             $('.nav-center').css('display','block');
@@ -140,6 +143,7 @@ function searchRoom(){
             $('.Reservation').animate({
                 left: 0,
             },1000);
+            $('.fa-hand-point-left').hide()
             open = false;
             
         }else{
@@ -147,9 +151,30 @@ function searchRoom(){
             $('.Reservation').animate({
                 left: -184,
             },1000)
+            $('.fa-hand-point-left').show()
             open = true;
             
         }
         
     });
+}
+
+
+function translateHand(){
+
+    setInterval(()=>{
+        $('.fa-hand-point-left').animate({
+            left: 25,
+        },1200,'easeInSine')
+        
+        $('.fa-circle').animate({
+            // color: 'red',
+        },1200,'easeInSine')
+    
+        $('.fa-hand-point-left').animate({
+            left: 45,
+        },1200,'easeInSine')
+    },1500);
+    
+    // return translateHand();
 }

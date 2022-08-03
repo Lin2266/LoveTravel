@@ -263,6 +263,10 @@ form input[type="checkbox"]{
 
 }
 
+.room-circle-hand{
+    display: none;
+}
+
 @media screen and (max-width: 414px) {
 
     .index-page .room ul {
@@ -393,12 +397,17 @@ form input[type="checkbox"]{
     
     }
 
+    .room-circle-hand{
+        display: block;
+    }
+
     .fa-hand-point-left{
-        font-size: 30px;
+        font-size: 35px;
         position: fixed;
-        top: 350px;
-        left: 0px;
+        top: 410px;
+        left: 40px;
         z-index: 15;
+        color: rgb(1, 255, 204);
         transform: translate(0px);
         /* transform: rotate(270deg); */
         /* transform: skewX(90deg); */
@@ -410,8 +419,9 @@ form input[type="checkbox"]{
         top: 400px;
         left: -15px;
         z-index: 10;
-        color:rgb(129, 129, 129,0.6);
+        color:rgba(129, 121, 121, 0.6);
         
     }
+
 
 }
