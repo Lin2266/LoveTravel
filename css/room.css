@@ -268,7 +268,12 @@ form input[type="checkbox"]{
     .index-page .room ul {
         height: 270px;
         width: 175px;
-        outline: 1px solid ;
+        /* outline: 1px solid ; */
+    }
+
+    .room-page .room::after {
+        content: "";
+        width:0px;
     }
 
     /* 圖片以外，其他都上下留空白margin */
@@ -291,15 +296,15 @@ form input[type="checkbox"]{
     }
     
     .room-shared .room .fa-thumbs-up {    
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .detailed button {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .room-page .room {
-        margin-left: 20px;
+        margin-left: 0;
     }
     
     .room-page .room ul {
@@ -309,19 +314,17 @@ form input[type="checkbox"]{
     
     }
 
-
-
-
-
-
-
-
     .room-page .Reservation {
         width: 180px;
-        height: 100%;
+        height: auto;
         padding: 10px;
     }
     
+    .Reservation{
+        position: absolute;
+        left: -184px;
+    }
+
     .Reservation select {
         font-size: 14px;
         font-weight: bold;
@@ -368,19 +371,19 @@ form input[type="checkbox"]{
     }
     
     .hotelToggle{
-        margin-left: 100px;
+        margin-left: 90px;
     }
     
     .prcesToggle{
-        margin-left: 123px;
+        margin-left: 117px;
     }
     
     .starToggle{
-        margin-left: 100px;
+        margin-left: 90px;
     }
     
     .facilityToggle{
-        margin-left: 123px;
+        margin-left:  117px;
     }
     
     .Reservation .line {
@@ -388,6 +391,27 @@ form input[type="checkbox"]{
         width: 160px;
         margin: 10px 0;
     
+    }
+
+    .fa-hand-point-left{
+        font-size: 30px;
+        position: fixed;
+        top: 350px;
+        left: 0px;
+        z-index: 15;
+        transform: translate(0px);
+        /* transform: rotate(270deg); */
+        /* transform: skewX(90deg); */
+    }
+
+    .fa-circle{
+        font-size: 40px;
+        position: fixed;
+        top: 400px;
+        left: -15px;
+        z-index: 10;
+        color:rgb(129, 129, 129,0.6);
+        
     }
 
 }

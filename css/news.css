@@ -139,4 +139,9 @@
         /* pointer-events: none; */
     }
 
+    .news-shared .news-text span {
+        margin-left: 30%;
+        margin-right: 10px;
+    }
+
 }

@@ -5,11 +5,13 @@ $(function () {
 
     headerCarousel();
     roomPlusMinus();
-
+    bars();
+    searchRoom();
     
    
 });
 
+//首頁大圖輪播
 function headerCarousel(){
     //  Carousel輪播
     //  負責page1目前畫面呈現的背景的索引號碼(0代表第1張)
@@ -115,12 +117,39 @@ function roomPlusMinus() {
     }
 }
 
-$('.fa-bars').on('click',()=>{
+//漢堡按鈕
+function bars(){
+    $('.fa-bars').on('click',()=>{
    
-    if($('.nav-center').css('display') == 'none'){
-        $('.nav-center').css('display','block');
-    }else{
-        $('.nav-center').css('display','none');
-    }
-    
-});
+        if($('.nav-center').css('display') == 'none'){
+            $('.nav-center').css('display','block');
+        }else{
+            $('.nav-center').css('display','none');
+        }
+        
+    });
+}
+
+//住宿搜尋隱藏打開
+function searchRoom(){
+    let open = true;
+    $('.fa-circle').on('click',() =>{
+        
+        if(open){
+            console.log('open :' + open)
+            $('.Reservation').animate({
+                left: 0,
+            },1000);
+            open = false;
+            
+        }else{
+            console.log('off :' + open)
+            $('.Reservation').animate({
+                left: -184,
+            },1000)
+            open = true;
+            
+        }
+        
+    });
+}

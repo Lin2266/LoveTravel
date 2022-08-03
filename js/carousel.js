@@ -3,10 +3,11 @@ $('.news .responsive').slick({
     dots: false,
     infinite: true,
     arrows: true,
-    speed: 4000,
+    speed: 1000,
     autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 2,
+    
     responsive: [
         {
             breakpoint: 1024,
@@ -24,6 +25,7 @@ $('.news .responsive').slick({
                 slidesToScroll: 1,
                 arrows: false,
                 infinite: true,
+                pauseOnDotsHover: true,
             }
         },
         {
@@ -33,7 +35,7 @@ $('.news .responsive').slick({
                 slidesToScroll: 1,
                 arrows: false,
                 infinite: true,
-                pauseOnHover:true,
+                pauseOnDotsHover: true,
             }
         }
 
@@ -46,7 +48,7 @@ $('.view .responsive').slick({
     dots: false,
     infinite: true,
     arrows: true,
-    speed: 2000,
+    speed: 1000,
     autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -69,16 +71,18 @@ $('.view .responsive').slick({
                 slidesToScroll: 2,
                 arrows: false,
                 infinite: true,
+                pauseOnDotsHover: true,
             }
         },
         {
             breakpoint: 415,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1,
+                slidesToScroll: 2,
                 arrows: false,
                 infinite: true,
                 centerMode: false,
+                pauseOnDotsHover: true,
             }
         }
 
