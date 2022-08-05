@@ -1,7 +1,7 @@
 .index-page .news ul {
     display: flex;
     flex-wrap: wrap;
-    height: 250px;
+    /* height: 250px; */
     width: 565px;
 }
 
