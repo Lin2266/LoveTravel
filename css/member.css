@@ -1,0 +1,395 @@
+@import url("reset.css");
+@import url("style.css");
+
+/* start editing from here */
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+/* text align right */
+.txt-lt {
+    text-align: left;
+}
+
+/* text align left */
+.txt-center {
+    text-align: center;
+}
+
+/* text align center */
+.float-rt {
+    float: right;
+}
+
+/* float right */
+.float-lt {
+    float: left;
+}
+
+/* float left */
+.clear {
+    clear: both;
+}
+
+/* clear float */
+.pos-relative {
+    position: relative;
+}
+
+/* Position Relative */
+.pos-absolute {
+    position: absolute;
+}
+
+/* Position Absolute */
+.vertical-base {
+    vertical-align: baseline;
+}
+
+/* vertical align baseline */
+.vertical-top {
+    vertical-align: top;
+}
+
+/* vertical align top */
+nav.vertical ul li {
+    display: block;
+}
+
+/* vertical menu */
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+/* horizontal menu */
+/* img{max-width:100%;} */
+/*end reset*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+}
+
+.main-content-w3 {
+    margin: 75px auto;
+}
+
+.sap_tabs-w3agile {
+    margin: 3em auto 0;
+    width: 32%;
+    text-align: center;
+    -webkit-appearance: none;
+    background-color: rgba(25, 30, 33, 0.86);
+    ;
+}
+
+.register {
+    padding: 1em 1em;
+}
+
+.resp-tab-item {
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px 30px;
+    display: inline-block;
+    list-style: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -webkit-appearance: none;
+    background: #1C395C;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    border-radius: 5px;
+}
+
+.login-top {
+    padding: 1em 0 0;
+}
+
+.resp-tab-item:hover {
+    background: #FFFFFF;
+    text-shadow: none;
+    color: #222;
+}
+
+.resp-tab-active {
+    background: #FFFFFF;
+    text-shadow: none;
+    color: #222;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.tab {
+    background: #fdbb30;
+    padding: 1em 0em 0 0;
+}
+
+.resp-tab-content {
+    display: none;
+}
+
+.resp-content-active,
+.resp-accordion-active {
+    display: block;
+}
+
+.login-top p {
+    font-size: 1em;
+    color: #fdbb30;
+    margin-bottom: 0.5em;
+}
+
+/*---------*/
+.register input[type="text"] {
+    outline: none;
+    font-size: 0.95em;
+    color: #eee;
+    padding: .8em 3em .8em 1em;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    width: 100%;
+    margin: 0 0 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(17, 18, 22, 0.68) url(../images/mess.png) no-repeat 96% 50%;
+    border-radius: 5px;
+}
+
+.register input.user {
+    background: rgba(17, 18, 22, 0.68) url(../images/user.png) no-repeat 96% 50%;
+}
+
+.register input.phone {
+    background: rgba(17, 18, 22, 0.68) url(../images/phone.png) no-repeat 96% 50%;
+}
+
+.register input[type="password"] {
+    outline: none;
+    font-size: 0.95em;
+    color: #eee;
+    padding: .8em 3em .8em 1em;
+    border: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 0 15px 0;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(17, 18, 22, 0.68) url(../images/pass.png) no-repeat 96% 50%;
+}
+
+.sign-up {
+    padding-bottom: .5em;
+}
+
+.sign-up input[type="submit"] {
+    background: #fdbb30;
+    color: #fff;
+    border: none;
+    font-size: 1.3em;
+    padding: 0.4em 1em;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.register span {
+    display: block;
+    margin: 0 0 1em 0;
+    color: #fff;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: left;
+}
+
+.register span input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.sign-up input[type="submit"]:hover {
+    color: #000;
+    background: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #eee;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #eee;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #eee;
+}
+
+:-ms-input-placeholder {
+    color: #eee;
+}
+
+h4.text-center {
+    font-size: 1.5em;
+    color: #fff;
+    padding-top: 0.5em;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+h4.text-center1 {
+    font-size: 1.5em;
+    color: #fff;
+    padding: 0 0 .5em;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+p.tab-text {
+    font-size: 0.95em;
+    line-height: 1.8em;
+    color: #fff;
+    padding: 1em 1em 0;
+}
+
+.sel {
+    width: 98%;
+    padding: .8em 1em;
+    font-size: 0.95em;
+    margin-bottom: 1em;
+    outline: none;
+    border: none;
+    background: rgba(17, 18, 22, 0.68);
+    color: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register a {
+    color: #fdbb30;
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+
+.login-top ul li a.face {
+    background: #3b5998;
+    padding: 0.8em 1.7em 0.9em 1em;
+    border-radius: 5px;
+}
+
+.login-top ul li a.face:hover {
+    background: #244384;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.login-top ul li a.twit {
+    background: #00aeed;
+    padding: 0.8em 2.8em 0.9em 1em;
+    border-radius: 5px;
+}
+
+.login-top ul li a.twit:hover {
+    background: #26A6D5;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.login-top ul li a span.face {
+    background: url(../images/face.png) no-repeat 0px 0px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0em 1.5em 0em 0em;
+}
+
+.login-top ul li a span.twit {
+    background: url(../images/twit.png)no-repeat 0px 0px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0em 1.5em 0em 0em;
+}
+
+.login-top ul li a {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.login-top ul li {
+    padding: .8em 0;
+    display: inline-block;
+}
+
+/**responsive**/
+@media (max-width: 1440px) {
+    .sap_tabs-w3agile {
+        width: 36%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .sap_tabs-w3agile {
+        width: 41%;
+    }
+}
+
+@media (max-width: 414px) {
+    .sap_tabs-w3agile {
+        width: 90%;
+    }
+
+    .register input[type="text"],
+    .register input[type="password"] {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .sign-up input[type="submit"] {
+        font-size: 1.2em;
+    }
+
+    .sel {
+        font-size: 0.8em;
+        width: 99%;
+    }
+}

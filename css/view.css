@@ -1,6 +1,5 @@
 .index-page .view ul { 
     width: 250px;
-    /* height: 350px; */
 }
 
 .view-shared .view li {
@@ -36,7 +35,6 @@
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 350px;
     margin-bottom: 40px;
 }
 
@@ -52,8 +50,6 @@
 @media screen and (max-width: 414px) {
     .index-page .view ul { 
         width: 160px;
-        height: 240px;
-        /* outline: 1px solid red; */
     }
     
     .view-shared .view img {
@@ -73,7 +69,7 @@
 
     .view-page .view ul { 
         width: 160px;
-        height: 240px;
+        /* height: 240px; */
         margin-bottom: 20px;
     }
     

@@ -94,6 +94,10 @@ button:hover {
     background-image: url("../images/room_header.jpg");
 }
 
+.header-member {
+    background-image: url("../images/member.jpg");
+}
+
 .header-index {
     width: 100%;
     height: 800px;
@@ -624,7 +628,7 @@ footer>a p:hover {
     }
 
     .responsive {
-        margin-left: 0;
+        /* margin-left: 3px; */
         /* outline: 2px solid red; */
     }
 

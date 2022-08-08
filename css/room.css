@@ -11,7 +11,7 @@
 
 .index-page .room ul {
     text-align: center;
-    height: 400px;
+    /* height: 400px; */
     width: 250px;
     margin-bottom: 20px;
 
@@ -116,7 +116,7 @@
     /* outline: 1px solid rgb(0, 255, 136); */
 }
 
-form>ul>li>input {
+.Reservation form>ul>li>input {
     font-size: 16px;
     font-weight: bold;
     width: 100%;
@@ -126,14 +126,14 @@ form>ul>li>input {
     margin-bottom: 15px;
 }
 
-form .numInput{
+.Reservation form .numInput{
     display: flex;
     margin-bottom: 15px;
     justify-content: space-between;   
     width: 100%;
 }
 
-form .numInput input{
+.Reservation form .numInput input{
     font-size: 16px;
     font-weight: bold;
     width: 80px;
@@ -143,7 +143,7 @@ form .numInput input{
     
 }
 
-form .prces input {
+.Reservation form .prces input {
     font-size: 16px;
     font-weight: bold;
     width: 100%;
@@ -153,7 +153,7 @@ form .prces input {
     
 }
 
-form input[type="checkbox"]{
+.Reservation form input[type="checkbox"]{
     width: 15px;
     height: 15px;
     /* outline: 1px solid rgb(0, 255, 136); */
@@ -255,6 +255,11 @@ form input[type="checkbox"]{
     width:250px;
 }
 
+.room-page .room::after {
+    content: "";
+    width:250px;
+}
+
 .room-page .room ul {
     text-align: center;
     height: 400px;
@@ -336,25 +341,25 @@ form input[type="checkbox"]{
         
     }
     
-    form>ul>li>input {
+    .Reservation form>ul>li>input {
         font-size: 14px;
         margin-bottom: 10px;
     }
     
-    form .numInput{
+    .Reservation form .numInput{
         margin-bottom: 10px;
     }
     
-    form .numInput input{
+    .Reservation form .numInput input{
         font-size: 14px;
         width: 70px;
     }
     
-    form .prces input {
+    .Reservation form .prces input {
         font-size: 14px; 
     }
     
-    form input[type="checkbox"]{
+    .Reservation form input[type="checkbox"]{
         width: 15px;
         height: 15px;
     }
