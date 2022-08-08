@@ -145,7 +145,7 @@ button:hover {
 .nav-center li {
     padding: 0 30px;
     font-size: 25px;
-    /* border: 1px solid rgb(64, 0, 255); */
+   text-shadow: 1px 1px 3px white;
 }
 
 .header-index>a {
@@ -157,6 +157,7 @@ button:hover {
     /* border: 1px solid rgb(255, 111, 0); */
     width: 120px;
     height: 80px;
+    
 }
 
 .header-index>a img {
