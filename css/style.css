@@ -489,7 +489,7 @@ footer>a p:hover {
 
     .fa-bars {
         position: absolute;
-        top: 3px;
+        top: 4px;
         right: 3px;
         z-index: 5;
         font-size: 30px;
@@ -511,7 +511,7 @@ footer>a p:hover {
 
     .nav-right li {
         font-size: 18px;
-        padding: 10px 30px 10px 0px;
+        padding: 14px 30px 10px 0px;
     }
 
     .nav-right li:nth-child(5) {
@@ -535,7 +535,7 @@ footer>a p:hover {
     }
 
     .header-index>a {
-        top: -37px;
+        top: -42px;
         left: 5px;
         width: 55px;
         height: 35px;
@@ -544,8 +544,8 @@ footer>a p:hover {
     /* .header-index>a:hover:none {} */
 
     .header-index>a img {
-        width: 55px;
-        height: 35px;
+        width: 60px;
+        height: 40px;
         /* border: 1px solid rgb(255, 111, 0); */
 
     }
