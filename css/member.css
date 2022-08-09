@@ -1,10 +1,9 @@
-@import url("reset.css");
 @import url("style.css");
 
 /* start editing from here */
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
 .txt-rt {
     text-align: right;
@@ -83,7 +82,6 @@ body {
     text-align: center;
     -webkit-appearance: none;
     background-color: rgba(25, 30, 33, 0.86);
-    ;
 }
 
 .register {
@@ -92,7 +90,7 @@ body {
 
 .resp-tab-item {
     border: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
     cursor: pointer;
     padding: 10px 30px;
@@ -105,7 +103,7 @@ body {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     -webkit-appearance: none;
-    background: #767d84;
+    background: #ffffff;
     font-family: 'Ubuntu Condensed', sans-serif;
     border-radius: 5px;
 }
@@ -115,15 +113,15 @@ body {
 }
 
 .resp-tab-item:hover {
-    background: #FFFFFF;
+    background: #757575;
     text-shadow: none;
-    color: #222;
+    color: rgb(255, 255, 255);
 }
 
 .resp-tab-active {
-    background: #FFFFFF;
+    background: #757575;
     text-shadow: none;
-    color: #222;
+    color: rgb(255, 255, 255);
 }
 
 h2.resp-accordion {
@@ -133,7 +131,7 @@ h2.resp-accordion {
 }
 
 .tab {
-    background: #bbbbbb;
+    background: #d9d9d9;
     padding: 1em 0em 0 0;
 }
 
@@ -148,7 +146,7 @@ h2.resp-accordion {
 
 .login-top p {
     font-size: 1em;
-    color: #bbbbbb;
+    color: rgb(255, 255, 255);
     margin-bottom: 0.5em;
 }
 
@@ -156,7 +154,7 @@ h2.resp-accordion {
 .register input[type="text"] {
     outline: none;
     font-size: 0.95em;
-    color: #eee;
+    color: rgb(255, 255, 255);
     padding: .8em 3em .8em 1em;
     border: none;
     -moz-border-radius: 3px;
@@ -181,7 +179,7 @@ h2.resp-accordion {
 .register input[type="password"] {
     outline: none;
     font-size: 0.95em;
-    color: #eee;
+    color: rgb(255, 255, 255);
     padding: .8em 3em .8em 1em;
     border: none;
     -moz-border-radius: 5px;
@@ -190,7 +188,7 @@ h2.resp-accordion {
     border-radius: 5px;
     width: 100%;
     margin: 0 0 15px 0;
-    background: #fff;
+    /* background: #fff; */
     font-family: 'Open Sans', sans-serif;
     background: rgba(17, 18, 22, 0.68) url(../images/pass.png) no-repeat 96% 50%;
 }
@@ -200,8 +198,8 @@ h2.resp-accordion {
 }
 
 .sign-up input[type="submit"] {
-    background: #bbbbbb;
-    color: #fff;
+    background: #757575;
+    color: rgb(255, 255, 255);
     border: none;
     font-size: 1.3em;
     padding: 0.4em 1em;
@@ -296,9 +294,8 @@ p.tab-text {
 }
 
 .register a {
-    color: #bbbbbb;
+    color: #ffffff;
     font-size: 0.9em;
-    text-decoration: underline;
 }
 
 .login-top ul li a.face {
