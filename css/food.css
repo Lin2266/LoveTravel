@@ -87,8 +87,12 @@
         
     }
 
+    .food-shared .food h2 {
+        margin: 13px 0;
+    }
+
     .food-shared .food p {
-        margin: 5px;
+        margin-bottom: 8px;
         height: 7em;
     }
 
