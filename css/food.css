@@ -27,7 +27,7 @@
 }
 
 .food-shared .food li {
-    width: 255px;
+    width: 250px;
     text-align: center;
 }
 
@@ -66,7 +66,7 @@
     font-weight: bold;
     cursor: pointer;
     color: rgb(51, 9, 236);
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .food-shared .food li h3{
@@ -76,9 +76,13 @@
 /* ------------------food-page---------------- */
 
 @media screen and (max-width: 414px) {
+    .food-shared .food {
+        justify-content:center;
+    }
+
     .food-shared .food ul {
-        height: 190px;
-        width: 380px;
+        height: 185px;
+        width: 370px;
         margin-bottom: 30px;
         
     }
