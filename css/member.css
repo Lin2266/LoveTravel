@@ -105,7 +105,7 @@ body {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     -webkit-appearance: none;
-    background: #1C395C;
+    background: #767d84;
     font-family: 'Ubuntu Condensed', sans-serif;
     border-radius: 5px;
 }
@@ -133,7 +133,7 @@ h2.resp-accordion {
 }
 
 .tab {
-    background: #fdbb30;
+    background: #bbbbbb;
     padding: 1em 0em 0 0;
 }
 
@@ -148,7 +148,7 @@ h2.resp-accordion {
 
 .login-top p {
     font-size: 1em;
-    color: #fdbb30;
+    color: #bbbbbb;
     margin-bottom: 0.5em;
 }
 
@@ -200,7 +200,7 @@ h2.resp-accordion {
 }
 
 .sign-up input[type="submit"] {
-    background: #fdbb30;
+    background: #bbbbbb;
     color: #fff;
     border: none;
     font-size: 1.3em;
@@ -296,7 +296,7 @@ p.tab-text {
 }
 
 .register a {
-    color: #fdbb30;
+    color: #bbbbbb;
     font-size: 0.9em;
     text-decoration: underline;
 }
